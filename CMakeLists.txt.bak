@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+project(Elka)
+
+file(GLOB_RECURSE Elka_SOURCES "src/*.cpp")
+file(GLOB_RECURSE Elka_HEADERS "src/*.h")
+
+set(Foo_INCLUDE_DIRS "")
+foreach(_headerFile ${Elka_HEADERS})
+  get_filename_component(_dir ${_headerFile} PATH)
+  list(APPEND Elka_INCLUDE_DIRS ${_dir})
+endforeach()
+list(REMOVE_DUPLICATES Elka_INLCUDE_DIRS)
+
+include_directories(${Elka_INCLUDE_DIRS})
+add_executable(Elka ${Elka_SOURCES})

@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libelka_drivers.a  CMakeFiles/elka_drivers.dir/adc.c.obj CMakeFiles/elka_drivers.dir/exti.c.obj CMakeFiles/elka_drivers.dir/i2cdev.c.obj CMakeFiles/elka_drivers.dir/i2croutines.c.obj CMakeFiles/elka_drivers.dir/motors.c.obj CMakeFiles/elka_drivers.dir/mpu6050.c.obj CMakeFiles/elka_drivers.dir/nrf24l01.c.obj CMakeFiles/elka_drivers.dir/nvic.c.obj
+/usr/bin/arm-none-eabi-ranlib libelka_drivers.a

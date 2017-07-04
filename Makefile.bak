@@ -1,0 +1,10 @@
+.PHONY all:
+all: elka
+
+.PHONY elka:
+elka:
+	@mkdir -p build_elka && cd build_elka && cmake -Wno-dev ../ -DCMAKE_TOOLCHAIN_FILE=../toolchain/Toolchain-arm-none-eabi.cmake
+	@cd build_elka && make
+
+clean:
+	@rm -rf build_elka

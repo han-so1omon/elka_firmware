@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libelka_hal.a  CMakeFiles/elka_hal.dir/imu.c.obj
+/usr/bin/arm-none-eabi-ranlib libelka_hal.a

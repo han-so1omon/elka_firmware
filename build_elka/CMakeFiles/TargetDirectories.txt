@@ -1,0 +1,7 @@
+/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles/elka.dir
+/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/utils/CMakeFiles/elka_utils.dir
+/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir
+/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules/CMakeFiles/elka_modules.dir
+/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS/CMakeFiles/FreeRTOS.dir
+/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/elka_hal/CMakeFiles/elka_hal.dir
+/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers/CMakeFiles/elka_drivers.dir
