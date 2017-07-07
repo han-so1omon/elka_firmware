@@ -1,2 +1,0 @@
-/usr/bin/arm-none-eabi-ar qc libelka_utils.a  CMakeFiles/elka_utils.dir/cfassert.c.obj CMakeFiles/elka_utils.dir/filter.c.obj CMakeFiles/elka_utils.dir/stm32f4_discovery.c.obj CMakeFiles/elka_utils.dir/stm32f4_discovery_lis302dl.c.obj
-/usr/bin/arm-none-eabi-ranlib libelka_utils.a

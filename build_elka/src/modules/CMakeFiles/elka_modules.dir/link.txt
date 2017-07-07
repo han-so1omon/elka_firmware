@@ -1,2 +1,0 @@
-/usr/bin/arm-none-eabi-ar qc libelka_modules.a  CMakeFiles/elka_modules.dir/sensfusion6.c.obj CMakeFiles/elka_modules.dir/stabilizer.c.obj
-/usr/bin/arm-none-eabi-ranlib libelka_modules.a

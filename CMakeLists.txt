@@ -78,8 +78,9 @@ include_directories(
 set(ELKA_LINK_LIBS "")
 
 add_definitions(
-  -D__ELKA_FreeRTOS_ELKA
+  -D__ELKA_FREERTOS
 )
+
 #=============================================================================
 # git
 #

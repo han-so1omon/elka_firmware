@@ -1,3 +1,5 @@
 *.sw*
-build_*
+build_elka/
+build*/*
+build_*/
 *.pyc

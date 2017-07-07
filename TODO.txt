@@ -17,4 +17,6 @@ Compile elka app
 Add Elena to elka_firmware github repo so that she might test
 open-sourced elka firmware
 
+STM32F4 timer
+
 Make .resources file for files to be fetched from other repositories (with wget)
