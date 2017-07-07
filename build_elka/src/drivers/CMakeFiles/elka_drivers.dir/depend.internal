@@ -48,7 +48,7 @@ src/drivers/CMakeFiles/elka_drivers.dir/adc.c.obj
  ../inc/drivers/adc.h
  ../inc/stdbool.h
  ../inc/utils/stm32f4_discovery.h
- /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/adc.c
+ /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/adc.c
 src/drivers/CMakeFiles/elka_drivers.dir/exti.c.obj
  ../inc/CMSIS/core_cm4.h
  ../inc/CMSIS/core_cm4_simd.h
@@ -87,7 +87,7 @@ src/drivers/CMakeFiles/elka_drivers.dir/exti.c.obj
  ../inc/drivers/nrf24l01.h
  ../inc/nvicconf/nvicconf.h
  ../inc/stdbool.h
- /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/exti.c
+ /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/exti.c
 src/drivers/CMakeFiles/elka_drivers.dir/i2cdev.c.obj
  ../inc/CMSIS/core_cm4.h
  ../inc/CMSIS/core_cm4_simd.h
@@ -136,7 +136,7 @@ src/drivers/CMakeFiles/elka_drivers.dir/i2cdev.c.obj
  ../inc/drivers/i2croutines.h
  ../inc/nvicconf/nvicconf.h
  ../inc/stdbool.h
- /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/i2cdev.c
+ /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/i2cdev.c
 src/drivers/CMakeFiles/elka_drivers.dir/i2croutines.c.obj
  ../inc/CMSIS/core_cm4.h
  ../inc/CMSIS/core_cm4_simd.h
@@ -183,7 +183,7 @@ src/drivers/CMakeFiles/elka_drivers.dir/i2croutines.c.obj
  ../inc/drivers/i2croutines.h
  ../inc/nvicconf/nvicconf.h
  ../inc/stdbool.h
- /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/i2croutines.c
+ /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/i2croutines.c
 src/drivers/CMakeFiles/elka_drivers.dir/motors.c.obj
  ../inc/CMSIS/core_cm4.h
  ../inc/CMSIS/core_cm4_simd.h
@@ -228,7 +228,7 @@ src/drivers/CMakeFiles/elka_drivers.dir/motors.c.obj
  ../inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_wwdg.h
  ../inc/drivers/motors.h
  ../inc/stdbool.h
- /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/motors.c
+ /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/motors.c
 src/drivers/CMakeFiles/elka_drivers.dir/mpu6050.c.obj
  ../inc/CMSIS/core_cm4.h
  ../inc/CMSIS/core_cm4_simd.h
@@ -274,7 +274,7 @@ src/drivers/CMakeFiles/elka_drivers.dir/mpu6050.c.obj
  ../inc/drivers/i2cdev.h
  ../inc/drivers/mpu6050.h
  ../inc/stdbool.h
- /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/mpu6050.c
+ /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/mpu6050.c
 src/drivers/CMakeFiles/elka_drivers.dir/nrf24l01.c.obj
  ../inc/CMSIS/core_cm4.h
  ../inc/CMSIS/core_cm4_simd.h
@@ -314,7 +314,7 @@ src/drivers/CMakeFiles/elka_drivers.dir/nrf24l01.c.obj
  ../inc/drivers/nrf24l01.h
  ../inc/stdbool.h
  ../inc/utils/cfassert.h
- /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/nrf24l01.c
+ /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/nrf24l01.c
 src/drivers/CMakeFiles/elka_drivers.dir/nvic.c.obj
  ../inc/CMSIS/core_cm4.h
  ../inc/CMSIS/core_cm4_simd.h
@@ -354,4 +354,4 @@ src/drivers/CMakeFiles/elka_drivers.dir/nvic.c.obj
  ../inc/drivers/i2croutines.h
  ../inc/drivers/nvic.h
  ../inc/stdbool.h
- /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/nvic.c
+ /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/nvic.c

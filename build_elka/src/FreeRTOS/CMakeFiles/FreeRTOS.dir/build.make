@@ -43,10 +43,10 @@ RM = /opt/cmake-3.4.3-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake
+CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka
+CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka
 
 # Include any dependencies generated for this target.
 include src/FreeRTOS/CMakeFiles/FreeRTOS.dir/depend.make
@@ -59,16 +59,16 @@ include src/FreeRTOS/CMakeFiles/FreeRTOS.dir/flags.make
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.obj: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/flags.make
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.obj: ../src/FreeRTOS/croutine.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/croutine.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/croutine.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/croutine.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/croutine.c
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/croutine.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/croutine.c > CMakeFiles/FreeRTOS.dir/croutine.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/croutine.c > CMakeFiles/FreeRTOS.dir/croutine.c.i
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/croutine.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/croutine.c -o CMakeFiles/FreeRTOS.dir/croutine.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/croutine.c -o CMakeFiles/FreeRTOS.dir/croutine.c.s
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.obj.requires:
 
@@ -83,16 +83,16 @@ src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.obj.provides.build: src/FreeRTOS
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.obj: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/flags.make
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.obj: ../src/FreeRTOS/list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/list.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/list.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/list.c
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/list.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/list.c > CMakeFiles/FreeRTOS.dir/list.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/list.c > CMakeFiles/FreeRTOS.dir/list.c.i
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/list.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/list.c -o CMakeFiles/FreeRTOS.dir/list.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/list.c -o CMakeFiles/FreeRTOS.dir/list.c.s
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.obj.requires:
 
@@ -107,16 +107,16 @@ src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.obj.provides.build: src/FreeRTOS/CMa
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.obj: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/flags.make
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.obj: ../src/FreeRTOS/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/queue.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/queue.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/queue.c
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/queue.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/queue.c > CMakeFiles/FreeRTOS.dir/queue.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/queue.c > CMakeFiles/FreeRTOS.dir/queue.c.i
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/queue.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/queue.c -o CMakeFiles/FreeRTOS.dir/queue.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/queue.c -o CMakeFiles/FreeRTOS.dir/queue.c.s
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.obj.requires:
 
@@ -131,16 +131,16 @@ src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.obj.provides.build: src/FreeRTOS/CM
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.obj: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/flags.make
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.obj: ../src/FreeRTOS/tasks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/tasks.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/tasks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/tasks.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/tasks.c
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/tasks.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/tasks.c > CMakeFiles/FreeRTOS.dir/tasks.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/tasks.c > CMakeFiles/FreeRTOS.dir/tasks.c.i
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/tasks.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/tasks.c -o CMakeFiles/FreeRTOS.dir/tasks.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/tasks.c -o CMakeFiles/FreeRTOS.dir/tasks.c.s
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.obj.requires:
 
@@ -155,16 +155,16 @@ src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.obj.provides.build: src/FreeRTOS/CM
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.obj: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/flags.make
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.obj: ../src/FreeRTOS/timers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/timers.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/timers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/timers.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/timers.c
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/timers.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/timers.c > CMakeFiles/FreeRTOS.dir/timers.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/timers.c > CMakeFiles/FreeRTOS.dir/timers.c.i
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/timers.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/timers.c -o CMakeFiles/FreeRTOS.dir/timers.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/timers.c -o CMakeFiles/FreeRTOS.dir/timers.c.s
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.obj.requires:
 
@@ -179,16 +179,16 @@ src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.obj.provides.build: src/FreeRTOS/C
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.obj: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/flags.make
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.obj: ../src/FreeRTOS/GCC/ARM_CM4F/port.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/GCC/ARM_CM4F/port.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/GCC/ARM_CM4F/port.c
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/GCC/ARM_CM4F/port.c > CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/GCC/ARM_CM4F/port.c > CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.i
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/GCC/ARM_CM4F/port.c -o CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/GCC/ARM_CM4F/port.c -o CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.s
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.obj.requires:
 
@@ -203,16 +203,16 @@ src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.obj.provides.build: src
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.obj: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/flags.make
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.obj: ../src/FreeRTOS/MemMang/heap_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/MemMang/heap_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/MemMang/heap_1.c
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/MemMang/heap_1.c > CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/MemMang/heap_1.c > CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.i
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS/MemMang/heap_1.c -o CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS/MemMang/heap_1.c -o CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.s
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.obj.requires:
 
@@ -247,9 +247,9 @@ src/FreeRTOS/libFreeRTOS.a: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/po
 src/FreeRTOS/libFreeRTOS.a: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.obj
 src/FreeRTOS/libFreeRTOS.a: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make
 src/FreeRTOS/libFreeRTOS.a: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libFreeRTOS.a"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && $(CMAKE_COMMAND) -P CMakeFiles/FreeRTOS.dir/cmake_clean_target.cmake
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FreeRTOS.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libFreeRTOS.a"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && $(CMAKE_COMMAND) -P CMakeFiles/FreeRTOS.dir/cmake_clean_target.cmake
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FreeRTOS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build: src/FreeRTOS/libFreeRTOS.a
@@ -267,10 +267,10 @@ src/FreeRTOS/CMakeFiles/FreeRTOS.dir/requires: src/FreeRTOS/CMakeFiles/FreeRTOS.
 .PHONY : src/FreeRTOS/CMakeFiles/FreeRTOS.dir/requires
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/clean:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS && $(CMAKE_COMMAND) -P CMakeFiles/FreeRTOS.dir/cmake_clean.cmake
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS && $(CMAKE_COMMAND) -P CMakeFiles/FreeRTOS.dir/cmake_clean.cmake
 .PHONY : src/FreeRTOS/CMakeFiles/FreeRTOS.dir/clean
 
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/depend:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/FreeRTOS /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS/CMakeFiles/FreeRTOS.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eric/Programs/elka/elka_firmware/elka_firmware /home/eric/Programs/elka/elka_firmware/elka_firmware/src/FreeRTOS /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS/CMakeFiles/FreeRTOS.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/FreeRTOS/CMakeFiles/FreeRTOS.dir/depend
 

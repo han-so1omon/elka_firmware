@@ -1,4 +1,4 @@
-# Install script for directory: /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver
+# Install script for directory: /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "DEBUG")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()

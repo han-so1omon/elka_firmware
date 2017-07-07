@@ -48,10 +48,10 @@ RM = /opt/cmake-3.4.3-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake
+CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka
+CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/elka_hal/CMakeFiles/progress.marks
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/elka_hal/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles 0
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/elka_hal/CMakeFiles/progress.marks
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/elka_hal/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/elka_hal/clean
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/elka_hal/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/elka_hal/preinstall
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/elka_hal/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/elka_hal/preinstall
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/elka_hal/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/elka_hal/CMakeFiles/elka_hal.dir/rule:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/elka_hal/CMakeFiles/elka_hal.dir/rule
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/elka_hal/CMakeFiles/elka_hal.dir/rule
 .PHONY : src/elka_hal/CMakeFiles/elka_hal.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ elka_hal: src/elka_hal/CMakeFiles/elka_hal.dir/rule
 
 # fast build rule for target.
 elka_hal/fast:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/elka_hal/CMakeFiles/elka_hal.dir/build.make src/elka_hal/CMakeFiles/elka_hal.dir/build
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/elka_hal/CMakeFiles/elka_hal.dir/build.make src/elka_hal/CMakeFiles/elka_hal.dir/build
 .PHONY : elka_hal/fast
 
 imu.obj: imu.c.obj
@@ -131,7 +131,7 @@ imu.obj: imu.c.obj
 
 # target to build an object file
 imu.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/elka_hal/CMakeFiles/elka_hal.dir/build.make src/elka_hal/CMakeFiles/elka_hal.dir/imu.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/elka_hal/CMakeFiles/elka_hal.dir/build.make src/elka_hal/CMakeFiles/elka_hal.dir/imu.c.obj
 .PHONY : imu.c.obj
 
 imu.i: imu.c.i
@@ -140,7 +140,7 @@ imu.i: imu.c.i
 
 # target to preprocess a source file
 imu.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/elka_hal/CMakeFiles/elka_hal.dir/build.make src/elka_hal/CMakeFiles/elka_hal.dir/imu.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/elka_hal/CMakeFiles/elka_hal.dir/build.make src/elka_hal/CMakeFiles/elka_hal.dir/imu.c.i
 .PHONY : imu.c.i
 
 imu.s: imu.c.s
@@ -149,7 +149,7 @@ imu.s: imu.c.s
 
 # target to generate assembly for a file
 imu.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/elka_hal/CMakeFiles/elka_hal.dir/build.make src/elka_hal/CMakeFiles/elka_hal.dir/imu.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/elka_hal/CMakeFiles/elka_hal.dir/build.make src/elka_hal/CMakeFiles/elka_hal.dir/imu.c.s
 .PHONY : imu.c.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

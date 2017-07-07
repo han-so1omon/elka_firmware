@@ -48,10 +48,10 @@ RM = /opt/cmake-3.4.3-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake
+CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka
+CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,6 +124,71 @@ elka/fast:
 .PHONY : elka/fast
 
 #=============================================================================
+# Target rules for targets named git_elka_comm
+
+# Build rule for target.
+git_elka_comm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 git_elka_comm
+.PHONY : git_elka_comm
+
+# fast build rule for target.
+git_elka_comm/fast:
+	$(MAKE) -f CMakeFiles/git_elka_comm.dir/build.make CMakeFiles/git_elka_comm.dir/build
+.PHONY : git_elka_comm/fast
+
+#=============================================================================
+# Target rules for targets named git_gencpp
+
+# Build rule for target.
+git_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 git_gencpp
+.PHONY : git_gencpp
+
+# fast build rule for target.
+git_gencpp/fast:
+	$(MAKE) -f CMakeFiles/git_gencpp.dir/build.make CMakeFiles/git_gencpp.dir/build
+.PHONY : git_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named git_genmsg
+
+# Build rule for target.
+git_genmsg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 git_genmsg
+.PHONY : git_genmsg
+
+# fast build rule for target.
+git_genmsg/fast:
+	$(MAKE) -f CMakeFiles/git_genmsg.dir/build.make CMakeFiles/git_genmsg.dir/build
+.PHONY : git_genmsg/fast
+
+#=============================================================================
+# Target rules for targets named msg_gen
+
+# Build rule for target.
+msg_gen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 msg_gen
+.PHONY : msg_gen
+
+# fast build rule for target.
+msg_gen/fast:
+	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/build
+.PHONY : msg_gen/fast
+
+#=============================================================================
+# Target rules for targets named submodule_clean
+
+# Build rule for target.
+submodule_clean: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 submodule_clean
+.PHONY : submodule_clean
+
+# fast build rule for target.
+submodule_clean/fast:
+	$(MAKE) -f CMakeFiles/submodule_clean.dir/build.make CMakeFiles/submodule_clean.dir/build
+.PHONY : submodule_clean/fast
+
+#=============================================================================
 # Target rules for targets named elka_drivers
 
 # Build rule for target.
@@ -148,6 +213,19 @@ elka_hal: cmake_check_build_system
 elka_hal/fast:
 	$(MAKE) -f src/elka_hal/CMakeFiles/elka_hal.dir/build.make src/elka_hal/CMakeFiles/elka_hal.dir/build
 .PHONY : elka_hal/fast
+
+#=============================================================================
+# Target rules for targets named elka_comm
+
+# Build rule for target.
+elka_comm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 elka_comm
+.PHONY : elka_comm
+
+# fast build rule for target.
+elka_comm/fast:
+	$(MAKE) -f src/elka_comm/common/CMakeFiles/elka_comm.dir/build.make src/elka_comm/common/CMakeFiles/elka_comm.dir/build
+.PHONY : elka_comm/fast
 
 #=============================================================================
 # Target rules for targets named FreeRTOS
@@ -255,6 +333,87 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/elka.dir/build.make CMakeFiles/elka.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+topics_sources/elka_msg.obj: topics_sources/elka_msg.cpp.obj
+
+.PHONY : topics_sources/elka_msg.obj
+
+# target to build an object file
+topics_sources/elka_msg.cpp.obj:
+	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/topics_sources/elka_msg.cpp.obj
+.PHONY : topics_sources/elka_msg.cpp.obj
+
+topics_sources/elka_msg.i: topics_sources/elka_msg.cpp.i
+
+.PHONY : topics_sources/elka_msg.i
+
+# target to preprocess a source file
+topics_sources/elka_msg.cpp.i:
+	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/topics_sources/elka_msg.cpp.i
+.PHONY : topics_sources/elka_msg.cpp.i
+
+topics_sources/elka_msg.s: topics_sources/elka_msg.cpp.s
+
+.PHONY : topics_sources/elka_msg.s
+
+# target to generate assembly for a file
+topics_sources/elka_msg.cpp.s:
+	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/topics_sources/elka_msg.cpp.s
+.PHONY : topics_sources/elka_msg.cpp.s
+
+topics_sources/elka_msg_ack.obj: topics_sources/elka_msg_ack.cpp.obj
+
+.PHONY : topics_sources/elka_msg_ack.obj
+
+# target to build an object file
+topics_sources/elka_msg_ack.cpp.obj:
+	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/topics_sources/elka_msg_ack.cpp.obj
+.PHONY : topics_sources/elka_msg_ack.cpp.obj
+
+topics_sources/elka_msg_ack.i: topics_sources/elka_msg_ack.cpp.i
+
+.PHONY : topics_sources/elka_msg_ack.i
+
+# target to preprocess a source file
+topics_sources/elka_msg_ack.cpp.i:
+	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/topics_sources/elka_msg_ack.cpp.i
+.PHONY : topics_sources/elka_msg_ack.cpp.i
+
+topics_sources/elka_msg_ack.s: topics_sources/elka_msg_ack.cpp.s
+
+.PHONY : topics_sources/elka_msg_ack.s
+
+# target to generate assembly for a file
+topics_sources/elka_msg_ack.cpp.s:
+	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/topics_sources/elka_msg_ack.cpp.s
+.PHONY : topics_sources/elka_msg_ack.cpp.s
+
+topics_sources/uORBTopics.obj: topics_sources/uORBTopics.cpp.obj
+
+.PHONY : topics_sources/uORBTopics.obj
+
+# target to build an object file
+topics_sources/uORBTopics.cpp.obj:
+	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/topics_sources/uORBTopics.cpp.obj
+.PHONY : topics_sources/uORBTopics.cpp.obj
+
+topics_sources/uORBTopics.i: topics_sources/uORBTopics.cpp.i
+
+.PHONY : topics_sources/uORBTopics.i
+
+# target to preprocess a source file
+topics_sources/uORBTopics.cpp.i:
+	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/topics_sources/uORBTopics.cpp.i
+.PHONY : topics_sources/uORBTopics.cpp.i
+
+topics_sources/uORBTopics.s: topics_sources/uORBTopics.cpp.s
+
+.PHONY : topics_sources/uORBTopics.s
+
+# target to generate assembly for a file
+topics_sources/uORBTopics.cpp.s:
+	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/topics_sources/uORBTopics.cpp.s
+.PHONY : topics_sources/uORBTopics.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -264,8 +423,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... elka"
+	@echo "... msg_gen"
+	@echo "... git_elka_comm"
+	@echo "... submodule_clean"
+	@echo "... git_genmsg"
+	@echo "... git_gencpp"
 	@echo "... elka_drivers"
 	@echo "... elka_hal"
+	@echo "... elka_comm"
 	@echo "... FreeRTOS"
 	@echo "... elka_modules"
 	@echo "... STM32F4xx_StdPeriph_Driver"
@@ -276,6 +441,15 @@ help:
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... topics_sources/elka_msg.obj"
+	@echo "... topics_sources/elka_msg.i"
+	@echo "... topics_sources/elka_msg.s"
+	@echo "... topics_sources/elka_msg_ack.obj"
+	@echo "... topics_sources/elka_msg_ack.i"
+	@echo "... topics_sources/elka_msg_ack.s"
+	@echo "... topics_sources/uORBTopics.obj"
+	@echo "... topics_sources/uORBTopics.i"
+	@echo "... topics_sources/uORBTopics.s"
 .PHONY : help
 
 

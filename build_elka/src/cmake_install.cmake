@@ -1,4 +1,4 @@
-# Install script for directory: /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src
+# Install script for directory: /home/eric/Programs/elka/elka_firmware/elka_firmware/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "DEBUG")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -29,12 +29,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers/cmake_install.cmake")
-  include("/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/elka_hal/cmake_install.cmake")
-  include("/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS/cmake_install.cmake")
-  include("/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules/cmake_install.cmake")
-  include("/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver/cmake_install.cmake")
-  include("/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/utils/cmake_install.cmake")
+  include("/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers/cmake_install.cmake")
+  include("/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/elka_hal/cmake_install.cmake")
+  include("/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/elka_comm/common/cmake_install.cmake")
+  include("/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS/cmake_install.cmake")
+  include("/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules/cmake_install.cmake")
+  include("/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver/cmake_install.cmake")
+  include("/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/utils/cmake_install.cmake")
 
 endif()
 

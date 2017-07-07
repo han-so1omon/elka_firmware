@@ -48,10 +48,10 @@ RM = /opt/cmake-3.4.3-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake
+CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka
+CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/FreeRTOS/CMakeFiles/progress.marks
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/FreeRTOS/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles 0
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/FreeRTOS/CMakeFiles/progress.marks
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/FreeRTOS/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/FreeRTOS/clean
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/FreeRTOS/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/FreeRTOS/preinstall
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/FreeRTOS/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/FreeRTOS/preinstall
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/FreeRTOS/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/rule:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/rule
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/FreeRTOS/CMakeFiles/FreeRTOS.dir/rule
 .PHONY : src/FreeRTOS/CMakeFiles/FreeRTOS.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ FreeRTOS: src/FreeRTOS/CMakeFiles/FreeRTOS.dir/rule
 
 # fast build rule for target.
 FreeRTOS/fast:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build
 .PHONY : FreeRTOS/fast
 
 GCC/ARM_CM4F/port.obj: GCC/ARM_CM4F/port.c.obj
@@ -131,7 +131,7 @@ GCC/ARM_CM4F/port.obj: GCC/ARM_CM4F/port.c.obj
 
 # target to build an object file
 GCC/ARM_CM4F/port.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.obj
 .PHONY : GCC/ARM_CM4F/port.c.obj
 
 GCC/ARM_CM4F/port.i: GCC/ARM_CM4F/port.c.i
@@ -140,7 +140,7 @@ GCC/ARM_CM4F/port.i: GCC/ARM_CM4F/port.c.i
 
 # target to preprocess a source file
 GCC/ARM_CM4F/port.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.i
 .PHONY : GCC/ARM_CM4F/port.c.i
 
 GCC/ARM_CM4F/port.s: GCC/ARM_CM4F/port.c.s
@@ -149,7 +149,7 @@ GCC/ARM_CM4F/port.s: GCC/ARM_CM4F/port.c.s
 
 # target to generate assembly for a file
 GCC/ARM_CM4F/port.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/GCC/ARM_CM4F/port.c.s
 .PHONY : GCC/ARM_CM4F/port.c.s
 
 MemMang/heap_1.obj: MemMang/heap_1.c.obj
@@ -158,7 +158,7 @@ MemMang/heap_1.obj: MemMang/heap_1.c.obj
 
 # target to build an object file
 MemMang/heap_1.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.obj
 .PHONY : MemMang/heap_1.c.obj
 
 MemMang/heap_1.i: MemMang/heap_1.c.i
@@ -167,7 +167,7 @@ MemMang/heap_1.i: MemMang/heap_1.c.i
 
 # target to preprocess a source file
 MemMang/heap_1.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.i
 .PHONY : MemMang/heap_1.c.i
 
 MemMang/heap_1.s: MemMang/heap_1.c.s
@@ -176,7 +176,7 @@ MemMang/heap_1.s: MemMang/heap_1.c.s
 
 # target to generate assembly for a file
 MemMang/heap_1.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/MemMang/heap_1.c.s
 .PHONY : MemMang/heap_1.c.s
 
 croutine.obj: croutine.c.obj
@@ -185,7 +185,7 @@ croutine.obj: croutine.c.obj
 
 # target to build an object file
 croutine.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.obj
 .PHONY : croutine.c.obj
 
 croutine.i: croutine.c.i
@@ -194,7 +194,7 @@ croutine.i: croutine.c.i
 
 # target to preprocess a source file
 croutine.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.i
 .PHONY : croutine.c.i
 
 croutine.s: croutine.c.s
@@ -203,7 +203,7 @@ croutine.s: croutine.c.s
 
 # target to generate assembly for a file
 croutine.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/croutine.c.s
 .PHONY : croutine.c.s
 
 list.obj: list.c.obj
@@ -212,7 +212,7 @@ list.obj: list.c.obj
 
 # target to build an object file
 list.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.obj
 .PHONY : list.c.obj
 
 list.i: list.c.i
@@ -221,7 +221,7 @@ list.i: list.c.i
 
 # target to preprocess a source file
 list.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.i
 .PHONY : list.c.i
 
 list.s: list.c.s
@@ -230,7 +230,7 @@ list.s: list.c.s
 
 # target to generate assembly for a file
 list.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/list.c.s
 .PHONY : list.c.s
 
 queue.obj: queue.c.obj
@@ -239,7 +239,7 @@ queue.obj: queue.c.obj
 
 # target to build an object file
 queue.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.obj
 .PHONY : queue.c.obj
 
 queue.i: queue.c.i
@@ -248,7 +248,7 @@ queue.i: queue.c.i
 
 # target to preprocess a source file
 queue.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.i
 .PHONY : queue.c.i
 
 queue.s: queue.c.s
@@ -257,7 +257,7 @@ queue.s: queue.c.s
 
 # target to generate assembly for a file
 queue.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/queue.c.s
 .PHONY : queue.c.s
 
 tasks.obj: tasks.c.obj
@@ -266,7 +266,7 @@ tasks.obj: tasks.c.obj
 
 # target to build an object file
 tasks.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.obj
 .PHONY : tasks.c.obj
 
 tasks.i: tasks.c.i
@@ -275,7 +275,7 @@ tasks.i: tasks.c.i
 
 # target to preprocess a source file
 tasks.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.i
 .PHONY : tasks.c.i
 
 tasks.s: tasks.c.s
@@ -284,7 +284,7 @@ tasks.s: tasks.c.s
 
 # target to generate assembly for a file
 tasks.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/tasks.c.s
 .PHONY : tasks.c.s
 
 timers.obj: timers.c.obj
@@ -293,7 +293,7 @@ timers.obj: timers.c.obj
 
 # target to build an object file
 timers.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.obj
 .PHONY : timers.c.obj
 
 timers.i: timers.c.i
@@ -302,7 +302,7 @@ timers.i: timers.c.i
 
 # target to preprocess a source file
 timers.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.i
 .PHONY : timers.c.i
 
 timers.s: timers.c.s
@@ -311,7 +311,7 @@ timers.s: timers.c.s
 
 # target to generate assembly for a file
 timers.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/FreeRTOS/CMakeFiles/FreeRTOS.dir/build.make src/FreeRTOS/CMakeFiles/FreeRTOS.dir/timers.c.s
 .PHONY : timers.c.s
 
 # Help Target
@@ -355,6 +355,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -43,10 +43,10 @@ RM = /opt/cmake-3.4.3-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake
+CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka
+CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka
 
 # Include any dependencies generated for this target.
 include src/drivers/CMakeFiles/elka_drivers.dir/depend.make
@@ -59,16 +59,16 @@ include src/drivers/CMakeFiles/elka_drivers.dir/flags.make
 
 src/drivers/CMakeFiles/elka_drivers.dir/adc.c.obj: src/drivers/CMakeFiles/elka_drivers.dir/flags.make
 src/drivers/CMakeFiles/elka_drivers.dir/adc.c.obj: ../src/drivers/adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/adc.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/adc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/adc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/adc.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/adc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/adc.c
 
 src/drivers/CMakeFiles/elka_drivers.dir/adc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elka_drivers.dir/adc.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/adc.c > CMakeFiles/elka_drivers.dir/adc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/adc.c > CMakeFiles/elka_drivers.dir/adc.c.i
 
 src/drivers/CMakeFiles/elka_drivers.dir/adc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elka_drivers.dir/adc.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/adc.c -o CMakeFiles/elka_drivers.dir/adc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/adc.c -o CMakeFiles/elka_drivers.dir/adc.c.s
 
 src/drivers/CMakeFiles/elka_drivers.dir/adc.c.obj.requires:
 
@@ -83,16 +83,16 @@ src/drivers/CMakeFiles/elka_drivers.dir/adc.c.obj.provides.build: src/drivers/CM
 
 src/drivers/CMakeFiles/elka_drivers.dir/exti.c.obj: src/drivers/CMakeFiles/elka_drivers.dir/flags.make
 src/drivers/CMakeFiles/elka_drivers.dir/exti.c.obj: ../src/drivers/exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/exti.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/exti.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/exti.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/exti.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/exti.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/exti.c
 
 src/drivers/CMakeFiles/elka_drivers.dir/exti.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elka_drivers.dir/exti.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/exti.c > CMakeFiles/elka_drivers.dir/exti.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/exti.c > CMakeFiles/elka_drivers.dir/exti.c.i
 
 src/drivers/CMakeFiles/elka_drivers.dir/exti.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elka_drivers.dir/exti.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/exti.c -o CMakeFiles/elka_drivers.dir/exti.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/exti.c -o CMakeFiles/elka_drivers.dir/exti.c.s
 
 src/drivers/CMakeFiles/elka_drivers.dir/exti.c.obj.requires:
 
@@ -107,16 +107,16 @@ src/drivers/CMakeFiles/elka_drivers.dir/exti.c.obj.provides.build: src/drivers/C
 
 src/drivers/CMakeFiles/elka_drivers.dir/i2cdev.c.obj: src/drivers/CMakeFiles/elka_drivers.dir/flags.make
 src/drivers/CMakeFiles/elka_drivers.dir/i2cdev.c.obj: ../src/drivers/i2cdev.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/i2cdev.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/i2cdev.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/i2cdev.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/i2cdev.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/i2cdev.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/i2cdev.c
 
 src/drivers/CMakeFiles/elka_drivers.dir/i2cdev.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elka_drivers.dir/i2cdev.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/i2cdev.c > CMakeFiles/elka_drivers.dir/i2cdev.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/i2cdev.c > CMakeFiles/elka_drivers.dir/i2cdev.c.i
 
 src/drivers/CMakeFiles/elka_drivers.dir/i2cdev.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elka_drivers.dir/i2cdev.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/i2cdev.c -o CMakeFiles/elka_drivers.dir/i2cdev.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/i2cdev.c -o CMakeFiles/elka_drivers.dir/i2cdev.c.s
 
 src/drivers/CMakeFiles/elka_drivers.dir/i2cdev.c.obj.requires:
 
@@ -131,16 +131,16 @@ src/drivers/CMakeFiles/elka_drivers.dir/i2cdev.c.obj.provides.build: src/drivers
 
 src/drivers/CMakeFiles/elka_drivers.dir/i2croutines.c.obj: src/drivers/CMakeFiles/elka_drivers.dir/flags.make
 src/drivers/CMakeFiles/elka_drivers.dir/i2croutines.c.obj: ../src/drivers/i2croutines.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/i2croutines.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/i2croutines.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/i2croutines.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/i2croutines.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/i2croutines.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/i2croutines.c
 
 src/drivers/CMakeFiles/elka_drivers.dir/i2croutines.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elka_drivers.dir/i2croutines.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/i2croutines.c > CMakeFiles/elka_drivers.dir/i2croutines.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/i2croutines.c > CMakeFiles/elka_drivers.dir/i2croutines.c.i
 
 src/drivers/CMakeFiles/elka_drivers.dir/i2croutines.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elka_drivers.dir/i2croutines.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/i2croutines.c -o CMakeFiles/elka_drivers.dir/i2croutines.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/i2croutines.c -o CMakeFiles/elka_drivers.dir/i2croutines.c.s
 
 src/drivers/CMakeFiles/elka_drivers.dir/i2croutines.c.obj.requires:
 
@@ -155,16 +155,16 @@ src/drivers/CMakeFiles/elka_drivers.dir/i2croutines.c.obj.provides.build: src/dr
 
 src/drivers/CMakeFiles/elka_drivers.dir/motors.c.obj: src/drivers/CMakeFiles/elka_drivers.dir/flags.make
 src/drivers/CMakeFiles/elka_drivers.dir/motors.c.obj: ../src/drivers/motors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/motors.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/motors.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/motors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/motors.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/motors.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/motors.c
 
 src/drivers/CMakeFiles/elka_drivers.dir/motors.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elka_drivers.dir/motors.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/motors.c > CMakeFiles/elka_drivers.dir/motors.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/motors.c > CMakeFiles/elka_drivers.dir/motors.c.i
 
 src/drivers/CMakeFiles/elka_drivers.dir/motors.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elka_drivers.dir/motors.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/motors.c -o CMakeFiles/elka_drivers.dir/motors.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/motors.c -o CMakeFiles/elka_drivers.dir/motors.c.s
 
 src/drivers/CMakeFiles/elka_drivers.dir/motors.c.obj.requires:
 
@@ -179,16 +179,16 @@ src/drivers/CMakeFiles/elka_drivers.dir/motors.c.obj.provides.build: src/drivers
 
 src/drivers/CMakeFiles/elka_drivers.dir/mpu6050.c.obj: src/drivers/CMakeFiles/elka_drivers.dir/flags.make
 src/drivers/CMakeFiles/elka_drivers.dir/mpu6050.c.obj: ../src/drivers/mpu6050.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/mpu6050.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/mpu6050.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/mpu6050.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/mpu6050.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/mpu6050.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/mpu6050.c
 
 src/drivers/CMakeFiles/elka_drivers.dir/mpu6050.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elka_drivers.dir/mpu6050.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/mpu6050.c > CMakeFiles/elka_drivers.dir/mpu6050.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/mpu6050.c > CMakeFiles/elka_drivers.dir/mpu6050.c.i
 
 src/drivers/CMakeFiles/elka_drivers.dir/mpu6050.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elka_drivers.dir/mpu6050.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/mpu6050.c -o CMakeFiles/elka_drivers.dir/mpu6050.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/mpu6050.c -o CMakeFiles/elka_drivers.dir/mpu6050.c.s
 
 src/drivers/CMakeFiles/elka_drivers.dir/mpu6050.c.obj.requires:
 
@@ -203,16 +203,16 @@ src/drivers/CMakeFiles/elka_drivers.dir/mpu6050.c.obj.provides.build: src/driver
 
 src/drivers/CMakeFiles/elka_drivers.dir/nrf24l01.c.obj: src/drivers/CMakeFiles/elka_drivers.dir/flags.make
 src/drivers/CMakeFiles/elka_drivers.dir/nrf24l01.c.obj: ../src/drivers/nrf24l01.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/nrf24l01.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/nrf24l01.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/nrf24l01.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/nrf24l01.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/nrf24l01.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/nrf24l01.c
 
 src/drivers/CMakeFiles/elka_drivers.dir/nrf24l01.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elka_drivers.dir/nrf24l01.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/nrf24l01.c > CMakeFiles/elka_drivers.dir/nrf24l01.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/nrf24l01.c > CMakeFiles/elka_drivers.dir/nrf24l01.c.i
 
 src/drivers/CMakeFiles/elka_drivers.dir/nrf24l01.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elka_drivers.dir/nrf24l01.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/nrf24l01.c -o CMakeFiles/elka_drivers.dir/nrf24l01.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/nrf24l01.c -o CMakeFiles/elka_drivers.dir/nrf24l01.c.s
 
 src/drivers/CMakeFiles/elka_drivers.dir/nrf24l01.c.obj.requires:
 
@@ -227,16 +227,16 @@ src/drivers/CMakeFiles/elka_drivers.dir/nrf24l01.c.obj.provides.build: src/drive
 
 src/drivers/CMakeFiles/elka_drivers.dir/nvic.c.obj: src/drivers/CMakeFiles/elka_drivers.dir/flags.make
 src/drivers/CMakeFiles/elka_drivers.dir/nvic.c.obj: ../src/drivers/nvic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/nvic.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/nvic.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/nvic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/drivers/CMakeFiles/elka_drivers.dir/nvic.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_drivers.dir/nvic.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/nvic.c
 
 src/drivers/CMakeFiles/elka_drivers.dir/nvic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elka_drivers.dir/nvic.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/nvic.c > CMakeFiles/elka_drivers.dir/nvic.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/nvic.c > CMakeFiles/elka_drivers.dir/nvic.c.i
 
 src/drivers/CMakeFiles/elka_drivers.dir/nvic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elka_drivers.dir/nvic.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers/nvic.c -o CMakeFiles/elka_drivers.dir/nvic.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers/nvic.c -o CMakeFiles/elka_drivers.dir/nvic.c.s
 
 src/drivers/CMakeFiles/elka_drivers.dir/nvic.c.obj.requires:
 
@@ -273,9 +273,9 @@ src/drivers/libelka_drivers.a: src/drivers/CMakeFiles/elka_drivers.dir/nrf24l01.
 src/drivers/libelka_drivers.a: src/drivers/CMakeFiles/elka_drivers.dir/nvic.c.obj
 src/drivers/libelka_drivers.a: src/drivers/CMakeFiles/elka_drivers.dir/build.make
 src/drivers/libelka_drivers.a: src/drivers/CMakeFiles/elka_drivers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library libelka_drivers.a"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && $(CMAKE_COMMAND) -P CMakeFiles/elka_drivers.dir/cmake_clean_target.cmake
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elka_drivers.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library libelka_drivers.a"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && $(CMAKE_COMMAND) -P CMakeFiles/elka_drivers.dir/cmake_clean_target.cmake
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elka_drivers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/drivers/CMakeFiles/elka_drivers.dir/build: src/drivers/libelka_drivers.a
@@ -294,10 +294,10 @@ src/drivers/CMakeFiles/elka_drivers.dir/requires: src/drivers/CMakeFiles/elka_dr
 .PHONY : src/drivers/CMakeFiles/elka_drivers.dir/requires
 
 src/drivers/CMakeFiles/elka_drivers.dir/clean:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers && $(CMAKE_COMMAND) -P CMakeFiles/elka_drivers.dir/cmake_clean.cmake
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers && $(CMAKE_COMMAND) -P CMakeFiles/elka_drivers.dir/cmake_clean.cmake
 .PHONY : src/drivers/CMakeFiles/elka_drivers.dir/clean
 
 src/drivers/CMakeFiles/elka_drivers.dir/depend:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/drivers /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/drivers/CMakeFiles/elka_drivers.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eric/Programs/elka/elka_firmware/elka_firmware /home/eric/Programs/elka/elka_firmware/elka_firmware/src/drivers /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/drivers/CMakeFiles/elka_drivers.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/drivers/CMakeFiles/elka_drivers.dir/depend
 

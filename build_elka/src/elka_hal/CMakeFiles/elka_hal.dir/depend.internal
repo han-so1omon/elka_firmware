@@ -48,4 +48,4 @@ src/elka_hal/CMakeFiles/elka_hal.dir/imu.c.obj
  ../inc/elka_hal/imu.h
  ../inc/stdbool.h
  ../inc/utils/filter.h
- /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/elka_hal/imu.c
+ /home/eric/Programs/elka/elka_firmware/elka_firmware/src/elka_hal/imu.c

@@ -43,10 +43,10 @@ RM = /opt/cmake-3.4.3-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake
+CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka
+CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka
 
 # Include any dependencies generated for this target.
 include src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/depend.make
@@ -59,16 +59,16 @@ include src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.obj: ../src/STM32F4xx_StdPeriph_Driver/misc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/misc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/misc.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/misc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/misc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/misc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/misc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.obj.requires:
 
@@ -83,16 +83,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_adc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_adc.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_adc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_adc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_adc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_adc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.obj.requires:
 
@@ -107,16 +107,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.obj.requires:
 
@@ -131,16 +131,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_crc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_crc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_crc.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_crc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_crc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_crc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_crc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.obj.requires:
 
@@ -155,16 +155,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.obj.requires:
 
@@ -179,16 +179,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_aes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_aes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_aes.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_aes.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_aes.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_aes.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_aes.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.obj.requires:
 
@@ -203,16 +203,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_des.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_des.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_des.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_des.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_des.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_des.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_des.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.obj.requires:
 
@@ -227,16 +227,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_tdes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_tdes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_tdes.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_tdes.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_tdes.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_tdes.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_tdes.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.obj.requires:
 
@@ -251,16 +251,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.obj.requires:
 
@@ -275,16 +275,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dbgmcu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dbgmcu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dbgmcu.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dbgmcu.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dbgmcu.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dbgmcu.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dbgmcu.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.obj.requires:
 
@@ -299,16 +299,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dcmi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dcmi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dcmi.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dcmi.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dcmi.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dcmi.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dcmi.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.obj.requires:
 
@@ -323,16 +323,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.obj.requires:
 
@@ -347,16 +347,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.obj.requires:
 
@@ -371,16 +371,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.obj.requires:
 
@@ -395,16 +395,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_fsmc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_fsmc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_fsmc.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_fsmc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_fsmc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_fsmc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_fsmc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.obj.requires:
 
@@ -419,16 +419,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.obj.requires:
 
@@ -443,16 +443,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.obj.requires:
 
@@ -467,16 +467,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_md5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_md5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_md5.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_md5.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_md5.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_md5.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_md5.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.obj.requires:
 
@@ -491,16 +491,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_sha1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_sha1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_sha1.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_sha1.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_sha1.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_sha1.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_sha1.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.obj.requires:
 
@@ -515,16 +515,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_i2c.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_i2c.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_i2c.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_i2c.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_i2c.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.obj.requires:
 
@@ -539,16 +539,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_it.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_it.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_it.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_it.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_it.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_it.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.obj.requires:
 
@@ -563,16 +563,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.obj.requires:
 
@@ -587,16 +587,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_pwr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_pwr.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_pwr.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_pwr.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_pwr.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_pwr.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.obj.requires:
 
@@ -611,16 +611,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.obj.requires:
 
@@ -635,16 +635,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rng.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rng.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rng.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rng.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rng.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rng.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rng.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.obj.requires:
 
@@ -659,16 +659,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rtc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rtc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rtc.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rtc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rtc.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rtc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rtc.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.obj.requires:
 
@@ -683,16 +683,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.obj.requires:
 
@@ -707,16 +707,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_spi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_spi.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_spi.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_spi.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_spi.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_spi.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.obj.requires:
 
@@ -731,16 +731,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.obj.requires:
 
@@ -755,16 +755,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.obj.requires:
 
@@ -779,16 +779,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_usart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_usart.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_usart.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_usart.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_usart.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_usart.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.obj.requires:
 
@@ -803,16 +803,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.obj: ../src/STM32F4xx_StdPeriph_Driver/stm32f4xx_wwdg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_wwdg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_wwdg.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_wwdg.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_wwdg.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_wwdg.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/stm32f4xx_wwdg.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.obj.requires:
 
@@ -827,16 +827,16 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.obj: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/flags.make
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.obj: ../src/STM32F4xx_StdPeriph_Driver/system_stm32f4xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/system_stm32f4xx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/system_stm32f4xx.c
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/system_stm32f4xx.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/system_stm32f4xx.c > CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.i
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver/system_stm32f4xx.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver/system_stm32f4xx.c -o CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.s
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.obj.requires:
 
@@ -923,9 +923,9 @@ src/STM32F4xx_StdPeriph_Driver/libSTM32F4xx_StdPeriph_Driver.a: src/STM32F4xx_St
 src/STM32F4xx_StdPeriph_Driver/libSTM32F4xx_StdPeriph_Driver.a: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.obj
 src/STM32F4xx_StdPeriph_Driver/libSTM32F4xx_StdPeriph_Driver.a: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make
 src/STM32F4xx_StdPeriph_Driver/libSTM32F4xx_StdPeriph_Driver.a: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking C static library libSTM32F4xx_StdPeriph_Driver.a"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && $(CMAKE_COMMAND) -P CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/cmake_clean_target.cmake
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking C static library libSTM32F4xx_StdPeriph_Driver.a"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && $(CMAKE_COMMAND) -P CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/cmake_clean_target.cmake
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build: src/STM32F4xx_StdPeriph_Driver/libSTM32F4xx_StdPeriph_Driver.a
@@ -969,10 +969,10 @@ src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/require
 .PHONY : src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/requires
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/clean:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver && $(CMAKE_COMMAND) -P CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/cmake_clean.cmake
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver && $(CMAKE_COMMAND) -P CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/cmake_clean.cmake
 .PHONY : src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/clean
 
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/depend:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/STM32F4xx_StdPeriph_Driver /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eric/Programs/elka/elka_firmware/elka_firmware /home/eric/Programs/elka/elka_firmware/elka_firmware/src/STM32F4xx_StdPeriph_Driver /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/depend
 

@@ -43,10 +43,10 @@ RM = /opt/cmake-3.4.3-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake
+CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka
+CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka
 
 # Include any dependencies generated for this target.
 include src/modules/CMakeFiles/elka_modules.dir/depend.make
@@ -59,16 +59,16 @@ include src/modules/CMakeFiles/elka_modules.dir/flags.make
 
 src/modules/CMakeFiles/elka_modules.dir/sensfusion6.c.obj: src/modules/CMakeFiles/elka_modules.dir/flags.make
 src/modules/CMakeFiles/elka_modules.dir/sensfusion6.c.obj: ../src/modules/sensfusion6.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/modules/CMakeFiles/elka_modules.dir/sensfusion6.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_modules.dir/sensfusion6.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/modules/sensfusion6.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/modules/CMakeFiles/elka_modules.dir/sensfusion6.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_modules.dir/sensfusion6.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/modules/sensfusion6.c
 
 src/modules/CMakeFiles/elka_modules.dir/sensfusion6.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elka_modules.dir/sensfusion6.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/modules/sensfusion6.c > CMakeFiles/elka_modules.dir/sensfusion6.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/modules/sensfusion6.c > CMakeFiles/elka_modules.dir/sensfusion6.c.i
 
 src/modules/CMakeFiles/elka_modules.dir/sensfusion6.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elka_modules.dir/sensfusion6.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/modules/sensfusion6.c -o CMakeFiles/elka_modules.dir/sensfusion6.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/modules/sensfusion6.c -o CMakeFiles/elka_modules.dir/sensfusion6.c.s
 
 src/modules/CMakeFiles/elka_modules.dir/sensfusion6.c.obj.requires:
 
@@ -83,16 +83,16 @@ src/modules/CMakeFiles/elka_modules.dir/sensfusion6.c.obj.provides.build: src/mo
 
 src/modules/CMakeFiles/elka_modules.dir/stabilizer.c.obj: src/modules/CMakeFiles/elka_modules.dir/flags.make
 src/modules/CMakeFiles/elka_modules.dir/stabilizer.c.obj: ../src/modules/stabilizer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/modules/CMakeFiles/elka_modules.dir/stabilizer.c.obj"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_modules.dir/stabilizer.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/modules/stabilizer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/modules/CMakeFiles/elka_modules.dir/stabilizer.c.obj"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/elka_modules.dir/stabilizer.c.obj   -c /home/eric/Programs/elka/elka_firmware/elka_firmware/src/modules/stabilizer.c
 
 src/modules/CMakeFiles/elka_modules.dir/stabilizer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/elka_modules.dir/stabilizer.c.i"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/modules/stabilizer.c > CMakeFiles/elka_modules.dir/stabilizer.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eric/Programs/elka/elka_firmware/elka_firmware/src/modules/stabilizer.c > CMakeFiles/elka_modules.dir/stabilizer.c.i
 
 src/modules/CMakeFiles/elka_modules.dir/stabilizer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/elka_modules.dir/stabilizer.c.s"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/modules/stabilizer.c -o CMakeFiles/elka_modules.dir/stabilizer.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules && /usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eric/Programs/elka/elka_firmware/elka_firmware/src/modules/stabilizer.c -o CMakeFiles/elka_modules.dir/stabilizer.c.s
 
 src/modules/CMakeFiles/elka_modules.dir/stabilizer.c.obj.requires:
 
@@ -117,9 +117,9 @@ src/modules/libelka_modules.a: src/modules/CMakeFiles/elka_modules.dir/sensfusio
 src/modules/libelka_modules.a: src/modules/CMakeFiles/elka_modules.dir/stabilizer.c.obj
 src/modules/libelka_modules.a: src/modules/CMakeFiles/elka_modules.dir/build.make
 src/modules/libelka_modules.a: src/modules/CMakeFiles/elka_modules.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libelka_modules.a"
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules && $(CMAKE_COMMAND) -P CMakeFiles/elka_modules.dir/cmake_clean_target.cmake
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elka_modules.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libelka_modules.a"
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules && $(CMAKE_COMMAND) -P CMakeFiles/elka_modules.dir/cmake_clean_target.cmake
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elka_modules.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/modules/CMakeFiles/elka_modules.dir/build: src/modules/libelka_modules.a
@@ -132,10 +132,10 @@ src/modules/CMakeFiles/elka_modules.dir/requires: src/modules/CMakeFiles/elka_mo
 .PHONY : src/modules/CMakeFiles/elka_modules.dir/requires
 
 src/modules/CMakeFiles/elka_modules.dir/clean:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules && $(CMAKE_COMMAND) -P CMakeFiles/elka_modules.dir/cmake_clean.cmake
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules && $(CMAKE_COMMAND) -P CMakeFiles/elka_modules.dir/cmake_clean.cmake
 .PHONY : src/modules/CMakeFiles/elka_modules.dir/clean
 
 src/modules/CMakeFiles/elka_modules.dir/depend:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/modules /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/modules/CMakeFiles/elka_modules.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eric/Programs/elka/elka_firmware/elka_firmware /home/eric/Programs/elka/elka_firmware/elka_firmware/src/modules /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/modules/CMakeFiles/elka_modules.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/modules/CMakeFiles/elka_modules.dir/depend
 

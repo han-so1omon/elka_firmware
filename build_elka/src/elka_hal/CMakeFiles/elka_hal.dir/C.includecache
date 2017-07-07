@@ -374,19 +374,19 @@ filter.h
 stdint.h
 -
 
-/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/elka_hal/imu.c
+/home/eric/Programs/elka/elka_firmware/elka_firmware/src/elka_hal/imu.c
 math.h
 -
 stm32f4xx_conf.h
-/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/elka_hal/stm32f4xx_conf.h
+/home/eric/Programs/elka/elka_firmware/elka_firmware/src/elka_hal/stm32f4xx_conf.h
 FreeRTOS.h
-/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/elka_hal/FreeRTOS.h
+/home/eric/Programs/elka/elka_firmware/elka_firmware/src/elka_hal/FreeRTOS.h
 task.h
-/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/elka_hal/task.h
+/home/eric/Programs/elka/elka_firmware/elka_firmware/src/elka_hal/task.h
 imu.h
-/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/elka_hal/imu.h
+/home/eric/Programs/elka/elka_firmware/elka_firmware/src/elka_hal/imu.h
 i2cdev.h
-/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/elka_hal/i2cdev.h
+/home/eric/Programs/elka/elka_firmware/elka_firmware/src/elka_hal/i2cdev.h
 mpu6050.h
-/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/elka_hal/mpu6050.h
+/home/eric/Programs/elka/elka_firmware/elka_firmware/src/elka_hal/mpu6050.h
 

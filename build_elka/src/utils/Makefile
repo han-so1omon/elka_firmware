@@ -48,10 +48,10 @@ RM = /opt/cmake-3.4.3-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake
+CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka
+CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/utils/CMakeFiles/progress.marks
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/utils/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles 0
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/utils/CMakeFiles/progress.marks
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/utils/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/utils/clean
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/utils/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/utils/preinstall
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/utils/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/utils/preinstall
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/utils/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/utils/CMakeFiles/elka_utils.dir/rule:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/utils/CMakeFiles/elka_utils.dir/rule
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/utils/CMakeFiles/elka_utils.dir/rule
 .PHONY : src/utils/CMakeFiles/elka_utils.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ elka_utils: src/utils/CMakeFiles/elka_utils.dir/rule
 
 # fast build rule for target.
 elka_utils/fast:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/build
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/build
 .PHONY : elka_utils/fast
 
 cfassert.obj: cfassert.c.obj
@@ -131,7 +131,7 @@ cfassert.obj: cfassert.c.obj
 
 # target to build an object file
 cfassert.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/cfassert.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/cfassert.c.obj
 .PHONY : cfassert.c.obj
 
 cfassert.i: cfassert.c.i
@@ -140,7 +140,7 @@ cfassert.i: cfassert.c.i
 
 # target to preprocess a source file
 cfassert.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/cfassert.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/cfassert.c.i
 .PHONY : cfassert.c.i
 
 cfassert.s: cfassert.c.s
@@ -149,7 +149,7 @@ cfassert.s: cfassert.c.s
 
 # target to generate assembly for a file
 cfassert.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/cfassert.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/cfassert.c.s
 .PHONY : cfassert.c.s
 
 filter.obj: filter.c.obj
@@ -158,7 +158,7 @@ filter.obj: filter.c.obj
 
 # target to build an object file
 filter.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/filter.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/filter.c.obj
 .PHONY : filter.c.obj
 
 filter.i: filter.c.i
@@ -167,7 +167,7 @@ filter.i: filter.c.i
 
 # target to preprocess a source file
 filter.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/filter.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/filter.c.i
 .PHONY : filter.c.i
 
 filter.s: filter.c.s
@@ -176,7 +176,7 @@ filter.s: filter.c.s
 
 # target to generate assembly for a file
 filter.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/filter.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/filter.c.s
 .PHONY : filter.c.s
 
 stm32f4_discovery.obj: stm32f4_discovery.c.obj
@@ -185,7 +185,7 @@ stm32f4_discovery.obj: stm32f4_discovery.c.obj
 
 # target to build an object file
 stm32f4_discovery.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery.c.obj
 .PHONY : stm32f4_discovery.c.obj
 
 stm32f4_discovery.i: stm32f4_discovery.c.i
@@ -194,7 +194,7 @@ stm32f4_discovery.i: stm32f4_discovery.c.i
 
 # target to preprocess a source file
 stm32f4_discovery.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery.c.i
 .PHONY : stm32f4_discovery.c.i
 
 stm32f4_discovery.s: stm32f4_discovery.c.s
@@ -203,7 +203,7 @@ stm32f4_discovery.s: stm32f4_discovery.c.s
 
 # target to generate assembly for a file
 stm32f4_discovery.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery.c.s
 .PHONY : stm32f4_discovery.c.s
 
 stm32f4_discovery_lis302dl.obj: stm32f4_discovery_lis302dl.c.obj
@@ -212,7 +212,7 @@ stm32f4_discovery_lis302dl.obj: stm32f4_discovery_lis302dl.c.obj
 
 # target to build an object file
 stm32f4_discovery_lis302dl.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery_lis302dl.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery_lis302dl.c.obj
 .PHONY : stm32f4_discovery_lis302dl.c.obj
 
 stm32f4_discovery_lis302dl.i: stm32f4_discovery_lis302dl.c.i
@@ -221,7 +221,7 @@ stm32f4_discovery_lis302dl.i: stm32f4_discovery_lis302dl.c.i
 
 # target to preprocess a source file
 stm32f4_discovery_lis302dl.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery_lis302dl.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery_lis302dl.c.i
 .PHONY : stm32f4_discovery_lis302dl.c.i
 
 stm32f4_discovery_lis302dl.s: stm32f4_discovery_lis302dl.c.s
@@ -230,7 +230,7 @@ stm32f4_discovery_lis302dl.s: stm32f4_discovery_lis302dl.c.s
 
 # target to generate assembly for a file
 stm32f4_discovery_lis302dl.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery_lis302dl.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/utils/CMakeFiles/elka_utils.dir/build.make src/utils/CMakeFiles/elka_utils.dir/stm32f4_discovery_lis302dl.c.s
 .PHONY : stm32f4_discovery_lis302dl.c.s
 
 # Help Target
@@ -265,6 +265,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

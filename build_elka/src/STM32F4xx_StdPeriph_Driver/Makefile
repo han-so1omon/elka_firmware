@@ -48,10 +48,10 @@ RM = /opt/cmake-3.4.3-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake
+CMAKE_SOURCE_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka
+CMAKE_BINARY_DIR = /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/src/STM32F4xx_StdPeriph_Driver/CMakeFiles/progress.marks
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/STM32F4xx_StdPeriph_Driver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles 0
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/src/STM32F4xx_StdPeriph_Driver/CMakeFiles/progress.marks
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/STM32F4xx_StdPeriph_Driver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/STM32F4xx_StdPeriph_Driver/clean
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/STM32F4xx_StdPeriph_Driver/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/STM32F4xx_StdPeriph_Driver/preinstall
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/STM32F4xx_StdPeriph_Driver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/STM32F4xx_StdPeriph_Driver/preinstall
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/STM32F4xx_StdPeriph_Driver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/rule:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/rule
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f CMakeFiles/Makefile2 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/rule
 .PHONY : src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ STM32F4xx_StdPeriph_Driver: src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_
 
 # fast build rule for target.
 STM32F4xx_StdPeriph_Driver/fast:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build
 .PHONY : STM32F4xx_StdPeriph_Driver/fast
 
 misc.obj: misc.c.obj
@@ -131,7 +131,7 @@ misc.obj: misc.c.obj
 
 # target to build an object file
 misc.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.obj
 .PHONY : misc.c.obj
 
 misc.i: misc.c.i
@@ -140,7 +140,7 @@ misc.i: misc.c.i
 
 # target to preprocess a source file
 misc.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.i
 .PHONY : misc.c.i
 
 misc.s: misc.c.s
@@ -149,7 +149,7 @@ misc.s: misc.c.s
 
 # target to generate assembly for a file
 misc.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/misc.c.s
 .PHONY : misc.c.s
 
 stm32f4xx_adc.obj: stm32f4xx_adc.c.obj
@@ -158,7 +158,7 @@ stm32f4xx_adc.obj: stm32f4xx_adc.c.obj
 
 # target to build an object file
 stm32f4xx_adc.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.obj
 .PHONY : stm32f4xx_adc.c.obj
 
 stm32f4xx_adc.i: stm32f4xx_adc.c.i
@@ -167,7 +167,7 @@ stm32f4xx_adc.i: stm32f4xx_adc.c.i
 
 # target to preprocess a source file
 stm32f4xx_adc.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.i
 .PHONY : stm32f4xx_adc.c.i
 
 stm32f4xx_adc.s: stm32f4xx_adc.c.s
@@ -176,7 +176,7 @@ stm32f4xx_adc.s: stm32f4xx_adc.c.s
 
 # target to generate assembly for a file
 stm32f4xx_adc.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_adc.c.s
 .PHONY : stm32f4xx_adc.c.s
 
 stm32f4xx_can.obj: stm32f4xx_can.c.obj
@@ -185,7 +185,7 @@ stm32f4xx_can.obj: stm32f4xx_can.c.obj
 
 # target to build an object file
 stm32f4xx_can.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.obj
 .PHONY : stm32f4xx_can.c.obj
 
 stm32f4xx_can.i: stm32f4xx_can.c.i
@@ -194,7 +194,7 @@ stm32f4xx_can.i: stm32f4xx_can.c.i
 
 # target to preprocess a source file
 stm32f4xx_can.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.i
 .PHONY : stm32f4xx_can.c.i
 
 stm32f4xx_can.s: stm32f4xx_can.c.s
@@ -203,7 +203,7 @@ stm32f4xx_can.s: stm32f4xx_can.c.s
 
 # target to generate assembly for a file
 stm32f4xx_can.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_can.c.s
 .PHONY : stm32f4xx_can.c.s
 
 stm32f4xx_crc.obj: stm32f4xx_crc.c.obj
@@ -212,7 +212,7 @@ stm32f4xx_crc.obj: stm32f4xx_crc.c.obj
 
 # target to build an object file
 stm32f4xx_crc.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.obj
 .PHONY : stm32f4xx_crc.c.obj
 
 stm32f4xx_crc.i: stm32f4xx_crc.c.i
@@ -221,7 +221,7 @@ stm32f4xx_crc.i: stm32f4xx_crc.c.i
 
 # target to preprocess a source file
 stm32f4xx_crc.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.i
 .PHONY : stm32f4xx_crc.c.i
 
 stm32f4xx_crc.s: stm32f4xx_crc.c.s
@@ -230,7 +230,7 @@ stm32f4xx_crc.s: stm32f4xx_crc.c.s
 
 # target to generate assembly for a file
 stm32f4xx_crc.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_crc.c.s
 .PHONY : stm32f4xx_crc.c.s
 
 stm32f4xx_cryp.obj: stm32f4xx_cryp.c.obj
@@ -239,7 +239,7 @@ stm32f4xx_cryp.obj: stm32f4xx_cryp.c.obj
 
 # target to build an object file
 stm32f4xx_cryp.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.obj
 .PHONY : stm32f4xx_cryp.c.obj
 
 stm32f4xx_cryp.i: stm32f4xx_cryp.c.i
@@ -248,7 +248,7 @@ stm32f4xx_cryp.i: stm32f4xx_cryp.c.i
 
 # target to preprocess a source file
 stm32f4xx_cryp.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.i
 .PHONY : stm32f4xx_cryp.c.i
 
 stm32f4xx_cryp.s: stm32f4xx_cryp.c.s
@@ -257,7 +257,7 @@ stm32f4xx_cryp.s: stm32f4xx_cryp.c.s
 
 # target to generate assembly for a file
 stm32f4xx_cryp.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp.c.s
 .PHONY : stm32f4xx_cryp.c.s
 
 stm32f4xx_cryp_aes.obj: stm32f4xx_cryp_aes.c.obj
@@ -266,7 +266,7 @@ stm32f4xx_cryp_aes.obj: stm32f4xx_cryp_aes.c.obj
 
 # target to build an object file
 stm32f4xx_cryp_aes.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.obj
 .PHONY : stm32f4xx_cryp_aes.c.obj
 
 stm32f4xx_cryp_aes.i: stm32f4xx_cryp_aes.c.i
@@ -275,7 +275,7 @@ stm32f4xx_cryp_aes.i: stm32f4xx_cryp_aes.c.i
 
 # target to preprocess a source file
 stm32f4xx_cryp_aes.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.i
 .PHONY : stm32f4xx_cryp_aes.c.i
 
 stm32f4xx_cryp_aes.s: stm32f4xx_cryp_aes.c.s
@@ -284,7 +284,7 @@ stm32f4xx_cryp_aes.s: stm32f4xx_cryp_aes.c.s
 
 # target to generate assembly for a file
 stm32f4xx_cryp_aes.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_aes.c.s
 .PHONY : stm32f4xx_cryp_aes.c.s
 
 stm32f4xx_cryp_des.obj: stm32f4xx_cryp_des.c.obj
@@ -293,7 +293,7 @@ stm32f4xx_cryp_des.obj: stm32f4xx_cryp_des.c.obj
 
 # target to build an object file
 stm32f4xx_cryp_des.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.obj
 .PHONY : stm32f4xx_cryp_des.c.obj
 
 stm32f4xx_cryp_des.i: stm32f4xx_cryp_des.c.i
@@ -302,7 +302,7 @@ stm32f4xx_cryp_des.i: stm32f4xx_cryp_des.c.i
 
 # target to preprocess a source file
 stm32f4xx_cryp_des.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.i
 .PHONY : stm32f4xx_cryp_des.c.i
 
 stm32f4xx_cryp_des.s: stm32f4xx_cryp_des.c.s
@@ -311,7 +311,7 @@ stm32f4xx_cryp_des.s: stm32f4xx_cryp_des.c.s
 
 # target to generate assembly for a file
 stm32f4xx_cryp_des.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_des.c.s
 .PHONY : stm32f4xx_cryp_des.c.s
 
 stm32f4xx_cryp_tdes.obj: stm32f4xx_cryp_tdes.c.obj
@@ -320,7 +320,7 @@ stm32f4xx_cryp_tdes.obj: stm32f4xx_cryp_tdes.c.obj
 
 # target to build an object file
 stm32f4xx_cryp_tdes.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.obj
 .PHONY : stm32f4xx_cryp_tdes.c.obj
 
 stm32f4xx_cryp_tdes.i: stm32f4xx_cryp_tdes.c.i
@@ -329,7 +329,7 @@ stm32f4xx_cryp_tdes.i: stm32f4xx_cryp_tdes.c.i
 
 # target to preprocess a source file
 stm32f4xx_cryp_tdes.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.i
 .PHONY : stm32f4xx_cryp_tdes.c.i
 
 stm32f4xx_cryp_tdes.s: stm32f4xx_cryp_tdes.c.s
@@ -338,7 +338,7 @@ stm32f4xx_cryp_tdes.s: stm32f4xx_cryp_tdes.c.s
 
 # target to generate assembly for a file
 stm32f4xx_cryp_tdes.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_cryp_tdes.c.s
 .PHONY : stm32f4xx_cryp_tdes.c.s
 
 stm32f4xx_dac.obj: stm32f4xx_dac.c.obj
@@ -347,7 +347,7 @@ stm32f4xx_dac.obj: stm32f4xx_dac.c.obj
 
 # target to build an object file
 stm32f4xx_dac.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.obj
 .PHONY : stm32f4xx_dac.c.obj
 
 stm32f4xx_dac.i: stm32f4xx_dac.c.i
@@ -356,7 +356,7 @@ stm32f4xx_dac.i: stm32f4xx_dac.c.i
 
 # target to preprocess a source file
 stm32f4xx_dac.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.i
 .PHONY : stm32f4xx_dac.c.i
 
 stm32f4xx_dac.s: stm32f4xx_dac.c.s
@@ -365,7 +365,7 @@ stm32f4xx_dac.s: stm32f4xx_dac.c.s
 
 # target to generate assembly for a file
 stm32f4xx_dac.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dac.c.s
 .PHONY : stm32f4xx_dac.c.s
 
 stm32f4xx_dbgmcu.obj: stm32f4xx_dbgmcu.c.obj
@@ -374,7 +374,7 @@ stm32f4xx_dbgmcu.obj: stm32f4xx_dbgmcu.c.obj
 
 # target to build an object file
 stm32f4xx_dbgmcu.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.obj
 .PHONY : stm32f4xx_dbgmcu.c.obj
 
 stm32f4xx_dbgmcu.i: stm32f4xx_dbgmcu.c.i
@@ -383,7 +383,7 @@ stm32f4xx_dbgmcu.i: stm32f4xx_dbgmcu.c.i
 
 # target to preprocess a source file
 stm32f4xx_dbgmcu.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.i
 .PHONY : stm32f4xx_dbgmcu.c.i
 
 stm32f4xx_dbgmcu.s: stm32f4xx_dbgmcu.c.s
@@ -392,7 +392,7 @@ stm32f4xx_dbgmcu.s: stm32f4xx_dbgmcu.c.s
 
 # target to generate assembly for a file
 stm32f4xx_dbgmcu.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dbgmcu.c.s
 .PHONY : stm32f4xx_dbgmcu.c.s
 
 stm32f4xx_dcmi.obj: stm32f4xx_dcmi.c.obj
@@ -401,7 +401,7 @@ stm32f4xx_dcmi.obj: stm32f4xx_dcmi.c.obj
 
 # target to build an object file
 stm32f4xx_dcmi.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.obj
 .PHONY : stm32f4xx_dcmi.c.obj
 
 stm32f4xx_dcmi.i: stm32f4xx_dcmi.c.i
@@ -410,7 +410,7 @@ stm32f4xx_dcmi.i: stm32f4xx_dcmi.c.i
 
 # target to preprocess a source file
 stm32f4xx_dcmi.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.i
 .PHONY : stm32f4xx_dcmi.c.i
 
 stm32f4xx_dcmi.s: stm32f4xx_dcmi.c.s
@@ -419,7 +419,7 @@ stm32f4xx_dcmi.s: stm32f4xx_dcmi.c.s
 
 # target to generate assembly for a file
 stm32f4xx_dcmi.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dcmi.c.s
 .PHONY : stm32f4xx_dcmi.c.s
 
 stm32f4xx_dma.obj: stm32f4xx_dma.c.obj
@@ -428,7 +428,7 @@ stm32f4xx_dma.obj: stm32f4xx_dma.c.obj
 
 # target to build an object file
 stm32f4xx_dma.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.obj
 .PHONY : stm32f4xx_dma.c.obj
 
 stm32f4xx_dma.i: stm32f4xx_dma.c.i
@@ -437,7 +437,7 @@ stm32f4xx_dma.i: stm32f4xx_dma.c.i
 
 # target to preprocess a source file
 stm32f4xx_dma.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.i
 .PHONY : stm32f4xx_dma.c.i
 
 stm32f4xx_dma.s: stm32f4xx_dma.c.s
@@ -446,7 +446,7 @@ stm32f4xx_dma.s: stm32f4xx_dma.c.s
 
 # target to generate assembly for a file
 stm32f4xx_dma.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_dma.c.s
 .PHONY : stm32f4xx_dma.c.s
 
 stm32f4xx_exti.obj: stm32f4xx_exti.c.obj
@@ -455,7 +455,7 @@ stm32f4xx_exti.obj: stm32f4xx_exti.c.obj
 
 # target to build an object file
 stm32f4xx_exti.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.obj
 .PHONY : stm32f4xx_exti.c.obj
 
 stm32f4xx_exti.i: stm32f4xx_exti.c.i
@@ -464,7 +464,7 @@ stm32f4xx_exti.i: stm32f4xx_exti.c.i
 
 # target to preprocess a source file
 stm32f4xx_exti.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.i
 .PHONY : stm32f4xx_exti.c.i
 
 stm32f4xx_exti.s: stm32f4xx_exti.c.s
@@ -473,7 +473,7 @@ stm32f4xx_exti.s: stm32f4xx_exti.c.s
 
 # target to generate assembly for a file
 stm32f4xx_exti.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_exti.c.s
 .PHONY : stm32f4xx_exti.c.s
 
 stm32f4xx_flash.obj: stm32f4xx_flash.c.obj
@@ -482,7 +482,7 @@ stm32f4xx_flash.obj: stm32f4xx_flash.c.obj
 
 # target to build an object file
 stm32f4xx_flash.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.obj
 .PHONY : stm32f4xx_flash.c.obj
 
 stm32f4xx_flash.i: stm32f4xx_flash.c.i
@@ -491,7 +491,7 @@ stm32f4xx_flash.i: stm32f4xx_flash.c.i
 
 # target to preprocess a source file
 stm32f4xx_flash.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.i
 .PHONY : stm32f4xx_flash.c.i
 
 stm32f4xx_flash.s: stm32f4xx_flash.c.s
@@ -500,7 +500,7 @@ stm32f4xx_flash.s: stm32f4xx_flash.c.s
 
 # target to generate assembly for a file
 stm32f4xx_flash.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_flash.c.s
 .PHONY : stm32f4xx_flash.c.s
 
 stm32f4xx_fsmc.obj: stm32f4xx_fsmc.c.obj
@@ -509,7 +509,7 @@ stm32f4xx_fsmc.obj: stm32f4xx_fsmc.c.obj
 
 # target to build an object file
 stm32f4xx_fsmc.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.obj
 .PHONY : stm32f4xx_fsmc.c.obj
 
 stm32f4xx_fsmc.i: stm32f4xx_fsmc.c.i
@@ -518,7 +518,7 @@ stm32f4xx_fsmc.i: stm32f4xx_fsmc.c.i
 
 # target to preprocess a source file
 stm32f4xx_fsmc.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.i
 .PHONY : stm32f4xx_fsmc.c.i
 
 stm32f4xx_fsmc.s: stm32f4xx_fsmc.c.s
@@ -527,7 +527,7 @@ stm32f4xx_fsmc.s: stm32f4xx_fsmc.c.s
 
 # target to generate assembly for a file
 stm32f4xx_fsmc.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_fsmc.c.s
 .PHONY : stm32f4xx_fsmc.c.s
 
 stm32f4xx_gpio.obj: stm32f4xx_gpio.c.obj
@@ -536,7 +536,7 @@ stm32f4xx_gpio.obj: stm32f4xx_gpio.c.obj
 
 # target to build an object file
 stm32f4xx_gpio.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.obj
 .PHONY : stm32f4xx_gpio.c.obj
 
 stm32f4xx_gpio.i: stm32f4xx_gpio.c.i
@@ -545,7 +545,7 @@ stm32f4xx_gpio.i: stm32f4xx_gpio.c.i
 
 # target to preprocess a source file
 stm32f4xx_gpio.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.i
 .PHONY : stm32f4xx_gpio.c.i
 
 stm32f4xx_gpio.s: stm32f4xx_gpio.c.s
@@ -554,7 +554,7 @@ stm32f4xx_gpio.s: stm32f4xx_gpio.c.s
 
 # target to generate assembly for a file
 stm32f4xx_gpio.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_gpio.c.s
 .PHONY : stm32f4xx_gpio.c.s
 
 stm32f4xx_hash.obj: stm32f4xx_hash.c.obj
@@ -563,7 +563,7 @@ stm32f4xx_hash.obj: stm32f4xx_hash.c.obj
 
 # target to build an object file
 stm32f4xx_hash.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.obj
 .PHONY : stm32f4xx_hash.c.obj
 
 stm32f4xx_hash.i: stm32f4xx_hash.c.i
@@ -572,7 +572,7 @@ stm32f4xx_hash.i: stm32f4xx_hash.c.i
 
 # target to preprocess a source file
 stm32f4xx_hash.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.i
 .PHONY : stm32f4xx_hash.c.i
 
 stm32f4xx_hash.s: stm32f4xx_hash.c.s
@@ -581,7 +581,7 @@ stm32f4xx_hash.s: stm32f4xx_hash.c.s
 
 # target to generate assembly for a file
 stm32f4xx_hash.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash.c.s
 .PHONY : stm32f4xx_hash.c.s
 
 stm32f4xx_hash_md5.obj: stm32f4xx_hash_md5.c.obj
@@ -590,7 +590,7 @@ stm32f4xx_hash_md5.obj: stm32f4xx_hash_md5.c.obj
 
 # target to build an object file
 stm32f4xx_hash_md5.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.obj
 .PHONY : stm32f4xx_hash_md5.c.obj
 
 stm32f4xx_hash_md5.i: stm32f4xx_hash_md5.c.i
@@ -599,7 +599,7 @@ stm32f4xx_hash_md5.i: stm32f4xx_hash_md5.c.i
 
 # target to preprocess a source file
 stm32f4xx_hash_md5.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.i
 .PHONY : stm32f4xx_hash_md5.c.i
 
 stm32f4xx_hash_md5.s: stm32f4xx_hash_md5.c.s
@@ -608,7 +608,7 @@ stm32f4xx_hash_md5.s: stm32f4xx_hash_md5.c.s
 
 # target to generate assembly for a file
 stm32f4xx_hash_md5.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_md5.c.s
 .PHONY : stm32f4xx_hash_md5.c.s
 
 stm32f4xx_hash_sha1.obj: stm32f4xx_hash_sha1.c.obj
@@ -617,7 +617,7 @@ stm32f4xx_hash_sha1.obj: stm32f4xx_hash_sha1.c.obj
 
 # target to build an object file
 stm32f4xx_hash_sha1.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.obj
 .PHONY : stm32f4xx_hash_sha1.c.obj
 
 stm32f4xx_hash_sha1.i: stm32f4xx_hash_sha1.c.i
@@ -626,7 +626,7 @@ stm32f4xx_hash_sha1.i: stm32f4xx_hash_sha1.c.i
 
 # target to preprocess a source file
 stm32f4xx_hash_sha1.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.i
 .PHONY : stm32f4xx_hash_sha1.c.i
 
 stm32f4xx_hash_sha1.s: stm32f4xx_hash_sha1.c.s
@@ -635,7 +635,7 @@ stm32f4xx_hash_sha1.s: stm32f4xx_hash_sha1.c.s
 
 # target to generate assembly for a file
 stm32f4xx_hash_sha1.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_hash_sha1.c.s
 .PHONY : stm32f4xx_hash_sha1.c.s
 
 stm32f4xx_i2c.obj: stm32f4xx_i2c.c.obj
@@ -644,7 +644,7 @@ stm32f4xx_i2c.obj: stm32f4xx_i2c.c.obj
 
 # target to build an object file
 stm32f4xx_i2c.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.obj
 .PHONY : stm32f4xx_i2c.c.obj
 
 stm32f4xx_i2c.i: stm32f4xx_i2c.c.i
@@ -653,7 +653,7 @@ stm32f4xx_i2c.i: stm32f4xx_i2c.c.i
 
 # target to preprocess a source file
 stm32f4xx_i2c.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.i
 .PHONY : stm32f4xx_i2c.c.i
 
 stm32f4xx_i2c.s: stm32f4xx_i2c.c.s
@@ -662,7 +662,7 @@ stm32f4xx_i2c.s: stm32f4xx_i2c.c.s
 
 # target to generate assembly for a file
 stm32f4xx_i2c.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_i2c.c.s
 .PHONY : stm32f4xx_i2c.c.s
 
 stm32f4xx_it.obj: stm32f4xx_it.c.obj
@@ -671,7 +671,7 @@ stm32f4xx_it.obj: stm32f4xx_it.c.obj
 
 # target to build an object file
 stm32f4xx_it.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.obj
 .PHONY : stm32f4xx_it.c.obj
 
 stm32f4xx_it.i: stm32f4xx_it.c.i
@@ -680,7 +680,7 @@ stm32f4xx_it.i: stm32f4xx_it.c.i
 
 # target to preprocess a source file
 stm32f4xx_it.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.i
 .PHONY : stm32f4xx_it.c.i
 
 stm32f4xx_it.s: stm32f4xx_it.c.s
@@ -689,7 +689,7 @@ stm32f4xx_it.s: stm32f4xx_it.c.s
 
 # target to generate assembly for a file
 stm32f4xx_it.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_it.c.s
 .PHONY : stm32f4xx_it.c.s
 
 stm32f4xx_iwdg.obj: stm32f4xx_iwdg.c.obj
@@ -698,7 +698,7 @@ stm32f4xx_iwdg.obj: stm32f4xx_iwdg.c.obj
 
 # target to build an object file
 stm32f4xx_iwdg.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.obj
 .PHONY : stm32f4xx_iwdg.c.obj
 
 stm32f4xx_iwdg.i: stm32f4xx_iwdg.c.i
@@ -707,7 +707,7 @@ stm32f4xx_iwdg.i: stm32f4xx_iwdg.c.i
 
 # target to preprocess a source file
 stm32f4xx_iwdg.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.i
 .PHONY : stm32f4xx_iwdg.c.i
 
 stm32f4xx_iwdg.s: stm32f4xx_iwdg.c.s
@@ -716,7 +716,7 @@ stm32f4xx_iwdg.s: stm32f4xx_iwdg.c.s
 
 # target to generate assembly for a file
 stm32f4xx_iwdg.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_iwdg.c.s
 .PHONY : stm32f4xx_iwdg.c.s
 
 stm32f4xx_pwr.obj: stm32f4xx_pwr.c.obj
@@ -725,7 +725,7 @@ stm32f4xx_pwr.obj: stm32f4xx_pwr.c.obj
 
 # target to build an object file
 stm32f4xx_pwr.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.obj
 .PHONY : stm32f4xx_pwr.c.obj
 
 stm32f4xx_pwr.i: stm32f4xx_pwr.c.i
@@ -734,7 +734,7 @@ stm32f4xx_pwr.i: stm32f4xx_pwr.c.i
 
 # target to preprocess a source file
 stm32f4xx_pwr.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.i
 .PHONY : stm32f4xx_pwr.c.i
 
 stm32f4xx_pwr.s: stm32f4xx_pwr.c.s
@@ -743,7 +743,7 @@ stm32f4xx_pwr.s: stm32f4xx_pwr.c.s
 
 # target to generate assembly for a file
 stm32f4xx_pwr.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_pwr.c.s
 .PHONY : stm32f4xx_pwr.c.s
 
 stm32f4xx_rcc.obj: stm32f4xx_rcc.c.obj
@@ -752,7 +752,7 @@ stm32f4xx_rcc.obj: stm32f4xx_rcc.c.obj
 
 # target to build an object file
 stm32f4xx_rcc.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.obj
 .PHONY : stm32f4xx_rcc.c.obj
 
 stm32f4xx_rcc.i: stm32f4xx_rcc.c.i
@@ -761,7 +761,7 @@ stm32f4xx_rcc.i: stm32f4xx_rcc.c.i
 
 # target to preprocess a source file
 stm32f4xx_rcc.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.i
 .PHONY : stm32f4xx_rcc.c.i
 
 stm32f4xx_rcc.s: stm32f4xx_rcc.c.s
@@ -770,7 +770,7 @@ stm32f4xx_rcc.s: stm32f4xx_rcc.c.s
 
 # target to generate assembly for a file
 stm32f4xx_rcc.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rcc.c.s
 .PHONY : stm32f4xx_rcc.c.s
 
 stm32f4xx_rng.obj: stm32f4xx_rng.c.obj
@@ -779,7 +779,7 @@ stm32f4xx_rng.obj: stm32f4xx_rng.c.obj
 
 # target to build an object file
 stm32f4xx_rng.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.obj
 .PHONY : stm32f4xx_rng.c.obj
 
 stm32f4xx_rng.i: stm32f4xx_rng.c.i
@@ -788,7 +788,7 @@ stm32f4xx_rng.i: stm32f4xx_rng.c.i
 
 # target to preprocess a source file
 stm32f4xx_rng.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.i
 .PHONY : stm32f4xx_rng.c.i
 
 stm32f4xx_rng.s: stm32f4xx_rng.c.s
@@ -797,7 +797,7 @@ stm32f4xx_rng.s: stm32f4xx_rng.c.s
 
 # target to generate assembly for a file
 stm32f4xx_rng.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rng.c.s
 .PHONY : stm32f4xx_rng.c.s
 
 stm32f4xx_rtc.obj: stm32f4xx_rtc.c.obj
@@ -806,7 +806,7 @@ stm32f4xx_rtc.obj: stm32f4xx_rtc.c.obj
 
 # target to build an object file
 stm32f4xx_rtc.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.obj
 .PHONY : stm32f4xx_rtc.c.obj
 
 stm32f4xx_rtc.i: stm32f4xx_rtc.c.i
@@ -815,7 +815,7 @@ stm32f4xx_rtc.i: stm32f4xx_rtc.c.i
 
 # target to preprocess a source file
 stm32f4xx_rtc.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.i
 .PHONY : stm32f4xx_rtc.c.i
 
 stm32f4xx_rtc.s: stm32f4xx_rtc.c.s
@@ -824,7 +824,7 @@ stm32f4xx_rtc.s: stm32f4xx_rtc.c.s
 
 # target to generate assembly for a file
 stm32f4xx_rtc.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_rtc.c.s
 .PHONY : stm32f4xx_rtc.c.s
 
 stm32f4xx_sdio.obj: stm32f4xx_sdio.c.obj
@@ -833,7 +833,7 @@ stm32f4xx_sdio.obj: stm32f4xx_sdio.c.obj
 
 # target to build an object file
 stm32f4xx_sdio.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.obj
 .PHONY : stm32f4xx_sdio.c.obj
 
 stm32f4xx_sdio.i: stm32f4xx_sdio.c.i
@@ -842,7 +842,7 @@ stm32f4xx_sdio.i: stm32f4xx_sdio.c.i
 
 # target to preprocess a source file
 stm32f4xx_sdio.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.i
 .PHONY : stm32f4xx_sdio.c.i
 
 stm32f4xx_sdio.s: stm32f4xx_sdio.c.s
@@ -851,7 +851,7 @@ stm32f4xx_sdio.s: stm32f4xx_sdio.c.s
 
 # target to generate assembly for a file
 stm32f4xx_sdio.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_sdio.c.s
 .PHONY : stm32f4xx_sdio.c.s
 
 stm32f4xx_spi.obj: stm32f4xx_spi.c.obj
@@ -860,7 +860,7 @@ stm32f4xx_spi.obj: stm32f4xx_spi.c.obj
 
 # target to build an object file
 stm32f4xx_spi.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.obj
 .PHONY : stm32f4xx_spi.c.obj
 
 stm32f4xx_spi.i: stm32f4xx_spi.c.i
@@ -869,7 +869,7 @@ stm32f4xx_spi.i: stm32f4xx_spi.c.i
 
 # target to preprocess a source file
 stm32f4xx_spi.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.i
 .PHONY : stm32f4xx_spi.c.i
 
 stm32f4xx_spi.s: stm32f4xx_spi.c.s
@@ -878,7 +878,7 @@ stm32f4xx_spi.s: stm32f4xx_spi.c.s
 
 # target to generate assembly for a file
 stm32f4xx_spi.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_spi.c.s
 .PHONY : stm32f4xx_spi.c.s
 
 stm32f4xx_syscfg.obj: stm32f4xx_syscfg.c.obj
@@ -887,7 +887,7 @@ stm32f4xx_syscfg.obj: stm32f4xx_syscfg.c.obj
 
 # target to build an object file
 stm32f4xx_syscfg.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.obj
 .PHONY : stm32f4xx_syscfg.c.obj
 
 stm32f4xx_syscfg.i: stm32f4xx_syscfg.c.i
@@ -896,7 +896,7 @@ stm32f4xx_syscfg.i: stm32f4xx_syscfg.c.i
 
 # target to preprocess a source file
 stm32f4xx_syscfg.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.i
 .PHONY : stm32f4xx_syscfg.c.i
 
 stm32f4xx_syscfg.s: stm32f4xx_syscfg.c.s
@@ -905,7 +905,7 @@ stm32f4xx_syscfg.s: stm32f4xx_syscfg.c.s
 
 # target to generate assembly for a file
 stm32f4xx_syscfg.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_syscfg.c.s
 .PHONY : stm32f4xx_syscfg.c.s
 
 stm32f4xx_tim.obj: stm32f4xx_tim.c.obj
@@ -914,7 +914,7 @@ stm32f4xx_tim.obj: stm32f4xx_tim.c.obj
 
 # target to build an object file
 stm32f4xx_tim.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.obj
 .PHONY : stm32f4xx_tim.c.obj
 
 stm32f4xx_tim.i: stm32f4xx_tim.c.i
@@ -923,7 +923,7 @@ stm32f4xx_tim.i: stm32f4xx_tim.c.i
 
 # target to preprocess a source file
 stm32f4xx_tim.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.i
 .PHONY : stm32f4xx_tim.c.i
 
 stm32f4xx_tim.s: stm32f4xx_tim.c.s
@@ -932,7 +932,7 @@ stm32f4xx_tim.s: stm32f4xx_tim.c.s
 
 # target to generate assembly for a file
 stm32f4xx_tim.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_tim.c.s
 .PHONY : stm32f4xx_tim.c.s
 
 stm32f4xx_usart.obj: stm32f4xx_usart.c.obj
@@ -941,7 +941,7 @@ stm32f4xx_usart.obj: stm32f4xx_usart.c.obj
 
 # target to build an object file
 stm32f4xx_usart.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.obj
 .PHONY : stm32f4xx_usart.c.obj
 
 stm32f4xx_usart.i: stm32f4xx_usart.c.i
@@ -950,7 +950,7 @@ stm32f4xx_usart.i: stm32f4xx_usart.c.i
 
 # target to preprocess a source file
 stm32f4xx_usart.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.i
 .PHONY : stm32f4xx_usart.c.i
 
 stm32f4xx_usart.s: stm32f4xx_usart.c.s
@@ -959,7 +959,7 @@ stm32f4xx_usart.s: stm32f4xx_usart.c.s
 
 # target to generate assembly for a file
 stm32f4xx_usart.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_usart.c.s
 .PHONY : stm32f4xx_usart.c.s
 
 stm32f4xx_wwdg.obj: stm32f4xx_wwdg.c.obj
@@ -968,7 +968,7 @@ stm32f4xx_wwdg.obj: stm32f4xx_wwdg.c.obj
 
 # target to build an object file
 stm32f4xx_wwdg.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.obj
 .PHONY : stm32f4xx_wwdg.c.obj
 
 stm32f4xx_wwdg.i: stm32f4xx_wwdg.c.i
@@ -977,7 +977,7 @@ stm32f4xx_wwdg.i: stm32f4xx_wwdg.c.i
 
 # target to preprocess a source file
 stm32f4xx_wwdg.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.i
 .PHONY : stm32f4xx_wwdg.c.i
 
 stm32f4xx_wwdg.s: stm32f4xx_wwdg.c.s
@@ -986,7 +986,7 @@ stm32f4xx_wwdg.s: stm32f4xx_wwdg.c.s
 
 # target to generate assembly for a file
 stm32f4xx_wwdg.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/stm32f4xx_wwdg.c.s
 .PHONY : stm32f4xx_wwdg.c.s
 
 system_stm32f4xx.obj: system_stm32f4xx.c.obj
@@ -995,7 +995,7 @@ system_stm32f4xx.obj: system_stm32f4xx.c.obj
 
 # target to build an object file
 system_stm32f4xx.c.obj:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.obj
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.obj
 .PHONY : system_stm32f4xx.c.obj
 
 system_stm32f4xx.i: system_stm32f4xx.c.i
@@ -1004,7 +1004,7 @@ system_stm32f4xx.i: system_stm32f4xx.c.i
 
 # target to preprocess a source file
 system_stm32f4xx.c.i:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.i
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.i
 .PHONY : system_stm32f4xx.c.i
 
 system_stm32f4xx.s: system_stm32f4xx.c.s
@@ -1013,7 +1013,7 @@ system_stm32f4xx.s: system_stm32f4xx.c.s
 
 # target to generate assembly for a file
 system_stm32f4xx.c.s:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.s
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(MAKE) -f src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/build.make src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/system_stm32f4xx.c.s
 .PHONY : system_stm32f4xx.c.s
 
 # Help Target
@@ -1135,6 +1135,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

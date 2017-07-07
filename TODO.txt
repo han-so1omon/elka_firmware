@@ -1,0 +1,20 @@
+Add $PX4_FIRMWARE/Tools/genmsg&gencpp as submodules
+
+Symbolic link to $PX4_FIRMWARE/Tools/px_generate_uorb_topic_files.py
+using technique from
+https://stackoverflow.com/questions/15844542/git-symlink-reference-to-a-file-in-an-external-repository/27770463#27770463>
+
+Add $PX4_FIRMWARE/src/modules/elka as a submodule under name elka_comm
+
+Follow techniques from $PX4_FIRMWARE/cmake/config/px4_base.cmake
+px4_generate_messages() to add ROS-style messages to elka in
+$ELKA_FIRMWARE_BINARY_DIR/src/modules/elka_comm/topics directory
+
+Compile and link generated messages
+
+Compile elka app
+
+Add Elena to elka_firmware github repo so that she might test
+open-sourced elka firmware
+
+Make .resources file for files to be fetched from other repositories (with wget)

@@ -4,18 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/_write.c" "/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles/elka.dir/src/_write.c.obj"
-  "/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/src/main.c" "/home/eric/Programs/elka/elka_firmware/elka_stm32f4_cmake/build_elka/CMakeFiles/elka.dir/src/main.c.obj"
+  "/home/eric/Programs/elka/elka_firmware/elka_firmware/src/_write.c" "/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles/elka.dir/src/_write.c.obj"
+  "/home/eric/Programs/elka/elka_firmware/elka_firmware/src/main.c" "/home/eric/Programs/elka/elka_firmware/elka_firmware/build_elka/CMakeFiles/elka.dir/src/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C
   "USE_STDPERIPH_DRIVER"
+  "__ELKA_FreeRTOS_ELKA"
   )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "inc"
+  "src"
   "../inc"
   "../inc/CMSIS"
   "../inc/Device/STM32F4xx"
@@ -26,7 +29,10 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../inc/modules"
   "../inc/nvicconf"
   "../inc/STM32F4xx_StdPeriph_Driver"
+  "../inc/systemlib"
   "../inc/utils"
+  "../inc/uORB"
+  "../src/elka_comm"
   )
 
 # Targets to which this target links.
