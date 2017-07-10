@@ -1,5 +1,5 @@
-#ifndef ELKA_LOG
-#define ELKA_LOG
+#ifndef ELKA_LOG_H
+#define ELKA_LOG_H
 
 #ifdef __cplusplus
 extern "C" {

@@ -8,8 +8,7 @@
   ******************************************************************************
   * @attention
   *
-  * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
-  * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+  * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
   * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
   * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
   * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
@@ -40,6 +39,9 @@
 #include "nrf24l01.h"
 #include "nRF24L01reg.h"
 
+#include <elka_comm/free_rtos/elka_freertos.h>
+#include <elka_comm/free_rtos/.h>
+
 /** @addtogroup STM32F4-Discovery_Demo
   * @{
   */
@@ -67,6 +69,19 @@ portTASK_FUNCTION_PROTO( vElkaRXAck, pvParameters ); // Task to wirelessly recei
 portTASK_FUNCTION_PROTO( vGetData, pvParameters ); // Task to obtain gyro, accel and actuator data and transfer it to queue that can later be read by ElkaRxAck Task
 portTASK_FUNCTION_PROTO( vSpektrumchannel_DSMX, pvParameters );
 
+// This task does bytewise reads from UART queues
+// and does bytewise writes to UART ports.
+// In the read case, the task will read up to one elka msg
+// per cycle. This is accomplished by checking if bytes are
+// available to be read. After reading one message
+// (may take multiple cycles), the message is added to the
+// queue of messages to be handled by this program.
+portTASK_FUNCTION_PROTO( vElkaRXReadWrite, pvParameters);
+
+// This task parses one elka msg per cycle. Waits if no messages
+// available
+portTASK_FUNCTION_PROTO( vElkaParse, pvParameters);
+
 void nrfInitRXack(void);
 
 //void USART2Init( void );
@@ -77,7 +92,8 @@ void nrfInitRXack(void);
 
 xQueueHandle xDebugQueue;
 xQueueHandle  tx1Queue,eulerqueue,spektrumqueue;
-xQueueHandle xDebugQueue, uartData, adctransferQueue;
+xQueueHandle xDebugQueue, uartData, adctransferQueue,
+             uartRXData, uartTXData;
 xSemaphoreHandle dataRdy, queuewritten;
 
 
@@ -151,8 +167,32 @@ int main(void)
 	vSemaphoreCreateBinary(queuewritten); // create semaphore to release vGetData task. Serviced by vElkaRxAck task.
 	tx1Queue = xQueueCreate(3,sizeof(rxpacket)); //create queue to transfer packets received by radio to stabilizer task.
 	eulerqueue = xQueueCreate(3,sizeof(eulerstruct)); //create queue to transfer imu data to be sent via radio.
-	uartData = xQueueCreate(40, sizeof(uint8_t)); // create queue to read spektrum satellite receiver serial data.
+	//uartData = xQueueCreate(40, sizeof(uint8_t)); // create queue to read spektrum satellite receiver serial data.
 
+  // BEGIN MY CODE ------------------------------
+  uartRXData = xQueueCreate(
+                MAX_SERIAL_MSGS*MAX_MSG_LEN,
+                sizeof(uint8_t)
+               );
+  uartTXData = xQueueCreate(
+                MAX_SERIAL_MSGS*MAX_MSG_LEN,
+                sizeof(uint8_t)
+               );
+
+  // Read one byte from UART if ready
+  // Execute code if new elka_msg is ready
+  // Write one byte to UART if ready
+  // TODO send rcv_msg, snd_msg, rcv_ack, snd_ack as parameters
+  elka::ELKAPort *elka = new elka::ELKAPort(
+      3, PORT_NONE, PRIORITY_QUEUE, 42, "elka_port");
+  xTaskCreate(vElkaRXReadWrite,
+              NULL,
+              130,
+              (void *) elka,
+              3,
+              NULL);
+  xTaskCreate(vElkaParse, NULL, 130, (void *) elka, 2, NULL);
+  // END MY CODE ------------------------------
 
     //adc_init_multi();
 
@@ -166,10 +206,11 @@ int main(void)
    // xTaskCreate(stabilizerTask, (const signed char * const)"STABILIZER",configMINIMAL_STACK_SIZE, NULL, /*Piority*/tskIDLE_PRIORITY, NULL);
 
     //xTaskCreate( vLEDTask, ( signed portCHAR * ) "LED3", configMINIMAL_STACK_SIZE, (void *)LEDS[0],tskIDLE_PRIORITY+1, NULL );
-	xTaskCreate(vElkaRXAck, NULL,130, NULL, 2, NULL);
+	//xTaskCreate(vElkaRXAck, NULL,130, NULL, 2, NULL);
 	xTaskCreate( vGetData, NULL, 130, NULL, 1, NULL );
-	xTaskCreate (vSpektrumchannel_DSMX, NULL, 130, NULL, 3, NULL);
+	//xTaskCreate (vSpektrumchannel_DSMX, NULL, 130, NULL, 3, NULL);
 	//xTaskCreate( vDebugTask, (signed char *) "DEBUG", 130,NULL, 1, NULL );
+  //
 
 	/* Start the scheduler. */
 	vTaskStartScheduler();
@@ -350,6 +391,53 @@ portTASK_FUNCTION (vElkaRXAck, pvParameters)
 	}
 }
 
+// This task does bytewise reads from UART queues
+// and does bytewise writes to UART ports.
+// In the read case, the task will read up to one elka msg
+// per cycle. This is accomplished by checking if bytes are
+// available to be read. After reading one message
+// (may take multiple cycles), the message is added to the
+// queue of messages to be handled by this program.
+portTASK_FUNCTION (vElkaRXReadWrite, pvParameters) {
+#define TRX_WAIT_FOR_BYTE_TICKS 3
+  elka::ELKAPort *elka = (elka::ElkaPort *) pvParameters;
+  uint8_t tx_byte, rx_byte, byte_cnt = 0;
+  bool rcv_msg_ready, rcv_ack_ready;
+
+  while(1) {
+
+    byte_cnt = 0;
+    while ( (xQueueReceive(uartRXData,
+                           &rx_byte,
+                           TRX_WAIT_FOR_BYTE_TICKS)
+            == pdTrue) &&
+            (byte_cnt++) < MAX_MSG_LEN ) {
+
+    }
+
+    //TODO receive and send multiple bytes at once
+    byte_cnt = 0;
+    while ( (xQueueReceive(uartTXData,
+                           &tx_byte,
+                           TRX_WAIT_FOR_BYTE_TICKS)
+            == pdTrue) &&
+            (byte_cnt++) < MAX_MSG_LEN ) {
+      //FIXME send over wire associated with correct port
+      USART_SendData(USART3, tx_byte);
+    }
+  }
+}
+
+// This task parses one elka msg per cycle. Waits if no messages
+// available
+portTASK_FUNCTION_PROTO( vElkaParse, pvParameters) {
+  elka::ELKAPort *elka = (elka::ElkaPort *) pvParameters;
+
+  while(1) {
+
+  }
+}
+
 portTASK_FUNCTION (vSpektrumchannel_DSMX, pvParameters)
 {
 	volatile unsigned long i;
@@ -367,7 +455,22 @@ portTASK_FUNCTION (vSpektrumchannel_DSMX, pvParameters)
 		if (xQueueReceive(uartData, &c, 1000) == pdTRUE)
 		{
 
-			check = SpektrumParser_DSMX(c, &PrimarySpektrumState);
+      
+    //adc_init_multi();
+
+    bool i;
+    uint16_t ratio;
+    uint8_t data;
+    uint8_t buffer[14];
+    int j;
+
+
+   // xTaskCreate(stabilizerTask, (const signed char * const)"STABILIZER",configMINIMAL_STACK_SIZE, NULL, /*Piority*/tskIDLE_PRIORITY, NULL);
+
+    //xTaskCreate( vLEDTask, ( signed portCHAR * ) "LED3", configMINIMAL_STACK_SIZE, (void *)LEDS[0],tskIDLE_PRIORITY+1, NULL );
+	xTaskCreate(vElkaRXAck, NULL,130, NULL, 2, NULL);
+	xTaskCreate( vGetData, NULL, 130, NULL, 1, NULL );
+
 			//STM_EVAL_LEDToggle(LED6);
 
 

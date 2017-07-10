@@ -3,3 +3,4 @@ build_elka/
 build*/*
 build_*/
 *.pyc
+tags
