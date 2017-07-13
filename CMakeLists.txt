@@ -72,6 +72,7 @@ include_directories(
   ${ELKA_SOURCE_DIR}/inc/systemlib
   ${ELKA_SOURCE_DIR}/inc/utils
   ${ELKA_SOURCE_DIR}/inc/uORB
+  ${ELKA_SOURCE_DIR}/src/
   ${ELKA_SOURCE_DIR}/src/elka_comm
 )
 
@@ -116,6 +117,8 @@ set(GCC_COVERAGE_COMPILE_FLAGS "-march=armv7e-m -mthumb \
 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding \
 -fno-move-loop-invariants -Wall -Wextra -g3")
 
+set(GXX_COVERAGE_COMPILE_FLAGS "-std=c++11")
+
 set(GCC_COVERAGE_LINK_FLAGS
 "-T \"${ELKA_SOURCE_DIR}/ldscripts/mem.ld\" \
 -T \"${ELKA_SOURCE_DIR}/ldscripts/libs.ld\" \
@@ -123,7 +126,7 @@ set(GCC_COVERAGE_LINK_FLAGS
 -nostartfiles -Xlinker --gc-sections -Wl,-Map,\"elka.map\" \
 --specs=nano.specs -o \"elka.elf\"")
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS} ${GXX_COVERAGE_COMPILE_FLAGS}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER__FLAGS} ${GCC_COVERAGE_LINK_FLAGS}")
 
@@ -134,8 +137,8 @@ add_subdirectory(src)
 #FIXME make sure that this will create elka executable file
 #TODO link against libraries
 add_executable(elka
-  src/main.c
-  src/_write.c
+  src/main.cpp
+  src/_write.cpp
 )
 
 target_link_libraries(elka

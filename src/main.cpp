@@ -39,8 +39,8 @@
 #include "nrf24l01.h"
 #include "nRF24L01reg.h"
 
-#include <elka_comm/free_rtos/elka_freertos.h>
-#include <elka_comm/free_rtos/.h>
+#include <elka_comm/free_rtos/elka_free_rtos.h>
+#include <elka_comm/free_rtos/elka_devices.h>
 
 /** @addtogroup STM32F4-Discovery_Demo
   * @{
@@ -54,7 +54,19 @@ uint64_t u64Ticks=0;
 uint64_t u64IdleTicks=0;    // Value of u64IdleTicksCnt is copied once per sec.
 uint64_t u64IdleTicksCnt=0; // Counts when the OS has no task to execute.
 
+/*Modify this to change packet structure to send*/
+typedef struct
+{
+	uint8_t gyrobytes[6];
+	//uint8_t accelbytes[6];
+	uint8_t eulerangles[4];
+	uint8_t commanded[16];
+}imubytes;
 
+imubytes imudata;
+
+int16_t axi16, ayi16, azi16;
+int16_t gxi16, gyi16, gzi16;
 
 /* Private macro -------------------------------------------------------------*/
 
@@ -82,16 +94,16 @@ portTASK_FUNCTION_PROTO( vElkaRXReadWrite, pvParameters);
 // available
 portTASK_FUNCTION_PROTO( vElkaParse, pvParameters);
 
-void nrfInitRXack(void);
+void NVIC_Configuration(void);
+void nrfInitRxAck(void);
+
+void serialize_imubytes(char *imu_bytes, imubytes *imu_data);
 
 //void USART2Init( void );
 
-
-
 /* handlers to tasks to better control them */
 
-xQueueHandle xDebugQueue;
-xQueueHandle  tx1Queue,eulerqueue,spektrumqueue;
+xQueueHandle tx1Queue,eulerqueue,spektrumqueue;
 xQueueHandle xDebugQueue, uartData, adctransferQueue,
              uartRXData, uartTXData;
 xSemaphoreHandle dataRdy, queuewritten;
@@ -112,7 +124,8 @@ typedef struct SpektrumStateStruct SpektrumStateType;
 int SpektrumParser_DSMX(uint8_t c, SpektrumStateType* spektrum_state);
 SpektrumStateType PrimarySpektrumState = {0,0,0,{0}};
 int channeldata[7];
-uint16_t spektrumchannel[7];
+//FIXME should this be declared here as well as in stabilizer.h?
+//uint16_t spektrumchannel[7];
 int channelnum;
 int spektrum_check;
 
@@ -133,20 +146,6 @@ static void interruptCallback()
 	if(xHigherPriorityTaskWoken)
 		vPortYieldFromISR();
 }
-
-/*Modify this to change packet structure to send*/
-typedef struct
-{
-	uint8_t gyrobytes[6];
-	//uint8_t accelbytes[6];
-	uint8_t eulerangles[4];
-	uint8_t commanded[16];
-}imubytes;
-
-imubytes imudata;
-
-int16_t axi16, ayi16, azi16;
-int16_t gxi16, gyi16, gzi16;
 
 int main(void)
 {
@@ -329,7 +328,7 @@ portTASK_FUNCTION (vElkaRXAck, pvParameters)
 	portTickType xLastWakeTime;
 	xLastWakeTime = xTaskGetTickCount();
 	uint8_t counter = 0;
-	char *receive;
+	unsigned char *receive;
 	unsigned char bytereceived[5];
 	receive = &bytereceived[0];
 	int led1_state = 0;
@@ -338,6 +337,9 @@ portTASK_FUNCTION (vElkaRXAck, pvParameters)
 	char id1,id2,id3,id4, id5;
 	static rxpacket pk, pknoreceive;
 	unsigned char dataLen;
+
+  char imudata_bytes[sizeof(imubytes)];
+
 	for (i=0;i<TX_PAYLOAD_WIDTH; i++)
 	{
 		pknoreceive.data[i] = 0;
@@ -371,7 +373,8 @@ portTASK_FUNCTION (vElkaRXAck, pvParameters)
 			nrfReadRX((char *)pk.data,dataLen);
 			status2 = nrfRead1Reg(REG_FIFO_STATUS);
 
-			nrfWriteAck(0, &imudata,sizeof(imudata));
+      serialize_imubytes(&(imudata_bytes[0]), &imudata);
+			nrfWriteAck(0, &(imudata_bytes[0]),sizeof(imudata));
 
 			xSemaphoreGive(queuewritten);
 
@@ -389,53 +392,6 @@ portTASK_FUNCTION (vElkaRXAck, pvParameters)
 		//vTaskDelay(7);
 		STM_EVAL_LEDToggle(LED3);
 	}
-}
-
-// This task does bytewise reads from UART queues
-// and does bytewise writes to UART ports.
-// In the read case, the task will read up to one elka msg
-// per cycle. This is accomplished by checking if bytes are
-// available to be read. After reading one message
-// (may take multiple cycles), the message is added to the
-// queue of messages to be handled by this program.
-portTASK_FUNCTION (vElkaRXReadWrite, pvParameters) {
-#define TRX_WAIT_FOR_BYTE_TICKS 3
-  elka::ELKAPort *elka = (elka::ElkaPort *) pvParameters;
-  uint8_t tx_byte, rx_byte, byte_cnt = 0;
-  bool rcv_msg_ready, rcv_ack_ready;
-
-  while(1) {
-
-    byte_cnt = 0;
-    while ( (xQueueReceive(uartRXData,
-                           &rx_byte,
-                           TRX_WAIT_FOR_BYTE_TICKS)
-            == pdTrue) &&
-            (byte_cnt++) < MAX_MSG_LEN ) {
-
-    }
-
-    //TODO receive and send multiple bytes at once
-    byte_cnt = 0;
-    while ( (xQueueReceive(uartTXData,
-                           &tx_byte,
-                           TRX_WAIT_FOR_BYTE_TICKS)
-            == pdTrue) &&
-            (byte_cnt++) < MAX_MSG_LEN ) {
-      //FIXME send over wire associated with correct port
-      USART_SendData(USART3, tx_byte);
-    }
-  }
-}
-
-// This task parses one elka msg per cycle. Waits if no messages
-// available
-portTASK_FUNCTION_PROTO( vElkaParse, pvParameters) {
-  elka::ELKAPort *elka = (elka::ElkaPort *) pvParameters;
-
-  while(1) {
-
-  }
 }
 
 portTASK_FUNCTION (vSpektrumchannel_DSMX, pvParameters)
@@ -506,6 +462,98 @@ portTASK_FUNCTION (vSpektrumchannel_DSMX, pvParameters)
 		//vTaskDelayUntil( &xLastWakeTime, ( 20 / portTICK_RATE_MS  ) );
 		//vTaskDelay(10);
 	}
+}
+
+// This task does bytewise reads from UART queues
+// and does bytewise writes to UART ports.
+// In the read case, the task will read up to one elka msg
+// per cycle. This is accomplished by checking if bytes are
+// available to be read. After reading one message
+// (may take multiple cycles), the message is added to the
+// queue of messages to be handled by this program.
+#define TRX_WAIT_FOR_BYTE_TICKS 3
+portTASK_FUNCTION (vElkaRXReadWrite, pvParameters) {
+  elka::ELKAPort *elka = (elka::ELKAPort *) pvParameters;
+  msg_id_t rcv_msg_id;
+  dev_id_t rcv_rcv_id; // rcv_id from a message received 
+  uint16_t rcv_msg_num,
+           byte_cnt = 0, curr_byte_num = 0;
+  uint8_t tx_byte, rx_byte,
+          rcv_num_retries,
+          rcv_data[MAX_MSG_LEN];
+  bool rcv_msg_ready, rcv_id_found;
+
+  while(1) {
+    byte_cnt = 0;
+    curr_byte_num = 0;
+    while ( (xQueueReceive(uartRXData,
+                           &rx_byte,
+                           TRX_WAIT_FOR_BYTE_TICKS)
+            == pdTRUE) &&
+            ( (byte_cnt++) < MAX_MSG_LEN &&
+              !rcv_msg_ready) ) {
+
+      //TODO form rcv msg and send to elka->_rx_sb;
+      rcv_msg_ready = deserialize_elka_msg(
+                        &rcv_msg_id,
+                        &rcv_msg_num,
+                        &rcv_num_retries,
+                        &(rcv_data[0]),
+                        rx_byte,
+                        &curr_byte_num);
+
+      // Check if rcv device can be reached from here
+      if (!rcv_id_found &&
+          curr_byte_num >= MSG_ID_SIZE) {
+        get_elka_msg_id_attr(
+            NULL,
+            &rcv_rcv_id,
+            NULL,
+            NULL,
+            NULL,
+            rcv_msg_id);
+
+        if (!elka->check_route(rcv_rcv_id)) {
+          // Restart deserialization if rcv device
+          // can't be reached from here
+          curr_byte_num = 0;
+          continue;
+        } else {
+          // Set device found if rcv device can
+          // be reached from here
+          rcv_id_found = true;
+        }
+      } else if (rcv_msg_ready) {
+        // Add message
+        elka->add_msg(rcv_msg_id,
+                      rcv_msg_num,
+                      rcv_num_retries,
+                      &(rcv_data[0]),
+                      false);
+      }
+    }
+
+    //TODO receive and send multiple bytes at once
+    byte_cnt = 0;
+    while ( (xQueueReceive(uartTXData,
+                           &tx_byte,
+                           TRX_WAIT_FOR_BYTE_TICKS)
+            == pdTRUE) &&
+            ( (byte_cnt++) < MAX_MSG_LEN) ) {
+      //FIXME send over wire associated with correct port
+      USART_SendData(USART3, tx_byte);
+    }
+  }
+}
+
+// This task parses one elka msg per cycle. Waits if no messages
+// available
+portTASK_FUNCTION_PROTO( vElkaParse, pvParameters) {
+  elka::ELKAPort *elka = (elka::ELKAPort *) pvParameters;
+
+  while(1) {
+
+  }
 }
 
 void vApplicationMallocFailedHook( void )
@@ -698,3 +746,23 @@ void NVIC_Configuration(void)
   NVIC_Init(&NVIC_InitStructure);
 }
 
+void serialize_imubytes(char *imu_bytes, imubytes *imu_data) {
+  uint8_t i=0;
+  // serialize gyrobytes
+  for (; i < 6; i++) {
+    *imu_bytes = imu_data->gyrobytes[i];
+    imu_bytes++;
+  }
+
+  // serialize eulerangles
+  for (i=0; i < 4; i++) {
+    *imu_bytes = imu_data->eulerangles[i];
+    imu_bytes++;
+  }
+
+  // serialize commanded
+  for (i=0; i < 16; i++) {
+    *imu_bytes = imu_data->commanded[i];
+    imu_bytes++;
+  }
+}
