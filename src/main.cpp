@@ -41,6 +41,7 @@
 
 #include <elka_comm/free_rtos/elka_free_rtos.h>
 #include <elka_comm/free_rtos/elka_devices.h>
+#include <unistd.h>
 
 /** @addtogroup STM32F4-Discovery_Demo
   * @{
@@ -551,8 +552,47 @@ portTASK_FUNCTION (vElkaRXReadWrite, pvParameters) {
 portTASK_FUNCTION_PROTO( vElkaParse, pvParameters) {
   elka::ELKAPort *elka = (elka::ELKAPort *) pvParameters;
 
-  while(1) {
+  // nxt_msg_type contains next message for
+  // send & receive
+  uint8_t parse_res, ack_res, nxt_msg_type[2]; 
+  // snd_id is sender id for received elka_msgs and elka_msg_acks
+  dev_id_t snd_id;
 
+  while(1) {
+    elka->update_time();
+    // Remove and parse message from rx_buf
+    // Send ack if the message requires one 
+    if ( (nxt_msg_type[1] = elka->remove_msg(
+            elka->_elka_rcv,
+            elka->_elka_ack_rcv,
+            false)) != MSG_NULL &&
+          nxt_msg_type[1] == MSG_ACK) {
+
+    } else {
+      if ( parse_res = elka->parse_elka_msg(elka->_elka_rcv)
+           == MSG_FAILED ) {
+        LOG_ERR("Failed message for msg id: %" PRMIT "",
+          elka->_elka_rcv.msg_id);
+      }
+    }
+
+    if ( (nxt_msg_type[0] = elka->get_msg(
+                              elka->_elka_snd,
+                              elka->_elka_ack_snd,
+                              true))
+         == MSG_ACK ) {
+       elka->send_msg(elka->_elka_ack_snd);
+     } else if ( nxt_msg_type[0] != MSG_NULL &&
+                 nxt_msg_type[0] != MSG_FAILED ) {
+      elka->send_msg(elka->_elka_snd);
+
+      if (!(elka->_elka_snd.msg_id & ID_EXPECTING_ACK))
+        // TODO This scheme of popping only works if messages are
+        // pushed here and not in a separate thread
+        elka->pop_msg(true);
+      else // Sleep for a short time to let ack process
+        usleep(20000);
+    }
   }
 }
 
