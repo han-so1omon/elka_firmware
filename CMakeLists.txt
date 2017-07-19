@@ -46,9 +46,6 @@ if (CMAKE_INSTALL_PREFIX)
 	message(STATUS "CMAKE_INSTALL_PREFIX: ${CMAKE_INSTALL_PREFIX}")
 endif()
 
-list(APPEND CMAKE_MODULE_PATH "${ELKA_SOURCE_DIR}/cmake")
-message(STATUS "CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")
-
 # cmake modules
 include(ExternalProject)
 
@@ -134,12 +131,12 @@ add_definitions(-DUSE_STDPERIPH_DRIVER)
 
 add_subdirectory(src)
 
-#FIXME make sure that this will create elka executable file
-#TODO link against libraries
 add_executable(elka
   src/main.cpp
   src/_write.cpp
 )
+
+add_dependencies(elka msg_gen)
 
 target_link_libraries(elka
   ${ELKA_LINK_LIBS}
