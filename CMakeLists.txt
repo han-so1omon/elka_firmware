@@ -73,6 +73,20 @@ include_directories(
   ${ELKA_SOURCE_DIR}/src/elka_comm
 )
 
+link_directories(
+  ${ELKA_BINARY_DIR}
+  ${ELKA_BINARY_DIR}/src
+  ${ELKA_BINARY_DIR}/src/elka_comm/common
+  ${ELKA_BINARY_DIR}/src/elka_comm/free_rtos
+  ${ELKA_BINARY_DIR}/src/drivers
+  ${ELKA_BINARY_DIR}/src/elka_hal
+  ${ELKA_BINARY_DIR}/src/FreeRTOS
+  ${ELKA_BINARY_DIR}/src/modules
+  ${ELKA_BINARY_DIR}/src/STM32F4xx_StdPeriph_Driver
+  ${ELKA_BINARY_DIR}/src/uORB
+  ${ELKA_BINARY_DIR}/src/utils
+)
+
 set(ELKA_LINK_LIBS "")
 
 add_definitions(
@@ -103,6 +117,10 @@ elka_generate_messages(TARGET msg_gen
 	OS ${OS}
 	INCLUDES ${msg_include_paths}
 	DEPENDS git_genmsg git_gencpp
+)
+
+set(ELKA_LINK_LIBS
+  ${ELKA_LINK_LIBS} msg_gen
 )
 
 #=============================================================================
