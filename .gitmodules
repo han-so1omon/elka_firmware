@@ -1,9 +1,11 @@
 [submodule "tools/genmsg"]
 	path = tools/genmsg
 	url = https://github.com/ros/genmsg.git
+  branch = master
 [submodule "tools/gencpp"]
 	path = tools/gencpp
 	url = https://github.com/ros/gencpp.git
+  branch = master
 [submodule "src/elka_comm"]
 	path = src/elka_comm
 	url = https://github.com/han-so1omon/elka_comm
