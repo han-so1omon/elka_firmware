@@ -8,4 +8,7 @@ add_library(elka_hal STATIC
 	imu.c
 )
 
-set(ELKA_LINK_LIBS "${ELKA_LINK_LIBS} elka_hal")
+set(ELKA_LINK_LIBS
+  ${ELKA_LINK_LIBS} elka_hal
+	PARENT_SCOPE
+)

@@ -16,5 +16,6 @@ add_library(elka_drivers STATIC
 )
 
 set(ELKA_LINK_LIBS
-  "${ELKA_LINK_LIBS} elka_drivers"
+  ${ELKA_LINK_LIBS} elka_drivers
+	PARENT_SCOPE
 )

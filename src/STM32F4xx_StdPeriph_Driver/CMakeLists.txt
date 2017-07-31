@@ -42,5 +42,6 @@ add_library(STM32F4xx_StdPeriph_Driver STATIC
 )
 
 set(ELKA_LINK_LIBS
-  "${ELKA_LINK_LIBS} STM32F4xx_StdPeriph_Driver"
+  ${ELKA_LINK_LIBS} STM32F4xx_StdPeriph_Driver
+  PARENT_SCOPE
 )

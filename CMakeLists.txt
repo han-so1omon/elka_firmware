@@ -154,7 +154,10 @@ add_executable(elka
   src/_write.cpp
 )
 
-add_dependencies(elka msg_gen)
+message("libs: ${ELKA_LINK_LIBS}")
+add_dependencies(elka
+  ${ELKA_LINK_LIBS}
+)
 
 target_link_libraries(elka
   ${ELKA_LINK_LIBS}

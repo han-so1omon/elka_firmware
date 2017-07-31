@@ -10,5 +10,6 @@ add_library(elka_modules STATIC
 )
 
 set(ELKA_LINK_LIBS
-  "${ELKA_LINK_LIBS} elka_modules"
+  ${ELKA_LINK_LIBS} elka_modules
+  PARENT_SCOPE
 )
