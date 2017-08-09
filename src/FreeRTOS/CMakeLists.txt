@@ -16,5 +16,6 @@ add_library(FreeRTOS STATIC
 )
 
 set(ELKA_LINK_LIBS
-  "${ELKA_LINK_LIBS} FreeRTOS"
+  ${ELKA_LINK_LIBS} FreeRTOS
+  PARENT_SCOPE
 )

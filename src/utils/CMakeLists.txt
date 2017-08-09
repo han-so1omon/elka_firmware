@@ -14,5 +14,6 @@ add_library(elka_utils STATIC
 )
 
 set(ELKA_LINK_LIBS
-  "${ELKA_LINK_LIBS} elka_utils"
+  ${ELKA_LINK_LIBS} elka_utils
+  PARENT_SCOPE
 )

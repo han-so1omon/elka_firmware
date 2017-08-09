@@ -27,6 +27,7 @@
 #include <stdbool.h>
 #include "imu.h"
 #include "adc.h"
+#include <stdio.h>
 
 /* FreeRTOS includes */
 #include "FreeRTOS.h"
@@ -37,8 +38,12 @@
 #include "hw_config.h"
 #include "motors.h"
 #include "stabilizer.h"
+#include "debug.h"
 #include "nrf24l01.h"
 #include "nRF24L01reg.h"
+#include "px4flow.h"
+#include "serial_tasks.h"
+//#include "ring_buffer.h"
 
 /** @addtogroup STM32F4-Discovery_Demo
   * @{
@@ -66,6 +71,7 @@ portTASK_FUNCTION_PROTO( vDebugTask, pvParameters );
 portTASK_FUNCTION_PROTO( vElkaRXAck, pvParameters ); // Task to wirelessly receive commands from base-station and transmit the values obtained from vGetData via wireless acknowledgement packet
 portTASK_FUNCTION_PROTO( vGetData, pvParameters ); // Task to obtain gyro, accel and actuator data and transfer it to queue that can later be read by ElkaRxAck Task
 portTASK_FUNCTION_PROTO( vSpektrumchannel_DSMX, pvParameters );
+portTASK_FUNCTION_PROTO( vPx4_read, pvParameters );
 
 void nrfInitRXack(void);
 
@@ -97,6 +103,8 @@ int SpektrumParser_DSMX(uint8_t c, SpektrumStateType* spektrum_state);
 SpektrumStateType PrimarySpektrumState = {0,0,0,{0}};
 int channeldata[7];
 uint16_t spektrumchannel[7];
+i2c_frame px4_test;
+
 int channelnum;
 int spektrum_check;
 
@@ -119,18 +127,15 @@ static void interruptCallback()
 }
 
 /*Modify this to change packet structure to send*/
-typedef struct
-{
-	uint8_t gyrobytes[6];
-	//uint8_t accelbytes[6];
-	uint8_t eulerangles[4];
-	uint8_t commanded[16];
-}imubytes;
+
 
 imubytes imudata;
 
 int16_t axi16, ayi16, azi16;
 int16_t gxi16, gyi16, gzi16;
+
+//cb le_snap;
+//BufferType le_snaparray[BUFFER_SIZE1];
 
 int main(void)
 {
@@ -138,14 +143,19 @@ int main(void)
 	/* initialize hardware... */
 	prvSetupHardware();
 
-	stabilizerInit();
-	USART1Init(115200);
-	//USART2Init(38400);
+	vDebugInitQueue();
+
+	USART1Init(38400);
+	USART3Init(38400);
+	//rosSerialInit();
+	int j;
+	for(j=0;j<1000000;j++);
 
 	//init_tim();
 	nrfInit(); //Initialize radio unit
 	nrfInitRxAck(); //Setup radio with auto acknowledge - enhanced shockburst
 	nrfSetInterruptCallback(interruptCallback);
+
 	NVIC_Configuration();
 	vSemaphoreCreateBinary(dataRdy); //create semaphore to release vElkaRxAck task. Serviced by external interrupt.
 	vSemaphoreCreateBinary(queuewritten); // create semaphore to release vGetData task. Serviced by vElkaRxAck task.
@@ -156,22 +166,25 @@ int main(void)
 
     //adc_init_multi();
 
-    bool i;
+    int i;
     uint16_t ratio;
     uint8_t data;
-    uint8_t buffer[14];
-    int j;
+    //uint8_t buffer[14];
+
 
 
    // xTaskCreate(stabilizerTask, (const signed char * const)"STABILIZER",configMINIMAL_STACK_SIZE, NULL, /*Piority*/tskIDLE_PRIORITY, NULL);
 
     //xTaskCreate( vLEDTask, ( signed portCHAR * ) "LED3", configMINIMAL_STACK_SIZE, (void *)LEDS[0],tskIDLE_PRIORITY+1, NULL );
-	xTaskCreate(vElkaRXAck, NULL,130, NULL, 2, NULL);
+	//xTaskCreate(vElkaRXAck, NULL,200, NULL, 2, NULL);
 	xTaskCreate( vGetData, NULL, 130, NULL, 1, NULL );
-	xTaskCreate (vSpektrumchannel_DSMX, NULL, 130, NULL, 3, NULL);
+	//xTaskCreate (vSpektrumchannel_DSMX, NULL, 130, NULL, 3, NULL);
+	//xTaskCreate (vPx4_read, NULL, 130, NULL, 1, NULL);
 	//xTaskCreate( vDebugTask, (signed char *) "DEBUG", 130,NULL, 1, NULL );
 
 	/* Start the scheduler. */
+	//init_I2C2_new();
+	//stabilizerInit();
 	vTaskStartScheduler();
 
 	/* Will only get here if there was not enough heap space to create the idle task. */
@@ -210,6 +223,20 @@ void vLEDTask( void *pvParameters )
 	}
 }
 
+void vPx4_read( void *pvParameters )
+{
+	static int status=1;
+	for( ;; )
+	{
+		//status = I2C_startslave1(I2C2,PX4_ADDRESS);
+		//readx(I2C2, &px4_test,PX4_ADDRESS);
+		readx1(I2C2, &px4_test,PX4_ADDRESS,status);
+		//I2C_startslave(I2C2, PX4_ADDRESS);
+		STM_EVAL_LEDToggle(LED3);
+		vTaskDelay(10);
+	}
+}
+
 portTASK_FUNCTION (vGetData, pvParameters)
 {
 
@@ -220,65 +247,65 @@ portTASK_FUNCTION (vGetData, pvParameters)
 
 	static int led1_state = 0;
 	rxpacket test;
-	eulerstruct eulerdata;
+	eulerstruct euler;
 	uint8_t ubyte, lbyte;
 	adcstruct press_sens;
-
-	xSemaphoreTake( queuewritten, 0 );
+	int counter = 0;
+	//xSemaphoreTake( queuewritten, 0 );
+	rx_xbee test1;
 
 	for( ;; )
 	{
 		//vTaskDelayUntil(&xlastWakeTime1, 10);
-
-		xSemaphoreTake(queuewritten, portMAX_DELAY);
+		//counter =  px4_test.ground_distance;//counter+1;
+		//xSemaphoreTake(queuewritten, portMAX_DELAY);
 		//xQueueReceive(adctransferQueue,&press_sens,0);
-		xQueueReceive(eulerqueue,&eulerdata,0);
+		//xQueueReceive(eulerqueue,&eulerdata,0);
 		gxi16 = (int)(100*gyro.x);
 		gyi16 = (int)(100*gyro.y);
 		gzi16 = (int)(100*gyro.z);
 		axi16 = (int)(100*acc.x);
 		ayi16 = (int)(100*acc.y);
 		azi16 = (int)(100*acc.z);
+		//imudata.gyrobytes[0] = (counter>>8)&(0xff);
+		//imudata.gyrobytes[1] = (counter)&(0xff);
 		imudata.gyrobytes[0] = (gxi16>>8)&(0xff);
 		imudata.gyrobytes[1] = (gxi16)&(0xff);
 		imudata.gyrobytes[2] = (gyi16>>8)&(0xff);
 		imudata.gyrobytes[3] = (gyi16)&(0xff);
 		imudata.gyrobytes[4] = (gzi16>>8)&(0xff);
 		imudata.gyrobytes[5] = (gzi16)&(0xff);
-		imudata.eulerangles[0] = (eulerdata.data[0]>>8)&(0xff);
-		imudata.eulerangles[1] = (eulerdata.data[0])&(0xff);
-		imudata.eulerangles[2] = (eulerdata.data[1]>>8)&(0xff);
-		imudata.eulerangles[3] = (eulerdata.data[1])&(0xff);
+		imudata.eulerangles[0] = (euler.data[0]>>8)&(0xff);
+		imudata.eulerangles[1] = (euler.data[0])&(0xff);
+		imudata.eulerangles[2] = (euler.data[1]>>8)&(0xff);
+		imudata.eulerangles[3] = (euler.data[1])&(0xff);
 
-		imudata.commanded[0] = (eulerdata.data[3]>>8)&(0xff);
-		imudata.commanded[1] = (eulerdata.data[3])&(0xff);
-		imudata.commanded[2] = (eulerdata.data[4]>>8)&(0xff);
-		imudata.commanded[3] = (eulerdata.data[4])&(0xff);
-		imudata.commanded[4] = (eulerdata.data[5]>>8)&(0xff);
-		imudata.commanded[5] = (eulerdata.data[5])&(0xff);
-		imudata.commanded[6] = (eulerdata.data[6]>>8)&(0xff);
-		imudata.commanded[7] = (eulerdata.data[6])&(0xff);
-		/*imudata.commanded[8] = (press_sens.data[0]>>8)&(0xff);
-	    imudata.commanded[9] = (press_sens.data[0])&(0xff);
-		imudata.commanded[10] = (press_sens.data[1]>>8)&(0xff);
-	    imudata.commanded[11] = (press_sens.data[1])&(0xff);
-		imudata.commanded[12] = (press_sens.data[2]>>8)&(0xff);
-	    imudata.commanded[13] = (press_sens.data[2])&(0xff);
-		imudata.commanded[14] = (press_sens.data[3]>>8)&(0xff);
-	    imudata.commanded[15] = (press_sens.data[3])&(0xff);*/
-		imudata.commanded[8] = (eulerdata.data[9]>>8)&(0xff);
-		imudata.commanded[9] = (eulerdata.data[9])&(0xff);
-		imudata.commanded[10] = (eulerdata.data[10]>>8)&(0xff);
-		imudata.commanded[11] = (eulerdata.data[10])&(0xff);
-		imudata.commanded[12] = (eulerdata.data[11]>>8)&(0xff);
-		imudata.commanded[13] = (eulerdata.data[11])&(0xff);
-		imudata.commanded[14] = (eulerdata.data[12]>>8)&(0xff);
-		imudata.commanded[15] = (eulerdata.data[12])&(0xff);
+		imudata.commanded[0] = (euler.data[3]>>8)&(0xff);
+		imudata.commanded[1] = (euler.data[3])&(0xff);
+		imudata.commanded[2] = (euler.data[4]>>8)&(0xff);
+		imudata.commanded[3] = (euler.data[4])&(0xff);
+		imudata.commanded[4] = (euler.data[5]>>8)&(0xff);
+		imudata.commanded[5] = (euler.data[5])&(0xff);
+		imudata.commanded[6] = (euler.data[6]>>8)&(0xff);
+		imudata.commanded[7] = (euler.data[6])&(0xff);
+		imudata.commanded[8] = snap_buf.data[4];//(euler.data[7]>>8)&(0xff);
+		imudata.commanded[9] = snap_buf.data[5];//(euler.data[7])&(0xff);
+		imudata.commanded[10] = snap_buf.data[6];//(euler.data[8]>>8)&(0xff);
+		imudata.commanded[11] =snap_buf.data[7];// (euler.data[8])&(0xff);
+		imudata.commanded[12] = snap_buf.data[8];//(euler.data[9]>>8)&(0xff);
+		imudata.commanded[13] = snap_buf.data[9];//(euler.data[9])&(0xff);
+		imudata.commanded[14] = snap_buf.data[10];//(euler.data[10]>>8)&(0xff);
+		imudata.commanded[15] = snap_buf.data[11];//(euler.data[10])&(0xff);
+		imudata.commanded[16] = (euler.data[11]>>8)&(0xff);
+		imudata.commanded[17] = (euler.data[11])&(0xff);
+		imudata.commanded[18] = (euler.data[12]>>8)&(0xff);
+		imudata.commanded[19] = (euler.data[12])&(0xff);
+		//vTaskDelay(10);
 
 		//GPIO_WriteBit(GPIOB, GPIO_Pin_5, led1_state ? Bit_SET : Bit_RESET);
 		//led1_state^=1;*/
-	    //STM_EVAL_LEDToggle(LED4);
-	    //vTaskDelay(100);
+		STM_EVAL_LEDToggle(LED3 );
+		vTaskDelay(500);
 	}
 }
 
@@ -345,7 +372,7 @@ portTASK_FUNCTION (vElkaRXAck, pvParameters)
 
 		nrfWrite1Reg(REG_STATUS, 0x70); //clear interrupt bits
 		nrfSetEnable(true);
-		//vTaskDelay(7);
+		vTaskDelay(7);
 		STM_EVAL_LEDToggle(LED3);
 	}
 }
@@ -364,7 +391,7 @@ portTASK_FUNCTION (vSpektrumchannel_DSMX, pvParameters)
 	for( ;; )
 	{
 		//xSemaphoreTake(uartread, portMAX_DELAY);
-		if (xQueueReceive(uartData, &c, 1000) == pdTRUE)
+		if (xQueueReceive(uartData, &c, 10000) == pdTRUE)
 		{
 
 			check = SpektrumParser_DSMX(c, &PrimarySpektrumState);
@@ -376,10 +403,10 @@ portTASK_FUNCTION (vSpektrumchannel_DSMX, pvParameters)
 		if (check==3)
 		{
 			counter++;
-			USART_SendData(USART3, check);
+			//USART_SendData(USART3, check);
 			if (counter>10)
 			{
-				STM_EVAL_LEDToggle(LED4);
+				STM_EVAL_LEDToggle(LED3);
 				counter=0;
 			}
 			for(i=0;i<7;i++)
@@ -392,7 +419,7 @@ portTASK_FUNCTION (vSpektrumchannel_DSMX, pvParameters)
 				channelnum = (channeldata[i] >> 11) & 0x0f;
 				spektrumchannel[channelnum] = channeldata[i] & 0x7ff;
 			}
-			//spektrumchannel[6] = 1;
+			spektrumchannel[6] = 1;
 
 			//xQueueSendToBack(spektrumqueue,&spektrumchannel,0);
 		}
@@ -485,61 +512,35 @@ void nrfInitRxAck()
 }
 
 static portBASE_TYPE xHigherPriorityTaskWoken;
-void USART3_IRQHandler(void)
-{
-
-	uint8_t b;
-	int counter = 0;
-	uint8_t k = 17;
-	static int led1_state;
-	xHigherPriorityTaskWoken = pdFALSE;
-	if (USART_GetITStatus(USART3, USART_IT_RXNE)) // Received characters modify string
-	{
-
-		b = USART_ReceiveData(USART3);
 
 
-		counter++;
-
-		{
-			//STM_EVAL_LEDToggle(LED6);
-		}
-
-		xQueueSendFromISR(uartData, &b, &xHigherPriorityTaskWoken);
-		portEND_SWITCHING_ISR( xHigherPriorityTaskWoken );
-
-	}
-
-
-}
-
-void USART1_IRQHandler(void)
-{
-
-	uint8_t b;
-	int counter = 0;
-	uint8_t k = 17;
-	static int led1_state;
-	xHigherPriorityTaskWoken = pdFALSE;
-	if (USART_GetITStatus(USART1, USART_IT_RXNE)) // Received characters modify string
-	{
-
-		b = USART_ReceiveData(USART1);
-
-
-		counter++;
-
-		{
-			//STM_EVAL_LEDToggle(LED6);
-		}
-
-		xQueueSendFromISR(uartData, &b, &xHigherPriorityTaskWoken);
-		portEND_SWITCHING_ISR( xHigherPriorityTaskWoken );
-
-	}
-
-
-}
+//void USART1_IRQHandler(void)
+//{
+//
+//	uint8_t b;
+//	int counter = 0;
+//	uint8_t k = 17;
+//	static int led1_state;
+//	xHigherPriorityTaskWoken = pdFALSE;
+//	if (USART_GetITStatus(USART1, USART_IT_RXNE)) // Received characters modify string
+//	{
+//
+//		b = USART_ReceiveData(USART1);
+//
+//
+//		counter++;
+//
+//		{
+//			//STM_EVAL_LEDToggle(LED6);
+//		}
+//
+//		xQueueSendFromISR(uartData, &b, &xHigherPriorityTaskWoken);
+//		portEND_SWITCHING_ISR( xHigherPriorityTaskWoken );
+//
+//	}
+//
+//
+//}
 
 //decoding information for spektrum dx6i and dsm2 satellite receiver
 int SpektrumParser_DSMX(uint8_t c, SpektrumStateType* spektrum_state)
@@ -552,8 +553,8 @@ int SpektrumParser_DSMX(uint8_t c, SpektrumStateType* spektrum_state)
 		spektrum_state->LostFrame_cnt = c;
 		spektrum_state->Sync = 1;
 		spektrum_state->ChannelCnt = 0;
-		//k=8;
-		//return;
+		//k=3;
+		return;
 	}
 
 	//else if (c)
@@ -582,16 +583,22 @@ int SpektrumParser_DSMX(uint8_t c, SpektrumStateType* spektrum_state)
 
 void NVIC_Configuration(void)
 {
-  NVIC_InitTypeDef NVIC_InitStructure;
+	NVIC_InitTypeDef NVIC_InitStructure;
 
-  /* Configure the NVIC Preemption Priority Bits */
-  //NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
+	/* Configure the NVIC Preemption Priority Bits */
+	//NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
 
-  /* Enable the USART3 Interrupt */
-  NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 14;
-  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
-  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-  NVIC_Init(&NVIC_InitStructure);
+	/* Enable the USART3 Interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 14;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
+	NVIC_InitStructure.NVIC_IRQChannel = USART3_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 15;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
 }
+
 

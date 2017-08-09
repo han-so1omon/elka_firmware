@@ -10,17 +10,21 @@ set(GCC_COVERAGE_COMPILE_FLAGS "-march=armv7e-m -mthumb \
 -fno-move-loop-invariants -Wall -Wextra -g3")
 
 set(GCC_COVERAGE_LINK_FLAGS
-"-T \"${PROJECT_SOURCE_DIR}/ldscripts/mem.ld\" \
--T \"${PROJECT_SOURCE_DIR}/ldscripts/libs.ld\" \
--T \"${PROJECT_SOURCE_DIR}/ldscripts/sections.ld\" \
--nostartfiles -Xlinker --gc-sections -Wl,-Map,\"elka.map\" \
---specs=nano.specs -o \"elka.elf\"")
+  #"-T \"${PROJECT_SOURCE_DIR}/ldscripts/mem.ld\" \
+  #-T \"${PROJECT_SOURCE_DIR}/ldscripts/libs.ld\" \
+  #-T \"${PROJECT_SOURCE_DIR}/ldscripts/sections.ld\" \
+  "-T \"${PROJECT_SOURCE_DIR}/ldscripts/stm32_flash.ld\" \
+-Xlinker --gc-sections -Wl,-Map,\"elka.map\" \
+--specs=nano.specs")
+#--specs=nosys.specs")
+#--specs=rdimon.specs")
+#-nostartfiles -Xlinker --gc-sections -Wl,-Map,\"elka.map\" \
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER__FLAGS} ${GCC_COVERAGE_LINK_FLAGS}")
 
-set(ELKA_LINK_LIBS "")
+#set(ELKA_LINK_LIBS rdimon)
 
 add_definitions(-DUSE_STDPERIPH_DRIVER)
 
@@ -40,11 +44,26 @@ ${PROJECT_SOURCE_DIR}/inc/utils
 
 add_subdirectory(src)
 
+# Set startup assembly file to be C file so that it may be linked
+# against
+set_property(
+  SOURCE src/startup/startup_stm32f4xx.s
+  PROPERTY LANGUAGE C
+)
+
 #FIXME make sure that this will create elka executable file
 #TODO link against libraries
 add_executable(elka
   src/main.c
+  #src/test.c
+  src/debug.c
+  src/hw_config.c
   src/_write.c
+  src/startup/startup_stm32f4xx.s
+)
+
+add_dependencies(elka
+  ${ELKA_LINK_LIBS}
 )
 
 target_link_libraries(elka
@@ -64,10 +83,21 @@ target_link_libraries(elka
 
 # ------------------------------------------
 # Add objcopy command to copy from .elf to .hex file at end
-#add_custom_command(
-#  OUTPUT elka.hex
-#  COMMAND arm-none-eabi-objcopy -O ihex "elka.elf" "elka.hex"
-#)
+add_custom_target(elka_hex)
+add_custom_command(
+  TARGET elka_hex
+  COMMAND arm-none-eabi-objcopy -O ihex "elka" "elka.hex" && chmod a+x elka.hex
+  DEPENDS elka
+  POST_BUILD
+)
+
+add_custom_target(elka_bin)
+add_custom_command(
+  TARGET elka_bin
+  COMMAND arm-none-eabi-objcopy -O binary "elka" "elka.bin" && chmod a+x elka.bin
+  DEPENDS elka
+  POST_BUILD
+)
 
 # Add size command to generate .siz file at end
 #add_custom_command(

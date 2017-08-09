@@ -1,3 +1,15 @@
 *.sw*
 build_elka/
 build_elka/*
+
+*.d
+
+*.obj
+*.o
+*.lo
+*.slo
+
+*.a
+*so
+
+*.pyc

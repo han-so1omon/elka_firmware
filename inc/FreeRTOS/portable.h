@@ -103,11 +103,12 @@
 #endif
 
 #ifdef GCC_ARM7
-	#include "../../Source/portable/GCC/ARM7_LPC2000/portmacro.h"
+	//#include "../../Source/portable/GCC/ARM7_LPC2000/portmacro.h"
+	#include "GCC/ARM7/portmacro.h"
 #endif
 
 #ifdef GCC_ARM7_ECLIPSE
-	#include "portmacro.h"
+	#include "GCC/ARM7/Eclipse/portmacro.h"
 #endif
 
 #ifdef ROWLEY_LPC23xx
@@ -179,13 +180,14 @@
 #endif
 
 #ifdef GCC_ARMCM3
-	#include "../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	//#include "../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	#include "GCC/ARM_CM3/portmacro.h"
 #endif
 
 #ifdef GCC_ARMCM4F
 	//#include "../../Source/portable/GCC/ARM_CM4F/portmacro.h"
 	//#include "../../FreeRTOS/portable/GCC/ARM_CM4F/portmacro.h"
-	#include "portmacro.h"
+	#include "GCC/ARM_CM4F/portmacro.h"
 #endif
 
 #ifdef IAR_ARM_CM3
