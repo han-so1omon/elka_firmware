@@ -1,0 +1,8 @@
+00000000  w      *UND*	00000000 malloc
+00000000  w      *UND*	00000000 __deregister_frame_info
+00000000  w      *UND*	00000000 software_init_hook
+00000000  w      *UND*	00000000 hardware_init_hook
+00000000  w      *UND*	00000000 __libc_fini
+00000000  w      *UND*	00000000 _Jv_RegisterClasses
+00000000  w      *UND*	00000000 __register_frame_info
+00000000  w      *UND*	00000000 free

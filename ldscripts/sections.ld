@@ -398,14 +398,13 @@ SECTIONS
     /* After that there are only debugging sections. */
     
     /* This can remove the debugging information from the standard libraries */    
-    /* 
     DISCARD :
     {
      libc.a ( * )
      libm.a ( * )
      libgcc.a ( * )
+     libnosys.a ( * )
      }
-     */
   
     /* Stabs debugging sections.  */
     .stab          0 : { *(.stab) }

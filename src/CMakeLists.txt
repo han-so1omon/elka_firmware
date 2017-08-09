@@ -10,7 +10,7 @@ add_subdirectory(modules)
 add_subdirectory(STM32F4xx_StdPeriph_Driver)
 add_subdirectory(utils)
 
-set(ELKA_LINK_LIBS
+set (ELKA_LINK_LIBS
   ${ELKA_LINK_LIBS}
   PARENT_SCOPE
 )
