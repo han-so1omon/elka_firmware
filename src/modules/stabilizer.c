@@ -25,9 +25,9 @@
  */
 #define ATTITUDE_UPDATE_RATE_DIVIDER  1
 #define FUSION_UPDATE_DT  (float)(1.0 / (IMU_UPDATE_FREQ / ATTITUDE_UPDATE_RATE_DIVIDER)) //(float)(ATTITUDE_UPDATE_RATE_DIVIDER/configTICK_RATE_HZ) //
-#define PID_GAINS 5
-#define SENSITIVITY 6
-#define TRIM 4
+#define PID_GAINS 1
+#define SENSITIVITY 2
+#define TRIM 3
 
 #define PRIVATE
 
@@ -36,10 +36,10 @@ Axis3f acc;  // Accelerometer axis data in mG
 Axis3i16   gyroMpu;
 Axis3i16   accelMpu;
 int8_t pitchkp = 4;
-int8_t pitchkd = 80;
-int8_t rollkp = -4;
-int8_t rollkd = 80;
-int8_t yawkp = 100;
+int8_t pitchkd = 60;
+int8_t rollkp = 4;
+int8_t rollkd = 60;
+int8_t yawkp = 150;
 int8_t pitchki, rollki;
 float f_actuatorThrust, f_actuatorRoll, f_actuatorPitch, f_actuatorYaw;
 
@@ -60,9 +60,10 @@ int16_t  actuatorPitch = 0;
 int16_t  actuatorYaw =0;
 int16_t actuatorLeftServo = 1500;
 int16_t actuatorRightServo = 1500;
-int16_t baseline = 0;//1000;
+int16_t baseline = 1000;
 
 int16_t trimThrust = 900; //900
+int16_t tempThrust = 900;
 int16_t trimRoll = 0;
 int16_t trimPitch = 0;
 int16_t trimYaw = 0;
@@ -72,7 +73,7 @@ float eulerPitchDesired = 0.0;
 int8_t t_sens = 10;//10
 int8_t r_sens = 1;//3
 int8_t p_sens = 1;//3
-int8_t y_sens = 30;//30;
+int8_t y_sens = 15;//30;
 float thrust_sens = 1.0;
 float roll_sens = 1.0;
 float yaw_sens = 1.0;
@@ -127,7 +128,7 @@ void stabilizerInit(void)
 
 static void stabilizerTask(void* param)
 {
-	bool i;
+	int i;
 	uint16_t ratio;
 	uint8_t data;
 	uint8_t buffer[14];
@@ -143,33 +144,38 @@ static void stabilizerTask(void* param)
 	eulerstruct euler;
 	rxpacket test;
 	static int k=0;
+	int counter=0,kay=0;
+	int initialize=0;
+	float actuatorThrusttemp, actuatorPitchtemp, actuatorRolltemp, actuatorYawtemp;
 
-	int bias = 0;
-    int biascount = 0;
-    int16_t spektrumbias[4]={0,0,0,0};
-    int ii = 0;
+	int spektrumchanneltemp[6];
+
+
+
 
 
 	while (1)
 	{
-		if (bias==0 & spektrumchannel[0]>100)
+
+		for(i=0;i<1000;i++)
 		{
-			for (biascount = 0; biascount<=100;biascount++)
+			if (spektrumchannel[5]>0)
 			{
-				for (ii=0; ii<=3; ii++)
+				if(initialize==0)
 				{
-					spektrumbias[ii] = spektrumchannel[ii];
+					for (i=0;i<5;i++)
+					{
+						spektrumchanneltemp[i] = spektrumchannel[i];
+					}
+
 				}
+				initialize=1;
 			}
-			bias = 1;
 		}
-
-
-
-
-		if (helicnt > 10)
+		if (helicnt > 100)
 		{
 			helicnt = 0;
+			STM_EVAL_LEDToggle(LED3);
 		}
 		helicnt++;
 		vTaskDelayUntil(&lastWakeTime,2);//F2T(IMU_UPDATE_FREQ)
@@ -222,7 +228,7 @@ static void stabilizerTask(void* param)
 			r_sens = test.data[5];
 			p_sens = test.data[6];
 			y_sens = test.data[7];*/
-			k=2;
+			//k=2;
 
 		}
 		else if (test.data[1] == TRIM && test.data[2]==255 && test.data[3] == 255)// && k==2)
@@ -234,23 +240,33 @@ static void stabilizerTask(void* param)
 			trimLeftServo = (test.data[12]<<8)+test.data[13];
 			trimRightServo = (test.data[14]<<8)+test.data[15];
 			//eulerPitchDesired = (test.data[16]<<8)+test.data[17];
-			k=3;
+			//k=3;
 		}
 
 
 
-		eulerPitchDesired = p_sens*(spektrumchannel[2]-spektrumbias[2])/10 + trimPitch; //use pitch stick to command attitude angle instead of actuator inputs.
-		eulerRollDesired = r_sens*(spektrumchannel[1]-spektrumbias[1])/10 + trimRoll;
-		f_actuatorThrust =  t_sens*(spektrumchannel[0]-spektrumbias[0])/10 + trimThrust;
-		f_actuatorRoll =    rollkd*gyro.x*0.017 - rollkp*(eulerRollActual - eulerRollDesired);
-		f_actuatorPitch =  pitchkd*gyro.y*0.017 - pitchkp*(eulerPitchActual - eulerPitchDesired);
-		f_actuatorYaw =   y_sens*(spektrumchannel[3]-spektrumbias[3])/10 + trimYaw - yawkp*gyro.z*0.017;
+		//		for (i=0;i<5;i++)
+		//		{
+		//			if(initialize==1)
+		//
+		//			{
+		//				if (abs(spektrumchanneltemp[i]-spektrumchannel[i])>300)
+		//				{
+		//					spektrumchannel[i]=spektrumchanneltemp[i];
+		//				}
+		//			}
+		//
+		//		}
 
-		if(helicnt==10)
-		{
-			//STM_EVAL_LEDToggle(LED3);
-			//vDebugPrintf("%i\r\n",accelMpu.z);
-		}
+
+		eulerPitchDesired = p_sens*(spektrumchannel[2]-baseline)*0.10; //use pitch stick to command attitude angle instead of actuator inputs.
+		eulerRollDesired = r_sens*(spektrumchannel[1]-baseline)*0.1;
+		f_actuatorThrust = (t_sens*spektrumchannel[0]*0.1) + trimThrust;
+		f_actuatorRoll =   rollkp*(eulerRollActual-eulerRollDesired) + rollkd*gyro.x*0.017 + trimRoll;  //r_sens*(spektrumchannel[1]-baseline)*0.1 +
+		f_actuatorPitch =  trimPitch + pitchkd*gyro.y*0.017 - pitchkp*(eulerPitchActual-eulerPitchDesired);
+		f_actuatorYaw =    y_sens*(spektrumchannel[3]-baseline)*0.1 + trimYaw + yawkp*gyro.z*0.017;
+
+
 
 		actuatorThrust = (int)(f_actuatorThrust); //(int16_t)(10*spektrumchannel[0]*0.1 + trimThrust);
 		actuatorRoll = (int)(f_actuatorRoll);
@@ -260,32 +276,70 @@ static void stabilizerTask(void* param)
 		euler.data[3] = (int)(actuatorThrust);
 		euler.data[4] = (int)(actuatorRoll);
 		euler.data[5] = (int)(actuatorPitch);
-		euler.data[6] = (int)(actuatorYaw);
+		euler.data[6] = (int)(helicnt);
 
 
-
-		/*euler.data[3] = (int)(spektrumchannel[0]);
-	    euler.data[4] = (int)(spektrumchannel[1]);
-		euler.data[5] = (int)(spektrumchannel[2]);
-		euler.data[6] = (int)(spektrumchannel[3]);*/
 		xQueueSend(eulerqueue,&euler,0);
+		distributePower(actuatorThrust, actuatorRoll, actuatorPitch, actuatorYaw, 0, 0);
+		//distributePower(1000, 0, 0, 0, 0, 0);
+		//
+		//		if (spektrumchannel[5]<1400)
+		//		{
+		//			counter++;
+		//		}
+		//		if (spektrumchannel[5]>1400 & actuatorThrust>1000)
+		//		{
+		//			distributePower(actuatorThrust, actuatorRoll, actuatorPitch, actuatorYaw, 0, 0);
+		//			//distributePower(actuatorThrust,0,0,0, 0, 0);
+		//			tempThrust = actuatorThrust;
+		//			counter=0;
+		//		}
+		//
+		//		else if(counter>1000 | actuatorThrust<=1000)// & spektrumchannel[6] ==1)
+		//		{
+		//			distributePower(1000, 0, 0, 0, 0, 0);
+		//			actuatorThrust=1000;
+		//
+		//		}
+		//
+		//		for (i=0;i<5;i++)
+		//		{
+		//
+		//			if (spektrumchannel[i]==0)
+		//			{
+		//				spektrumchannel[0] = 0;
+		//			}
+		//
+		//			if(initialize==1)
+		//			{
+		//			spektrumchanneltemp[i]=spektrumchannel[i];
+		//			}
+		//		}
 
 
-		if (actuatorThrust>1100)
-		{
-			distributePower(actuatorThrust, actuatorRoll, actuatorPitch, actuatorYaw, 0, 0);
-		}
-		else if(actuatorThrust<=1100 | spektrumchannel[0]<=100)
-		{
-			distributePower(1000,0,0,0,0,0);
-		}
-		//distributePower(1500, 0, 0, 0, 0, 0);
 
+
+
+		//euler.data[3] = (int)(spektrumchannel[0]);
+		//euler.data[4] = (int)(spektrumchannel[0]);
+		//euler.data[5] = (int)(spektrumchannel[5]);
+		//euler.data[6] = (int)(spektrumchanneltemp[0]);
+
+		//		else if(spektrumchannel[6]==0)
+		//		{
+		//			tempThrust = tempThrust-10;
+		//			distributePower(tempThrust,0,0,0,0,0);
+		//		}
+
+		//distributePower(spektrumchannel[0],0,0,0,0,0);
 
 
 		//vTaskDelay(LED[1]/portTICK_RATE_MS);
 		// vTaskDelay(10/portTICK_RATE_MS);
 		//vTaskDelay(1000);
+
+
+
 
 	}
 }
@@ -314,13 +368,18 @@ static void distributePower(const uint16_t thrust, const int16_t roll,
 
 static uint16_t limitThrust(int32_t value)
 {
-	if(value > 2000)
+	if(value > 5000)
 	{
 		value = 2000;
 	}
-	else if(value < 1000)
+	else if(value < 300 & value >200)
 	{
 		value = 1000;
+	}
+
+	else if(value <200)
+	{
+		value = 0;
 	}
 
 	return (uint16_t)value;
