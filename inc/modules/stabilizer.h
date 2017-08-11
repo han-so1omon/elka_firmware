@@ -26,6 +26,10 @@
 #ifndef STABILIZER_H_
 #define STABILIZER_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdbool.h>
 //#include <nrf24l01.h>
 
@@ -45,5 +49,9 @@ typedef struct
 
 uint16_t spektrumchannel[7];
 
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* STABILIZER_H_ */

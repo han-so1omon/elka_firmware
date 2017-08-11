@@ -5,10 +5,13 @@
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/7859817/
 $(VERBOSE).SILENT	build_elka/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE).SILENT	build_elka/msg/Makefile	/^$(VERBOSE).SILENT:$/;"	t
 $(VERBOSE).SILENT	build_elka/src/FreeRTOS/Makefile	/^$(VERBOSE).SILENT:$/;"	t
 $(VERBOSE).SILENT	build_elka/src/Makefile	/^$(VERBOSE).SILENT:$/;"	t
 $(VERBOSE).SILENT	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^$(VERBOSE).SILENT:$/;"	t
 $(VERBOSE).SILENT	build_elka/src/drivers/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE).SILENT	build_elka/src/elka_comm/common/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE).SILENT	build_elka/src/elka_comm/free_rtos/Makefile	/^$(VERBOSE).SILENT:$/;"	t
 $(VERBOSE).SILENT	build_elka/src/elka_hal/Makefile	/^$(VERBOSE).SILENT:$/;"	t
 $(VERBOSE).SILENT	build_elka/src/modules/Makefile	/^$(VERBOSE).SILENT:$/;"	t
 $(VERBOSE).SILENT	build_elka/src/utils/Makefile	/^$(VERBOSE).SILENT:$/;"	t
@@ -39,6 +42,30 @@ $(VERBOSE).SILENT	src/utils/Makefile	/^$(VERBOSE).SILENT:$/;"	t
 0.5.7 (2016-03-04)	tools/genmsg/CHANGELOG.rst	/^0.5.7 (2016-03-04)$/;"	s	chapter:Changelog for package genmsg
 0.5.8 (2016-09-02)	tools/genmsg/CHANGELOG.rst	/^0.5.8 (2016-09-02)$/;"	s	chapter:Changelog for package genmsg
 0.5.9 (2017-07-27)	tools/genmsg/CHANGELOG.rst	/^0.5.9 (2017-07-27)$/;"	s	chapter:Changelog for package genmsg
+ACK_ACCEPTED	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	static const uint8_t ACK_ACCEPTED = 1;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_ACCEPTED	build_elka/inc/uORB/topics/elka_msg_ack.h	/^#define ACK_ACCEPTED /;"	d
+ACK_ACCEPTED	build_elka/topics_temporary_header/elka_msg_ack.h	/^	static const uint8_t ACK_ACCEPTED = 1;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_ACCEPTED	build_elka/topics_temporary_header/elka_msg_ack.h	/^#define ACK_ACCEPTED /;"	d
+ACK_DENIED	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	static const uint8_t ACK_DENIED = 2;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_DENIED	build_elka/inc/uORB/topics/elka_msg_ack.h	/^#define ACK_DENIED /;"	d
+ACK_DENIED	build_elka/topics_temporary_header/elka_msg_ack.h	/^	static const uint8_t ACK_DENIED = 2;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_DENIED	build_elka/topics_temporary_header/elka_msg_ack.h	/^#define ACK_DENIED /;"	d
+ACK_FAILED	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	static const uint8_t ACK_FAILED = 4;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_FAILED	build_elka/inc/uORB/topics/elka_msg_ack.h	/^#define ACK_FAILED /;"	d
+ACK_FAILED	build_elka/topics_temporary_header/elka_msg_ack.h	/^	static const uint8_t ACK_FAILED = 4;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_FAILED	build_elka/topics_temporary_header/elka_msg_ack.h	/^#define ACK_FAILED /;"	d
+ACK_LEN	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	static const uint8_t ACK_LEN = 8;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_LEN	build_elka/inc/uORB/topics/elka_msg_ack.h	/^#define ACK_LEN /;"	d
+ACK_LEN	build_elka/topics_temporary_header/elka_msg_ack.h	/^	static const uint8_t ACK_LEN = 8;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_LEN	build_elka/topics_temporary_header/elka_msg_ack.h	/^#define ACK_LEN /;"	d
+ACK_NULL	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	static const uint8_t ACK_NULL = 0;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_NULL	build_elka/inc/uORB/topics/elka_msg_ack.h	/^#define ACK_NULL /;"	d
+ACK_NULL	build_elka/topics_temporary_header/elka_msg_ack.h	/^	static const uint8_t ACK_NULL = 0;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_NULL	build_elka/topics_temporary_header/elka_msg_ack.h	/^#define ACK_NULL /;"	d
+ACK_UNSUPPORTED	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	static const uint8_t ACK_UNSUPPORTED = 3;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_UNSUPPORTED	build_elka/inc/uORB/topics/elka_msg_ack.h	/^#define ACK_UNSUPPORTED /;"	d
+ACK_UNSUPPORTED	build_elka/topics_temporary_header/elka_msg_ack.h	/^	static const uint8_t ACK_UNSUPPORTED = 3;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint8_t
+ACK_UNSUPPORTED	build_elka/topics_temporary_header/elka_msg_ack.h	/^#define ACK_UNSUPPORTED /;"	d
 ACR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t ACR;      \/*!< FLASH access control register, Address offset: 0x00 *\/$/;"	m	struct:__anon5babb8181208	typeref:typename:__IO uint32_t
 ACR_BYTE0_ADDRESS	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.h	/^#define ACR_BYTE0_ADDRESS /;"	d
 ACTIVATE_DATA	src/drivers/nrf24l01.c	/^#define ACTIVATE_DATA /;"	d	file:
@@ -2017,10 +2044,13 @@ CLKCR_CLKEN_BB	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c	/^#define CLKCR_C
 CLKCR_OFFSET	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c	/^#define CLKCR_OFFSET /;"	d	file:
 CLKEN_BitNumber	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c	/^#define CLKEN_BitNumber /;"	d	file:
 CMAKE_BINARY_DIR	build_elka/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware\/build_elka$/;"	m
+CMAKE_BINARY_DIR	build_elka/msg/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware\/build_elka$/;"	m
 CMAKE_BINARY_DIR	build_elka/src/FreeRTOS/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware\/build_elka$/;"	m
 CMAKE_BINARY_DIR	build_elka/src/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware\/build_elka$/;"	m
 CMAKE_BINARY_DIR	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware\/build_elka$/;"	m
 CMAKE_BINARY_DIR	build_elka/src/drivers/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware\/build_elka$/;"	m
+CMAKE_BINARY_DIR	build_elka/src/elka_comm/common/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware\/build_elka$/;"	m
+CMAKE_BINARY_DIR	build_elka/src/elka_comm/free_rtos/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware\/build_elka$/;"	m
 CMAKE_BINARY_DIR	build_elka/src/elka_hal/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware\/build_elka$/;"	m
 CMAKE_BINARY_DIR	build_elka/src/modules/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware\/build_elka$/;"	m
 CMAKE_BINARY_DIR	build_elka/src/utils/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware\/build_elka$/;"	m
@@ -2032,10 +2062,13 @@ CMAKE_BINARY_DIR	src/elka_hal/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Progra
 CMAKE_BINARY_DIR	src/modules/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_stm32f4_cmake$/;"	m
 CMAKE_BINARY_DIR	src/utils/Makefile	/^CMAKE_BINARY_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_stm32f4_cmake$/;"	m
 CMAKE_COMMAND	build_elka/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build_elka/msg/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build_elka/src/FreeRTOS/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build_elka/src/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build_elka/src/drivers/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build_elka/src/elka_comm/common/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build_elka/src/elka_comm/free_rtos/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build_elka/src/elka_hal/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build_elka/src/modules/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build_elka/src/utils/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
@@ -2047,10 +2080,13 @@ CMAKE_COMMAND	src/elka_hal/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x
 CMAKE_COMMAND	src/modules/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
 CMAKE_COMMAND	src/utils/Makefile	/^CMAKE_COMMAND = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake$/;"	m
 CMAKE_SOURCE_DIR	build_elka/Makefile	/^CMAKE_SOURCE_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware$/;"	m
+CMAKE_SOURCE_DIR	build_elka/msg/Makefile	/^CMAKE_SOURCE_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware$/;"	m
 CMAKE_SOURCE_DIR	build_elka/src/FreeRTOS/Makefile	/^CMAKE_SOURCE_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware$/;"	m
 CMAKE_SOURCE_DIR	build_elka/src/Makefile	/^CMAKE_SOURCE_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware$/;"	m
 CMAKE_SOURCE_DIR	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^CMAKE_SOURCE_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware$/;"	m
 CMAKE_SOURCE_DIR	build_elka/src/drivers/Makefile	/^CMAKE_SOURCE_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware$/;"	m
+CMAKE_SOURCE_DIR	build_elka/src/elka_comm/common/Makefile	/^CMAKE_SOURCE_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware$/;"	m
+CMAKE_SOURCE_DIR	build_elka/src/elka_comm/free_rtos/Makefile	/^CMAKE_SOURCE_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware$/;"	m
 CMAKE_SOURCE_DIR	build_elka/src/elka_hal/Makefile	/^CMAKE_SOURCE_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware$/;"	m
 CMAKE_SOURCE_DIR	build_elka/src/modules/Makefile	/^CMAKE_SOURCE_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware$/;"	m
 CMAKE_SOURCE_DIR	build_elka/src/utils/Makefile	/^CMAKE_SOURCE_DIR = \/home\/eric\/Programs\/elka\/elka_firmware\/elka_firmware$/;"	m
@@ -2334,7 +2370,7 @@ Catkin (fuerte)	tools/genmsg/doc/developer.rst	/^Catkin (fuerte)$/;"	s	chapter:D
 Catkin (groovy)	tools/genmsg/doc/developer.rst	/^Catkin (groovy)$/;"	s	chapter:Developer documenation
 Changelog for package genmsg	tools/genmsg/CHANGELOG.rst	/^Changelog for package genmsg$/;"	c
 ChannelCnt	inc/serial_tasks.h	/^	uint8_t ChannelCnt;$/;"	m	struct:Pilot_ROS	typeref:typename:uint8_t
-ChannelCnt	src/main.c	/^	uint8_t ChannelCnt;$/;"	m	struct:SpektrumStateStruct	typeref:typename:uint8_t	file:
+ChannelCnt	src/main.cpp	/^	uint8_t ChannelCnt;$/;"	m	struct:SpektrumStateStruct	typeref:typename:uint8_t	file:
 CheckITStatus	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.c	/^static ITStatus CheckITStatus(uint32_t CAN_Reg, uint32_t It_Bit)$/;"	f	typeref:typename:ITStatus	file:
 Child	src/elka_comm/common/inet_comm.h	/^typedef struct Child {$/;"	s
 Child	src/elka_comm/common/inet_comm.h	/^} Child;$/;"	t	typeref:struct:Child
@@ -2349,7 +2385,6 @@ Constant	tools/genmsg/src/genmsg/msgs.py	/^class Constant(object):$/;"	c
 Contents	inc/Device/STM32F4xx/Release_Notes.html	/^<h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: initia/;"	i
 Contents	inc/STM32F4xx_StdPeriph_Driver/Release_Notes.html	/^    <h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: in/;"	i
 CopyDataInit	src/startup/startup_stm32f4xx.s	/^CopyDataInit:$/;"	l
-CopyDataInit	startup_stm32f4xx.s	/^CopyDataInit:$/;"	l
 CoreDebug	inc/CMSIS/core_cm4.h	/^#define CoreDebug /;"	d
 CoreDebug_BASE	inc/CMSIS/core_cm4.h	/^#define CoreDebug_BASE /;"	d
 CoreDebug_DCRSR_REGSEL_Msk	inc/CMSIS/core_cm4.h	/^#define CoreDebug_DCRSR_REGSEL_Msk /;"	d
@@ -2719,7 +2754,7 @@ DCTRL_SDIOEN_BB	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c	/^#define DCTRL_
 DEBUG_H_	inc/debug.h	/^#define DEBUG_H_$/;"	d
 DEBUG_MODULE	src/drivers/mpu6050.c	/^#define DEBUG_MODULE /;"	d	file:
 DEBUG_QUEUE_SIZE	src/debug.c	/^#define DEBUG_QUEUE_SIZE	/;"	d	file:
-DELAY	src/main.c	/^#define DELAY /;"	d	file:
+DELAY	src/main.cpp	/^#define DELAY /;"	d	file:
 DEMCR	inc/CMSIS/core_cm4.h	/^  __IO uint32_t DEMCR;                   \/*!< Offset: 0x00C (R\/W)  Debug Exception and Monitor/;"	m	struct:__anon7471197e1108	typeref:typename:__IO uint32_t
 DESBUSY_TIMEOUT	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_des.c	/^#define DESBUSY_TIMEOUT /;"	d	file:
 DEV_PROP_ELKA_SIDE	src/elka_comm/common/elka.h	/^#define DEV_PROP_ELKA_SIDE /;"	d
@@ -3176,7 +3211,6 @@ DUAL_SWTRIG_RESET	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.c	/^#define DUAL_
 DUAL_SWTRIG_SET	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.c	/^#define DUAL_SWTRIG_SET /;"	d	file:
 DUMMY_BYTE	src/drivers/nrf24l01.c	/^#define DUMMY_BYTE /;"	d	file:
 DUMMY_BYTE	src/utils/stm32f4_discovery_lis302dl.c	/^#define DUMMY_BYTE /;"	d	file:
-DUMMY_C	src/dummy.c	/^#define DUMMY_C$/;"	d	file:
 DURATION	tools/genmsg/src/genmsg/msgs.py	/^DURATION = 'duration'$/;"	v
 DURATION_MSG	tools/genmsg/src/genmsg/msgs.py	/^DURATION_MSG = "int32 secs\\nint32 nsecs"$/;"	v
 Data	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.h	/^  uint8_t Data[8]; \/*!< Contains the data to be received. It ranges from 0 to $/;"	m	struct:__anon9289f0a70408	typeref:typename:uint8_t[8]
@@ -3185,7 +3219,6 @@ Data	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.h	/^  uint32_t Data[5];      
 DebugMon_Handler	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_it.c	/^void DebugMon_Handler(void)$/;"	f	typeref:typename:void
 DebugMonitor_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  DebugMonitor_IRQn           = -4,     \/*!< 12 Cortex-M4 Debug Monitor Interrupt              /;"	e	enum:IRQn
 Default_Handler	src/startup/startup_stm32f4xx.s	/^Default_Handler:$/;"	l
-Default_Handler	startup_stm32f4xx.s	/^Default_Handler:$/;"	l
 DevIdVector	src/elka_comm/common/pyelka_common.cpp	/^typedef std::vector<dev_id_t> DevIdVector;$/;"	t	typeref:typename:std::vector<dev_id_t>	file:
 DevIdVector	src/elka_comm/pyelka_comm.cpp	/^typedef std::vector<dev_id_t> DevIdVector;$/;"	t	typeref:typename:std::vector<dev_id_t>	file:
 DevPropVector	src/elka_comm/common/pyelka_common.cpp	/^typedef std::vector<dev_prop_t> DevPropVector;$/;"	t	typeref:typename:std::vector<dev_prop_t>	file:
@@ -3203,10 +3236,14 @@ ELF_SRCS	Debug/sources.mk	/^ELF_SRCS := $/;"	m
 ELKAPort	src/elka_comm/free_rtos/elka_devices.cpp	/^elka::ELKAPort::ELKAPort(uint8_t port_num, uint8_t port_type,$/;"	f	class:elka::ELKAPort
 ELKAPort	src/elka_comm/free_rtos/elka_devices.h	/^class elka::ELKAPort : public elka::CommPort {$/;"	c	class:elka
 ELKA_COMM_H	src/elka_comm/common/elka_comm.h	/^#define ELKA_COMM_H$/;"	d
+ELKA_DEFINES_H	inc/elka_defines.h	/^#define ELKA_DEFINES_H$/;"	d
+ELKA_ERROR	inc/elka_defines.h	/^#define ELKA_ERROR /;"	d
 ELKA_FREE_RTOS_DEVICES_H	src/elka_comm/free_rtos/elka_devices.h	/^#define ELKA_FREE_RTOS_DEVICES_H$/;"	d
 ELKA_FREE_RTOS_H	src/elka_comm/free_rtos/elka_free_rtos.h	/^#define ELKA_FREE_RTOS_H$/;"	d
 ELKA_H	src/elka_comm/common/elka.h	/^#define ELKA_H$/;"	d
+ELKA_LOG_H	inc/elka_log.h	/^#define ELKA_LOG_H$/;"	d
 ELKA_MANAGER_H	src/elka_comm/posix/elka_manager.h	/^#define ELKA_MANAGER_H$/;"	d
+ELKA_OK	inc/elka_defines.h	/^#define ELKA_OK /;"	d
 ELKA_POSIX_DEVICES_H	src/elka_comm/gnd_station/elka_devices.h	/^#define ELKA_POSIX_DEVICES_H$/;"	d
 ELKA_POSIX_DEVICES_H	src/elka_comm/posix/elka_devices.h	/^#define ELKA_POSIX_DEVICES_H$/;"	d
 ELKA_POSIX_H	src/elka_comm/posix/elka_posix.h	/^#define ELKA_POSIX_H$/;"	d
@@ -3215,10 +3252,13 @@ EMR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t EMR;    \/*!< EXTI Event 
 ENABLE	inc/Device/STM32F4xx/stm32f4xx.h	/^typedef enum {DISABLE = 0, ENABLE = !DISABLE} FunctionalState;$/;"	e	enum:__anon5babb8180203
 ENCMDCOMPL_BitNumber	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c	/^#define ENCMDCOMPL_BitNumber /;"	d	file:
 EQUALS	build_elka/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build_elka/msg/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build_elka/src/FreeRTOS/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build_elka/src/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build_elka/src/drivers/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build_elka/src/elka_comm/common/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build_elka/src/elka_comm/free_rtos/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build_elka/src/elka_hal/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build_elka/src/modules/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build_elka/src/utils/Makefile	/^EQUALS = =$/;"	m
@@ -4775,7 +4815,6 @@ FTSR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t FTSR;   \/*!< EXTI Falli
 FUSION_UPDATE_DT	src/modules/stabilizer.c	/^#define FUSION_UPDATE_DT /;"	d	file:
 Field	tools/genmsg/src/genmsg/msgs.py	/^class Field(object):$/;"	c
 FillZerobss	src/startup/startup_stm32f4xx.s	/^FillZerobss:$/;"	l
-FillZerobss	startup_stm32f4xx.s	/^FillZerobss:$/;"	l
 FlagStatus	inc/Device/STM32F4xx/stm32f4xx.h	/^typedef enum {RESET = 0, SET = !RESET} FlagStatus, ITStatus;$/;"	t	typeref:enum:__anon5babb8180103
 Foo	tools/genmsg/test/test_genmsg_base.py	/^    class Foo(object):$/;"	c	function:test_plog	file:
 Foo	tools/genmsg/test/test_genmsg_msg_loader.py	/^    class Foo(object): pass$/;"	c	function:test_load_depends_srv	file:
@@ -5665,6 +5704,7 @@ INCLUDE_xTaskGetIdleTaskHandle	inc/FreeRTOS/FreeRTOS.h	/^	#define INCLUDE_xTaskG
 INCLUDE_xTaskGetSchedulerState	inc/FreeRTOS/FreeRTOS.h	/^	#define INCLUDE_xTaskGetSchedulerState /;"	d
 INCLUDE_xTaskResumeFromISR	inc/FreeRTOS/FreeRTOS.h	/^	#define INCLUDE_xTaskResumeFromISR /;"	d
 INCLUDE_xTimerGetTimerDaemonTaskHandle	inc/FreeRTOS/FreeRTOS.h	/^	#define INCLUDE_xTimerGetTimerDaemonTaskHandle /;"	d
+INCL_DEFAULT	tools/px_generate_uorb_topic_files.py	/^INCL_DEFAULT = ['std_msgs:.\/msg\/std_msgs']$/;"	v
 INC_FREERTOS_H	inc/FreeRTOS/FreeRTOS.h	/^#define INC_FREERTOS_H$/;"	d
 INET_COMM	src/elka_comm/common/inet_comm.h	/^#define INET_COMM$/;"	d
 INET_COMM	src/elka_comm/posix/inet_comm.h	/^#define INET_COMM$/;"	d
@@ -6180,7 +6220,6 @@ IWDG_WriteAccessCmd	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.c	/^void IWDG_
 IWDG_WriteAccess_Disable	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.h	/^#define IWDG_WriteAccess_Disable /;"	d
 IWDG_WriteAccess_Enable	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.h	/^#define IWDG_WriteAccess_Enable /;"	d
 Infinite_Loop	src/startup/startup_stm32f4xx.s	/^Infinite_Loop:$/;"	l
-Infinite_Loop	startup_stm32f4xx.s	/^Infinite_Loop:$/;"	l
 InvalidMsgSpec	tools/genmsg/src/genmsg/base.py	/^class InvalidMsgSpec(Exception):$/;"	c
 JDR1	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t JDR1;   \/*!< ADC injected data register 1,                Address offset: 0x3C /;"	m	struct:__anon5babb8180408	typeref:typename:__IO uint32_t
 JDR2	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t JDR2;   \/*!< ADC injected data register 2,                Address offset: 0x40 /;"	m	struct:__anon5babb8180408	typeref:typename:__IO uint32_t
@@ -6224,7 +6263,7 @@ LED6	inc/utils/stm32f4_discovery.h	/^  LED6 = 3$/;"	e	enum:__anon7f81810e0103
 LED6_GPIO_CLK	inc/utils/stm32f4_discovery.h	/^#define LED6_GPIO_CLK /;"	d
 LED6_GPIO_PORT	inc/utils/stm32f4_discovery.h	/^#define LED6_GPIO_PORT /;"	d
 LED6_PIN	inc/utils/stm32f4_discovery.h	/^#define LED6_PIN /;"	d
-LEDS	src/main.c	/^static const int LEDS[4][2] = {{LED3,DELAY*1},$/;"	v	typeref:typename:const int[4][2]	file:
+LEDS	src/main.cpp	/^static const int LEDS[4][2] = {{LED3,DELAY*1},$/;"	v	typeref:typename:const int[4][2]	file:
 LEDn	inc/utils/stm32f4_discovery.h	/^#define LEDn /;"	d
 LIBS	Debug/objects.mk	/^LIBS :=$/;"	m
 LIFCR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t LIFCR;  \/*!< DMA low interrupt flag clear register,  Address offset: 0x08 *\/$/;"	m	struct:__anon5babb8180f08	typeref:typename:__IO uint32_t
@@ -6351,6 +6390,10 @@ LIS302DL_Z_ENABLE	inc/utils/stm32f4_discovery_lis302dl.h	/^#define LIS302DL_Z_EN
 LISR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t LISR;   \/*!< DMA low interrupt status register,      Address offset: 0x00 *\/$/;"	m	struct:__anon5babb8180f08	typeref:typename:__IO uint32_t
 LIST_H	inc/FreeRTOS/list.h	/^#define LIST_H$/;"	d
 LOAD	inc/CMSIS/core_cm4.h	/^  __IO uint32_t LOAD;                    \/*!< Offset: 0x004 (R\/W)  SysTick Reload Value Regist/;"	m	struct:__anon7471197e0c08	typeref:typename:__IO uint32_t
+LOG_DEBUG	inc/elka_log.h	/^#define LOG_DEBUG(/;"	d
+LOG_ERR	inc/elka_log.h	/^#define LOG_ERR(/;"	d
+LOG_INFO	inc/elka_log.h	/^#define LOG_INFO(/;"	d
+LOG_WARN	inc/elka_log.h	/^#define LOG_WARN(/;"	d
 LSE_STARTUP_TIMEOUT	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_hal_conf.h	/^  #define LSE_STARTUP_TIMEOUT /;"	d
 LSE_VALUE	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_hal_conf.h	/^ #define LSE_VALUE /;"	d
 LSION_BitNumber	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c	/^#define LSION_BitNumber /;"	d	file:
@@ -6363,10 +6406,8 @@ License	inc/Device/STM32F4xx/Release_Notes.html	/^<h2 style="background: rgb(51,
 License	inc/STM32F4xx_StdPeriph_Driver/Release_Notes.html	/^    <h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: in/;"	a
 License	inc/STM32F4xx_StdPeriph_Driver/Release_Notes.html	/^    <h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: in/;"	i
 LoopCopyDataInit	src/startup/startup_stm32f4xx.s	/^LoopCopyDataInit:$/;"	l
-LoopCopyDataInit	startup_stm32f4xx.s	/^LoopCopyDataInit:$/;"	l
 LoopFillZerobss	src/startup/startup_stm32f4xx.s	/^LoopFillZerobss:$/;"	l
-LoopFillZerobss	startup_stm32f4xx.s	/^LoopFillZerobss:$/;"	l
-LostFrame_cnt	src/main.c	/^	uint8_t LostFrame_cnt;$/;"	m	struct:SpektrumStateStruct	typeref:typename:uint8_t	file:
+LostFrame_cnt	src/main.cpp	/^	uint8_t LostFrame_cnt;$/;"	m	struct:SpektrumStateStruct	typeref:typename:uint8_t	file:
 M0AR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t M0AR;   \/*!< DMA stream x memory 0 address register   *\/$/;"	m	struct:__anon5babb8180e08	typeref:typename:__IO uint32_t
 M1AR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t M1AR;   \/*!< DMA stream x memory 1 address register   *\/$/;"	m	struct:__anon5babb8180e08	typeref:typename:__IO uint32_t
 M2T	inc/FreeRTOS/FreeRTOSConfig.h	/^#define M2T(/;"	d
@@ -6399,6 +6440,10 @@ MAC_ADDR5	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_hal_conf.h	/^#define MAC_ADDR
 MASK	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t MASK;           \/*!< SDIO mask register,             Address offset: 0x3C *\/$/;"	m	struct:__anon5babb8181f08	typeref:typename:__IO uint32_t
 MAX_ELKA_DEVS	src/elka_comm/common/elka.h	/^#define MAX_ELKA_DEVS /;"	d
 MAX_MSG_LEN	src/elka_comm/common/elka.h	/^#define MAX_MSG_LEN /;"	d
+MAX_MSG_NUM	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	static const uint16_t MAX_MSG_NUM = 65535;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint16_t
+MAX_MSG_NUM	build_elka/inc/uORB/topics/elka_msg_ack.h	/^#define MAX_MSG_NUM /;"	d
+MAX_MSG_NUM	build_elka/topics_temporary_header/elka_msg_ack.h	/^	static const uint16_t MAX_MSG_NUM = 65535;$/;"	m	struct:elka_msg_ack_s	typeref:typename:const uint16_t
+MAX_MSG_NUM	build_elka/topics_temporary_header/elka_msg_ack.h	/^#define MAX_MSG_NUM /;"	d
 MAX_NAME_LEN	src/elka_comm/common/elka.h	/^#define MAX_NAME_LEN /;"	d
 MAX_NUM_RETRIES	src/elka_comm/common/elka.h	/^#define MAX_NUM_RETRIES /;"	d
 MAX_SERIAL_MSGS	src/elka_comm/free_rtos/elka_free_rtos.h	/^#define MAX_SERIAL_MSGS /;"	d
@@ -6432,6 +6477,7 @@ MODER	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t MODER;    \/*!< GPIO po
 MODE_DECRYPT	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.h	/^#define MODE_DECRYPT /;"	d
 MODE_ENCRYPT	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.h	/^#define MODE_ENCRYPT /;"	d
 MODIFY_REG	inc/Device/STM32F4xx/stm32f4xx.h	/^#define MODIFY_REG(/;"	d
+MODULES_UORB_UORBTOPICS_H_	inc/uORB/uORBTopics.h	/^#define MODULES_UORB_UORBTOPICS_H_$/;"	d
 MOTORS_PWM_BITS	inc/drivers/motors.h	/^#define MOTORS_PWM_BITS /;"	d
 MOTORS_PWM_PERIOD	inc/drivers/motors.h	/^#define MOTORS_PWM_PERIOD /;"	d
 MOTORS_PWM_PRESCALE	inc/drivers/motors.h	/^#define MOTORS_PWM_PRESCALE /;"	d
@@ -6844,6 +6890,10 @@ MSG_MOTOR_CMD	src/elka_comm/common/elka.h	/^#define MSG_MOTOR_CMD /;"	d
 MSG_NULL	src/elka_comm/common/elka.h	/^#define MSG_NULL /;"	d
 MSG_NUM_LEN	src/elka_comm/common/elka.h	/^#define MSG_NUM_LEN /;"	d
 MSG_NUM_SIZE	src/elka_comm/common/elka.h	/^#define MSG_NUM_SIZE /;"	d
+MSG_OFFSET	build_elka/inc/uORB/topics/elka_msg.h	/^	static const uint8_t MSG_OFFSET = 11;$/;"	m	struct:elka_msg_s	typeref:typename:const uint8_t
+MSG_OFFSET	build_elka/inc/uORB/topics/elka_msg.h	/^#define MSG_OFFSET /;"	d
+MSG_OFFSET	build_elka/topics_temporary_header/elka_msg.h	/^	static const uint8_t MSG_OFFSET = 11;$/;"	m	struct:elka_msg_s	typeref:typename:const uint8_t
+MSG_OFFSET	build_elka/topics_temporary_header/elka_msg.h	/^#define MSG_OFFSET /;"	d
 MSG_PORT_CTL	src/elka_comm/common/elka.h	/^#define MSG_PORT_CTL /;"	d
 MSG_ROUTE_CHANGED	src/elka_comm/common/elka.h	/^#define MSG_ROUTE_CHANGED /;"	d
 MSG_ROUTE_DEV_PROPS	src/elka_comm/common/elka.h	/^#define MSG_ROUTE_DEV_PROPS /;"	d
@@ -6879,13 +6929,17 @@ NDTR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t NDTR;   \/*!< DMA stream
 NIEN_BitNumber	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c	/^#define NIEN_BitNumber /;"	d	file:
 NMI_Handler	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_it.c	/^void NMI_Handler(void)$/;"	f	typeref:typename:void
 NO_BUF	src/elka_comm/common/elka.h	/^#define NO_BUF /;"	d
+NUM_OUTPUTS	build_elka/inc/uORB/topics/elka_msg.h	/^	static const uint8_t NUM_OUTPUTS = 4;$/;"	m	struct:elka_msg_s	typeref:typename:const uint8_t
+NUM_OUTPUTS	build_elka/inc/uORB/topics/elka_msg.h	/^#define NUM_OUTPUTS /;"	d
+NUM_OUTPUTS	build_elka/topics_temporary_header/elka_msg.h	/^	static const uint8_t NUM_OUTPUTS = 4;$/;"	m	struct:elka_msg_s	typeref:typename:const uint8_t
+NUM_OUTPUTS	build_elka/topics_temporary_header/elka_msg.h	/^#define NUM_OUTPUTS /;"	d
 NUM_RETRIES_SIZE	src/elka_comm/common/elka.h	/^#define NUM_RETRIES_SIZE /;"	d
 NVIC	inc/CMSIS/core_cm4.h	/^#define NVIC /;"	d
 NVIC_ADC_PRI	inc/nvicconf/nvicconf.h	/^#define NVIC_ADC_PRI /;"	d
 NVIC_BASE	inc/CMSIS/core_cm4.h	/^#define NVIC_BASE /;"	d
 NVIC_CONF_H_	inc/nvicconf/nvicconf.h	/^#define NVIC_CONF_H_$/;"	d
 NVIC_ClearPendingIRQ	inc/CMSIS/core_cm4.h	/^static __INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)$/;"	f	typeref:typename:__INLINE void
-NVIC_Configuration	src/main.c	/^void NVIC_Configuration(void)$/;"	f	typeref:typename:void
+NVIC_Configuration	src/main.cpp	/^void NVIC_Configuration(void)$/;"	f	typeref:typename:void
 NVIC_DecodePriority	inc/CMSIS/core_cm4.h	/^static __INLINE void NVIC_DecodePriority (uint32_t Priority, uint32_t PriorityGroup, uint32_t* p/;"	f	typeref:typename:__INLINE void
 NVIC_DisableIRQ	inc/CMSIS/core_cm4.h	/^static __INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)$/;"	f	typeref:typename:__INLINE void
 NVIC_EnableIRQ	inc/CMSIS/core_cm4.h	/^static __INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)$/;"	f	typeref:typename:__INLINE void
@@ -6971,6 +7025,19 @@ OPTCR_BYTE1_ADDRESS	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.h	/^#define O
 OPTCR_BYTE2_ADDRESS	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.h	/^#define OPTCR_BYTE2_ADDRESS /;"	d
 OPTKEYR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t OPTKEYR;  \/*!< FLASH option key register,     Address offset: 0x08 *\/$/;"	m	struct:__anon5babb8181208	typeref:typename:__IO uint32_t
 OR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint16_t OR;          \/*!< TIM option register,                 Address offset: 0x50 *\/$/;"	m	struct:__anon5babb8182108	typeref:typename:__IO uint16_t
+ORB_DECLARE	inc/uORB/uORB.h	/^# define ORB_DECLARE(/;"	d
+ORB_DEFINE	inc/uORB/uORB.h	/^#define ORB_DEFINE(/;"	d
+ORB_ID	inc/uORB/uORB.h	/^#define ORB_ID(/;"	d
+ORB_ID_VEHICLE_ATTITUDE_CONTROLS	inc/uORB/uORB.h	/^#define ORB_ID_VEHICLE_ATTITUDE_CONTROLS /;"	d
+ORB_MULTI_MAX_INSTANCES	inc/uORB/uORB.h	/^#define ORB_MULTI_MAX_INSTANCES	/;"	d
+ORB_PRIO	inc/uORB/uORB.h	/^enum ORB_PRIO {$/;"	g
+ORB_PRIO_DEFAULT	inc/uORB/uORB.h	/^	ORB_PRIO_DEFAULT = 75,$/;"	e	enum:ORB_PRIO
+ORB_PRIO_HIGH	inc/uORB/uORB.h	/^	ORB_PRIO_HIGH = 100,$/;"	e	enum:ORB_PRIO
+ORB_PRIO_LOW	inc/uORB/uORB.h	/^	ORB_PRIO_LOW = 50,$/;"	e	enum:ORB_PRIO
+ORB_PRIO_MAX	inc/uORB/uORB.h	/^	ORB_PRIO_MAX = 255$/;"	e	enum:ORB_PRIO
+ORB_PRIO_MIN	inc/uORB/uORB.h	/^	ORB_PRIO_MIN = 1, \/\/ leave 0 free for other purposes, eg. marking an uninitialized value$/;"	e	enum:ORB_PRIO
+ORB_PRIO_VERY_HIGH	inc/uORB/uORB.h	/^	ORB_PRIO_VERY_HIGH = 125,$/;"	e	enum:ORB_PRIO
+ORB_PRIO_VERY_LOW	inc/uORB/uORB.h	/^	ORB_PRIO_VERY_LOW = 25,$/;"	e	enum:ORB_PRIO
 OSPEEDR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t OSPEEDR;  \/*!< GPIO port output speed register,       Address offset: 0x08     /;"	m	struct:__anon5babb8181808	typeref:typename:__IO uint32_t
 OTG_FS_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  OTG_FS_IRQn                 = 67,     \/*!< USB OTG FS global Interrupt                       /;"	e	enum:IRQn
 OTG_FS_WKUP_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  OTG_FS_WKUP_IRQn            = 42,     \/*!< USB OTG FS Wakeup through EXTI line interrupt     /;"	e	enum:IRQn
@@ -6979,10 +7046,12 @@ OTG_HS_EP1_OUT_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  OTG_HS_EP1_OUT_IRQn    
 OTG_HS_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  OTG_HS_IRQn                 = 77,     \/*!< USB OTG HS global interrupt                       /;"	e	enum:IRQn
 OTG_HS_WKUP_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  OTG_HS_WKUP_IRQn            = 76,     \/*!< USB OTG HS Wakeup through EXTI interrupt          /;"	e	enum:IRQn
 OTYPER	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t OTYPER;   \/*!< GPIO port output type register,        Address offset: 0x04     /;"	m	struct:__anon5babb8181808	typeref:typename:__IO uint32_t
+OUTPUT_FILE_EXT	tools/px_generate_uorb_topic_files.py	/^OUTPUT_FILE_EXT = ['.h', '.cpp']$/;"	v
 O_SRCS	Debug/sources.mk	/^O_SRCS := $/;"	m
 Output_DataRate	inc/utils/stm32f4_discovery_lis302dl.h	/^  uint8_t Output_DataRate;                    \/* OUT data rate 100 Hz \/ 400 Hz *\/$/;"	m	struct:__anon556faaba0108	typeref:typename:uint8_t
 OwnAddress1	inc/drivers/i2croutines.h	/^#define OwnAddress1 /;"	d
 OwnAddress2	inc/drivers/i2croutines.h	/^#define OwnAddress2 /;"	d
+PACKAGE	tools/px_generate_uorb_topic_files.py	/^PACKAGE = 'px4'$/;"	v
 PAPER	tools/genmsg/doc/Makefile	/^PAPER         =$/;"	m
 PAPEROPT_a4	tools/genmsg/doc/Makefile	/^PAPEROPT_a4     = -D latex_paper_size=a4$/;"	m
 PAPEROPT_letter	tools/genmsg/doc/Makefile	/^PAPEROPT_letter = -D latex_paper_size=letter$/;"	m
@@ -7169,7 +7238,7 @@ PendSV_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  PendSV_IRQn                 = -
 Pilot_ROS	inc/serial_tasks.h	/^struct Pilot_ROS$/;"	s
 Power_Mode	inc/utils/stm32f4_discovery_lis302dl.h	/^  uint8_t Power_Mode;                         \/* Power-down\/Active Mode *\/$/;"	m	struct:__anon556faaba0108	typeref:typename:uint8_t
 PrimaryROSState	src/serial_tasks.c	/^ROS_Type PrimaryROSState = {0,{0}};$/;"	v	typeref:typename:ROS_Type
-PrimarySpektrumState	src/main.c	/^SpektrumStateType PrimarySpektrumState = {0,0,0,{0}};$/;"	v	typeref:typename:SpektrumStateType
+PrimarySpektrumState	src/main.cpp	/^SpektrumStateType PrimarySpektrumState = {0,0,0,{0}};$/;"	v	typeref:typename:SpektrumStateType
 Providing cmake code to catkin	tools/genmsg/doc/developer.rst	/^Providing cmake code to catkin$/;"	s	chapter:Developer documenation
 PyBROADCAST_MSG_ID	src/elka_comm/common/elka.h	/^#define PyBROADCAST_MSG_ID /;"	d
 PyCommPort	src/elka_comm/common/pyelka_common.h	/^template <class CommPortBase = CommPort> struct PyCommPort : public CommPortBase {$/;"	s	namespace:elka
@@ -7921,10 +7990,13 @@ RISR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t RISR;   \/*!< CRYP raw i
 RLR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t RLR;  \/*!< IWDG Reload register,    Address offset: 0x08 *\/$/;"	m	struct:__anon5babb8181b08	typeref:typename:__IO uint32_t
 RM	Debug/makefile	/^RM := rm -rf$/;"	m
 RM	build_elka/Makefile	/^RM = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake -E remove -f$/;"	m
+RM	build_elka/msg/Makefile	/^RM = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake -E remove -f$/;"	m
 RM	build_elka/src/FreeRTOS/Makefile	/^RM = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake -E remove -f$/;"	m
 RM	build_elka/src/Makefile	/^RM = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake -E remove -f$/;"	m
 RM	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^RM = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake -E remove -f$/;"	m
 RM	build_elka/src/drivers/Makefile	/^RM = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake -E remove -f$/;"	m
+RM	build_elka/src/elka_comm/common/Makefile	/^RM = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake -E remove -f$/;"	m
+RM	build_elka/src/elka_comm/free_rtos/Makefile	/^RM = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake -E remove -f$/;"	m
 RM	build_elka/src/elka_hal/Makefile	/^RM = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake -E remove -f$/;"	m
 RM	build_elka/src/modules/Makefile	/^RM = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake -E remove -f$/;"	m
 RM	build_elka/src/utils/Makefile	/^RM = \/opt\/cmake-3.4.3-Linux-x86_64\/bin\/cmake -E remove -f$/;"	m
@@ -8502,7 +8574,6 @@ RXCRCR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint16_t RXCRCR;     \/*!< SPI 
 Release Notes for STM32F4xx CMSIS	inc/Device/STM32F4xx/Release_Notes.html	/^Notes for STM32F4xx CMSIS<\/span><span style="font-size: 20pt; font-family: Verdana;"><o:p><\/o:/;"	h
 Release Notes for STM32F4xx Standard Peripherals Library Drivers (StdPeriph_Driver)	inc/STM32F4xx_StdPeriph_Driver/Release_Notes.html	/^    Peripherals Library Drivers (StdPeriph_Driver)<\/span><span style="font-size: 20pt; font-fam/;"	h
 Reset_Handler	src/startup/startup_stm32f4xx.s	/^Reset_Handler:  $/;"	l
-Reset_Handler	startup_stm32f4xx.s	/^Reset_Handler:  $/;"	l
 RouteMap	src/elka_comm/common/pyelka_common.cpp	/^					RouteMap;$/;"	t	typeref:typename:std::map<dev_id_t,elka::DeviceRoute,dev_id_tCmp>	file:
 RouteMap	src/elka_comm/pyelka_comm.cpp	/^					RouteMap;$/;"	t	typeref:typename:std::map<dev_id_t,elka::DeviceRoute,dev_id_tCmp>	file:
 Rx_Idx1	src/drivers/i2croutines.c	/^__IO uint8_t Tx_Idx1 = 0, Rx_Idx1 = 0;$/;"	v	typeref:typename:__IO uint8_t
@@ -8924,10 +8995,13 @@ SET_BIT	inc/Device/STM32F4xx/stm32f4xx.h	/^#define SET_BIT(/;"	d
 SHA1BUSY_TIMEOUT	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_sha1.c	/^#define SHA1BUSY_TIMEOUT /;"	d	file:
 SHCSR	inc/CMSIS/core_cm4.h	/^  __IO uint32_t SHCSR;                   \/*!< Offset: 0x024 (R\/W)  System Handler Control and /;"	m	struct:__anon7471197e0a08	typeref:typename:__IO uint32_t
 SHELL	build_elka/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build_elka/msg/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build_elka/src/FreeRTOS/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build_elka/src/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build_elka/src/drivers/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build_elka/src/elka_comm/common/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build_elka/src/elka_comm/free_rtos/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build_elka/src/elka_hal/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build_elka/src/modules/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build_elka/src/utils/Makefile	/^SHELL = \/bin\/sh$/;"	m
@@ -9172,10 +9246,13 @@ SUBDIRS	Debug/sources.mk	/^SUBDIRS := \\$/;"	m
 SUCCESS	inc/Device/STM32F4xx/stm32f4xx.h	/^typedef enum {ERROR = 0, SUCCESS = !ERROR} ErrorStatus;$/;"	e	enum:__anon5babb8180303
 SUCCESS	src/elka_comm/qurt/status.h	/^#define SUCCESS /;"	d
 SUFFIXES	build_elka/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build_elka/msg/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build_elka/src/FreeRTOS/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build_elka/src/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build_elka/src/drivers/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build_elka/src/elka_comm/common/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build_elka/src/elka_comm/free_rtos/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build_elka/src/elka_hal/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build_elka/src/modules/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build_elka/src/utils/Makefile	/^SUFFIXES =$/;"	m
@@ -9385,14 +9462,14 @@ SerialHandler	src/elka_comm/common/boost_uart.cpp	/^SerialHandler::SerialHandler
 SerialHandler	src/elka_comm/common/boost_uart.h	/^class SerialHandler {$/;"	c
 SetSysClock	src/STM32F4xx_StdPeriph_Driver/system_stm32f4xx.c	/^static void SetSysClock(void)$/;"	f	typeref:typename:void	file:
 SingleClick_Axes	inc/utils/stm32f4_discovery_lis302dl.h	/^  uint8_t SingleClick_Axes;                   \/* Single Click Axes Interrupts *\/$/;"	m	struct:__anon556faaba0308	typeref:typename:uint8_t
-SpektrumParser_DSMX	src/main.c	/^int SpektrumParser_DSMX(uint8_t c, SpektrumStateType* spektrum_state)$/;"	f	typeref:typename:int
-SpektrumStateStruct	src/main.c	/^struct SpektrumStateStruct$/;"	s	file:
-SpektrumStateType	src/main.c	/^typedef struct SpektrumStateStruct SpektrumStateType;$/;"	t	typeref:struct:SpektrumStateStruct	file:
+SpektrumParser_DSMX	src/main.cpp	/^int SpektrumParser_DSMX(uint8_t c, SpektrumStateType* spektrum_state)$/;"	f	typeref:typename:int
+SpektrumStateStruct	src/main.cpp	/^struct SpektrumStateStruct$/;"	s	file:
+SpektrumStateType	src/main.cpp	/^typedef struct SpektrumStateStruct SpektrumStateType;$/;"	t	typeref:struct:SpektrumStateStruct	file:
 SrvSpec	tools/genmsg/src/genmsg/srvs.py	/^class SrvSpec(object):$/;"	c
 StdId	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.h	/^  uint32_t StdId;  \/*!< Specifies the standard identifier.$/;"	m	struct:__anon9289f0a70308	typeref:typename:uint32_t
 StdId	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.h	/^  uint32_t StdId;  \/*!< Specifies the standard identifier.$/;"	m	struct:__anon9289f0a70408	typeref:typename:uint32_t
 Sync	inc/serial_tasks.h	/^	uint8_t Sync;$/;"	m	struct:Pilot_ROS	typeref:typename:uint8_t
-Sync	src/main.c	/^	uint8_t Sync;$/;"	m	struct:SpektrumStateStruct	typeref:typename:uint8_t	file:
+Sync	src/main.cpp	/^	uint8_t Sync;$/;"	m	struct:SpektrumStateStruct	typeref:typename:uint8_t	file:
 SysTick	inc/CMSIS/core_cm4.h	/^#define SysTick /;"	d
 SysTick_BASE	inc/CMSIS/core_cm4.h	/^#define SysTick_BASE /;"	d
 SysTick_CALIB_NOREF_Msk	inc/CMSIS/core_cm4.h	/^#define SysTick_CALIB_NOREF_Msk /;"	d
@@ -9433,6 +9510,7 @@ TDESBUSY_TIMEOUT	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_tdes.c	/^#define 
 TDHR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t TDHR; \/*!< CAN mailbox data high register *\/$/;"	m	struct:__anon5babb8180608	typeref:typename:__IO uint32_t
 TDLR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t TDLR; \/*!< CAN mailbox data low register *\/$/;"	m	struct:__anon5babb8180608	typeref:typename:__IO uint32_t
 TDTR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t TDTR; \/*!< CAN mailbox data length control and time stamp register *\/$/;"	m	struct:__anon5babb8180608	typeref:typename:__IO uint32_t
+TEMPLATE_FILE	tools/px_generate_uorb_topic_files.py	/^TEMPLATE_FILE = ['msg.h.template', 'msg.cpp.template']$/;"	v
 TER	inc/CMSIS/core_cm4.h	/^  __IO uint32_t TER;                     \/*!< Offset: 0xE00 (R\/W)  ITM Trace Enable Register  /;"	m	struct:__anon7471197e0d08	typeref:typename:__IO uint32_t
 TEST_CTX	tools/genmsg/test/test_genmsg_gentools.py	/^TEST_CTX = 'rosgraph_msgs'$/;"	v
 TI1_Config	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.c	/^static void TI1_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,$/;"	f	typeref:typename:void	file:
@@ -10029,6 +10107,8 @@ TIM_UpdateSource_Global	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.h	/^#define
 TIM_UpdateSource_Regular	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.h	/^#define TIM_UpdateSource_Regular /;"	d
 TIR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t TIR;  \/*!< CAN TX mailbox identifier register *\/$/;"	m	struct:__anon5babb8180608	typeref:typename:__IO uint32_t
 TMIDxR_TXRQ	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_can.c	/^#define TMIDxR_TXRQ /;"	d	file:
+TOPICS_LIST_TEMPLATE_FILE	tools/px_generate_uorb_topic_files.py	/^TOPICS_LIST_TEMPLATE_FILE = 'uORBTopics.cpp.template'$/;"	v
+TOPICS_TOKEN	tools/px_generate_uorb_topic_files.py	/^TOPICS_TOKEN = '# TOPICS '$/;"	v
 TPR	inc/CMSIS/core_cm4.h	/^  __IO uint32_t TPR;                     \/*!< Offset: 0xE40 (R\/W)  ITM Trace Privilege Registe/;"	m	struct:__anon7471197e0d08	typeref:typename:__IO uint32_t
 TR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t TR;      \/*!< RTC time register,                                        Address/;"	m	struct:__anon5babb8181e08	typeref:typename:__IO uint32_t
 TRANSFER_IT_ENABLE_MASK	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.c	/^#define TRANSFER_IT_ENABLE_MASK /;"	d	file:
@@ -10039,6 +10119,7 @@ TRUE	inc/stdbool.h	/^#define TRUE /;"	d
 TRUE	src/drivers/i2cdev.c	/^#define TRUE /;"	d	file:
 TRUE	src/drivers/mpu6050.c	/^#define TRUE /;"	d	file:
 TRUE	src/elka_hal/imu.c	/^#define TRUE /;"	d	file:
+TRX_WAIT_FOR_BYTE_TICKS	src/main.cpp	/^#define TRX_WAIT_FOR_BYTE_TICKS /;"	d	file:
 TSDR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t TSDR;      \/*!< RTC time stamp date register,                             Addre/;"	m	struct:__anon5babb8181e08	typeref:typename:__IO uint32_t
 TSR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t              TSR;                 \/*!< CAN transmit status register,        Add/;"	m	struct:__anon5babb8180908	typeref:typename:__IO uint32_t
 TSSSR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t TSSSR;     \/*!< RTC time-stamp sub second register,                       Addre/;"	m	struct:__anon5babb8181e08	typeref:typename:__IO uint32_t
@@ -10062,6 +10143,7 @@ UARTPort	src/elka_comm/qurt/snapdragon_uart_devices.h	/^class uart::UARTPort : p
 USART1	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART1 /;"	d
 USART1Init	src/hw_config.c	/^void USART1Init(uint32_t baudrate)$/;"	f	typeref:typename:void
 USART1_BASE	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART1_BASE /;"	d
+USART1_IRQHandler	src/main.cpp	/^void USART1_IRQHandler(void)$/;"	f	typeref:typename:void
 USART1_IRQHandler	src/serial_tasks.c	/^void USART1_IRQHandler(void)$/;"	f	typeref:typename:void
 USART1_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  USART1_IRQn                 = 37,     \/*!< USART1 global Interrupt                           /;"	e	enum:IRQn
 USART2	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART2 /;"	d
@@ -10071,6 +10153,7 @@ USART2_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  USART2_IRQn                 = 3
 USART3	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART3 /;"	d
 USART3Init	src/hw_config.c	/^void USART3Init(uint32_t baudrate)$/;"	f	typeref:typename:void
 USART3_BASE	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART3_BASE /;"	d
+USART3_IRQHandler	src/main.cpp	/^void USART3_IRQHandler(void)$/;"	f	typeref:typename:void
 USART3_IRQHandler	src/serial_tasks.c	/^void USART3_IRQHandler(void)$/;"	f	typeref:typename:void
 USART3_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  USART3_IRQn                 = 39,     \/*!< USART3 global Interrupt                           /;"	e	enum:IRQn
 USART6	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART6 /;"	d
@@ -10311,7 +10394,10 @@ Z	inc/CMSIS/core_cm4.h	/^    uint32_t Z:1;                        \/*!< bit:    
 _Bool	inc/stdbool.h	/^#define _Bool	/;"	d
 _MPU6050_H_	inc/drivers/mpu6050.h	/^#define _MPU6050_H_$/;"	d
 _STDBOOL_H	inc/stdbool.h	/^#define _STDBOOL_H$/;"	d
+_UORB_UORB_H	inc/uORB/uORB.h	/^#define _UORB_UORB_H$/;"	d
 __ASM	inc/CMSIS/core_cm4.h	/^  #define __ASM /;"	d
+__BEGIN_DECLS	inc/systemlib/visibility.h	/^#  define __BEGIN_DECLS	/;"	d
+__BEGIN_DECLS	inc/systemlib/visibility.h	/^#  define __BEGIN_DECLS$/;"	d
 __CFASSERT_H__	inc/utils/cfassert.h	/^#define __CFASSERT_H__$/;"	d
 __CLREX	inc/CMSIS/core_cmInstr.h	/^#define __CLREX /;"	d
 __CLREX	inc/CMSIS/core_cmInstr.h	/^__attribute__( ( always_inline ) ) static __INLINE void __CLREX(void)$/;"	f	typeref:typename:__INLINE void
@@ -10331,6 +10417,9 @@ __DMB	inc/CMSIS/core_cmInstr.h	/^#define __DMB(/;"	d
 __DMB	inc/CMSIS/core_cmInstr.h	/^__attribute__( ( always_inline ) ) static __INLINE void __DMB(void)$/;"	f	typeref:typename:__INLINE void
 __DSB	inc/CMSIS/core_cmInstr.h	/^#define __DSB(/;"	d
 __DSB	inc/CMSIS/core_cmInstr.h	/^__attribute__( ( always_inline ) ) static __INLINE void __DSB(void)$/;"	f	typeref:typename:__INLINE void
+__END_DECLS	inc/systemlib/visibility.h	/^#  define __END_DECLS	/;"	d
+__END_DECLS	inc/systemlib/visibility.h	/^#  define __END_DECLS$/;"	d
+__EXPORT	inc/systemlib/visibility.h	/^#define __EXPORT /;"	d
 __EXTI_H__	inc/drivers/exti.h	/^#define __EXTI_H__$/;"	d
 __FPU_PRESENT	inc/CMSIS/core_cm4.h	/^    #define __FPU_PRESENT /;"	d
 __FPU_PRESENT	inc/Device/STM32F4xx/stm32f4xx.h	/^#define __FPU_PRESENT /;"	d
@@ -10361,6 +10450,7 @@ __NVIC_PRIO_BITS	inc/Device/STM32F4xx/stm32f4xx.h	/^#define __NVIC_PRIO_BITS /;"
 __O	inc/CMSIS/core_cm4.h	/^#define     __O /;"	d
 __PKHBT	inc/CMSIS/core_cm4_simd.h	/^#define __PKHBT(/;"	d
 __PKHTB	inc/CMSIS/core_cm4_simd.h	/^#define __PKHTB(/;"	d
+__PRIVATE	inc/systemlib/visibility.h	/^#define __PRIVATE /;"	d
 __QADD	inc/CMSIS/core_cm4_simd.h	/^#define __QADD /;"	d
 __QADD16	inc/CMSIS/core_cm4_simd.h	/^#define __QADD16 /;"	d
 __QADD8	inc/CMSIS/core_cm4_simd.h	/^#define __QADD8 /;"	d
@@ -10452,6 +10542,7 @@ __STREXW	inc/CMSIS/core_cmInstr.h	/^#define __STREXW(/;"	d
 __STREXW	inc/CMSIS/core_cmInstr.h	/^__attribute__( ( always_inline ) ) static __INLINE uint32_t __STREXW(uint32_t value, volatile ui/;"	f	typeref:typename:__INLINE uint32_t
 __SXTAB16	inc/CMSIS/core_cm4_simd.h	/^#define __SXTAB16 /;"	d
 __SXTB16	inc/CMSIS/core_cm4_simd.h	/^#define __SXTB16 /;"	d
+__SYSTEMLIB_VISIBILITY_H	inc/systemlib/visibility.h	/^#define __SYSTEMLIB_VISIBILITY_H$/;"	d
 __SYSTEM_STM32F4XX_H	inc/Device/STM32F4xx/system_stm32f4xx.h	/^#define __SYSTEM_STM32F4XX_H$/;"	d
 __UADD16	inc/CMSIS/core_cm4_simd.h	/^#define __UADD16 /;"	d
 __UADD8	inc/CMSIS/core_cm4_simd.h	/^#define __UADD8 /;"	d
@@ -10546,6 +10637,7 @@ __anon5babb8182608	inc/Device/STM32F4xx/stm32f4xx.h	/^{$/;"	s
 __anon5c9ac9830103	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.h	/^{ $/;"	g
 __anon64b800a90108	inc/serial_tasks.h	/^{$/;"	s
 __anon64b800a90208	inc/serial_tasks.h	/^{$/;"	s
+__anon6bd514d20108	src/main.cpp	/^{$/;"	s	file:
 __anon7471197e010a	inc/CMSIS/core_cm4.h	/^{$/;"	u
 __anon7471197e0208	inc/CMSIS/core_cm4.h	/^  {$/;"	s	union:__anon7471197e010a
 __anon7471197e030a	inc/CMSIS/core_cm4.h	/^{$/;"	u
@@ -10631,10 +10723,13 @@ __anonf2da47d50902	src/elka_comm/pyelka_comm.cpp	/^				 [](RouteMap &m) {$/;"	f	
 __anonf2da47d50a02	src/elka_comm/pyelka_comm.cpp	/^						DevPropVector *p) {$/;"	f	function:PYBIND11_MODULE	file:
 __anonf2da47d50b02	src/elka_comm/pyelka_comm.cpp	/^						elka::DeviceRoute *d2) {$/;"	f	function:PYBIND11_MODULE	file:
 __anonf2da47d50c02	src/elka_comm/pyelka_comm.cpp	/^						uint8_t buf_type, uint8_t size, char *dev_name) {$/;"	f	function:PYBIND11_MODULE	file:
+__author__	tools/px_generate_uorb_topic_files.py	/^__author__ = "Sergey Belash, Thomas Gubler, Beat Kueng"$/;"	v
 __bool_true_false_are_defined	inc/stdbool.h	/^#define __bool_true_false_are_defined	/;"	d
+__copyright__	tools/px_generate_uorb_topic_files.py	/^__copyright__ = "Copyright (C) 2013-2016 PX4 Development Team."$/;"	v
 __disable_fault_irq	inc/CMSIS/core_cmFunc.h	/^#define __disable_fault_irq /;"	d
 __disable_fault_irq	inc/CMSIS/core_cmFunc.h	/^__attribute__( ( always_inline ) ) static __INLINE void __disable_fault_irq(void)$/;"	f	typeref:typename:__INLINE void
 __disable_irq	inc/CMSIS/core_cmFunc.h	/^__attribute__( ( always_inline ) ) static __INLINE void __disable_irq(void)$/;"	f	typeref:typename:__INLINE void
+__email__	tools/px_generate_uorb_topic_files.py	/^__email__ = "thomasgubler@gmail.com"$/;"	v
 __enable_fault_irq	inc/CMSIS/core_cmFunc.h	/^#define __enable_fault_irq /;"	d
 __enable_fault_irq	inc/CMSIS/core_cmFunc.h	/^__attribute__( ( always_inline ) ) static __INLINE void __enable_fault_irq(void)$/;"	f	typeref:typename:__INLINE void
 __enable_irq	inc/CMSIS/core_cmFunc.h	/^__attribute__( ( always_inline ) ) static __INLINE void __enable_irq(void)$/;"	f	typeref:typename:__INLINE void
@@ -10671,8 +10766,13 @@ __init__	tools/genmsg/src/genmsg/msgs.py	/^    def __init__(self, types, names, 
 __init__	tools/genmsg/src/genmsg/srvs.py	/^    def __init__(self, request, response, text, full_name = '', short_name = '', package = ''):$/;"	m	class:SrvSpec
 __interrupt	inc/FreeRTOS/portable.h	/^	typedef void ( __interrupt __far *pxISR )();$/;"	t	typeref:typename:void (__far * pxISR)()
 __interrupt	inc/FreeRTOS/portable.h	/^    typedef void ( __interrupt __far *pxISR )();$/;"	t	typeref:typename:void (__far * pxISR)()
+__license__	tools/px_generate_uorb_topic_files.py	/^__license__ = "BSD"$/;"	v
 __ne__	tools/genmsg/src/genmsg/msgs.py	/^    def __ne__(self, other):$/;"	m	class:MsgSpec
 __ne__	tools/genmsg/src/genmsg/srvs.py	/^    def __ne__(self, other):$/;"	m	class:SrvSpec
+__orb_elka_msg_ack_fields	build_elka/topics_sources/elka_msg_ack.cpp	/^const char *__orb_elka_msg_ack_fields = "uint64_t timestamp;uint64_t msg_id;uint16_t msg_num;uin/;"	v	typeref:typename:const char *
+__orb_elka_msg_ack_fields	build_elka/topics_temporary_sources/elka_msg_ack.cpp	/^const char *__orb_elka_msg_ack_fields = "uint64_t timestamp;uint64_t msg_id;uint16_t msg_num;uin/;"	v	typeref:typename:const char *
+__orb_elka_msg_fields	build_elka/topics_sources/elka_msg.cpp	/^const char *__orb_elka_msg_fields = "uint64_t timestamp;uint64_t msg_id;uint16_t msg_num;uint8_t/;"	v	typeref:typename:const char *
+__orb_elka_msg_fields	build_elka/topics_temporary_sources/elka_msg.cpp	/^const char *__orb_elka_msg_fields = "uint64_t timestamp;uint64_t msg_id;uint16_t msg_num;uint8_t/;"	v	typeref:typename:const char *
 __repr__	tools/genmsg/src/genmsg/msgs.py	/^    def __repr__(self):$/;"	m	class:Constant
 __repr__	tools/genmsg/src/genmsg/msgs.py	/^    def __repr__(self):$/;"	m	class:Field
 __repr__	tools/genmsg/src/genmsg/msgs.py	/^    def __repr__(self):$/;"	m	class:MsgSpec
@@ -10740,7 +10840,7 @@ _elka_snd	src/elka_comm/free_rtos/elka_devices.h	/^  struct elka_msg_s _elka_snd
 _elka_snd	src/elka_comm/gnd_station/elka_devices.h	/^  struct elka_msg_s _elka_snd,$/;"	m	class:elka::GroundPort	typeref:struct:elka_msg_s
 _elka_snd	src/elka_comm/posix/elka_devices.h	/^  struct elka_msg_s _elka_snd,$/;"	m	class:elka::PX4Port	typeref:struct:elka_msg_s
 _elka_snd	src/elka_comm/qurt/snapdragon_uart_devices.h	/^  elka_msg_s _elka_snd,$/;"	m	class:uart::UARTPort	typeref:typename:elka_msg_s
-_exit	src/_write.c	/^void _exit(int status) {$/;"	f	typeref:typename:void
+_exit	src/_write.cpp	/^void _exit(int status) {$/;"	f	typeref:typename:void
 _expecting_ack	src/elka_comm/common/elka_comm.h	/^  bool _expecting_ack;$/;"	m	struct:elka::ElkaBufferMsg	typeref:typename:bool
 _generate_from_spec	tools/genmsg/src/genmsg/template_tools.py	/^def _generate_from_spec(input_file, output_dir, template_dir, msg_context, spec, template_map, s/;"	f
 _generate_msg_from_file	tools/genmsg/src/genmsg/template_tools.py	/^def _generate_msg_from_file(input_file, output_dir, template_dir, search_path, package_name, msg/;"	f
@@ -10767,7 +10867,7 @@ _instance	src/elka_comm/qurt/snapdragon_uart_manager.h	/^  static Manager *_inst
 _io	src/elka_comm/common/boost_uart.h	/^  boost::asio::io_service _io;$/;"	m	class:SerialHandler	typeref:typename:boost::asio::io_service
 _ipaddr	src/elka_comm/common/inet_comm.cpp	/^struct in_addr _ipaddr;$/;"	v	typeref:struct:in_addr
 _ipaddr	src/elka_comm/posix/inet_comm.cpp	/^struct in_addr _ipaddr;$/;"	v	typeref:struct:in_addr
-_kill	src/_write.c	/^void _kill(int pid, int sig) {$/;"	f	typeref:typename:void
+_kill	src/_write.cpp	/^void _kill(int pid, int sig) {$/;"	f	typeref:typename:void
 _load_constant_line	tools/genmsg/src/genmsg/msg_loader.py	/^def _load_constant_line(orig_line):$/;"	f
 _load_field_line	tools/genmsg/src/genmsg/msg_loader.py	/^def _load_field_line(orig_line, package_context):$/;"	f
 _load_md5_tests	tools/genmsg/test/test_genmsg_gentools.py	/^def _load_md5_tests(dir_name):$/;"	f
@@ -10781,6 +10881,10 @@ _now	src/elka_comm/qurt/snapdragon_uart_devices.h	/^  hrt_abstime _now; $/;"	m	c
 _num_bytes	src/elka_comm/common/inet_comm.cpp	/^int _num_bytes;$/;"	v	typeref:typename:int
 _num_bytes	src/elka_comm/posix/inet_comm.cpp	/^int _num_bytes;$/;"	v	typeref:typename:int
 _num_retries	src/elka_comm/common/elka_comm.h	/^  uint8_t _num_retries;$/;"	m	struct:elka::ElkaBufferMsg	typeref:typename:uint8_t
+_padding0	build_elka/inc/uORB/topics/elka_msg.h	/^	uint8_t _padding0[5]; \/\/ required for logger$/;"	m	struct:elka_msg_s	typeref:typename:uint8_t[5]
+_padding0	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	uint8_t _padding0[4]; \/\/ required for logger$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint8_t[4]
+_padding0	build_elka/topics_temporary_header/elka_msg.h	/^	uint8_t _padding0[5]; \/\/ required for logger$/;"	m	struct:elka_msg_s	typeref:typename:uint8_t[5]
+_padding0	build_elka/topics_temporary_header/elka_msg_ack.h	/^	uint8_t _padding0[4]; \/\/ required for logger$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint8_t[4]
 _port_id	src/elka_comm/common/elka_comm.h	/^  dev_id_t _port_id;$/;"	m	struct:elka::SerialBuffer	typeref:typename:dev_id_t
 _port_num	src/elka_comm/common/elka_comm.h	/^  uint8_t _port_num;$/;"	m	struct:elka::CommPort	typeref:typename:uint8_t
 _portno	src/elka_comm/common/inet_comm.cpp	/^int _sockfd[2], _newsockfd, _portno[2];$/;"	v	typeref:typename:int[2][2]
@@ -10841,15 +10945,17 @@ _tx_sb	src/elka_comm/qurt/basic_uart.cpp	/^elka::SerialBuffer *_tx_sb[MAX_UART_P
 _type	src/elka_comm/common/elka_comm.h	/^  uint8_t _type;$/;"	m	struct:elka::SerialBuffer	typeref:typename:uint8_t
 _uart_devs	src/elka_comm/qurt/snapdragon_uart_manager.h	/^  UARTPort *_uart_devs[MAX_UART_PORTS]; \/\/ Allow at most MAX_UART_PORTS devices$/;"	m	class:uart::Manager	typeref:typename:UARTPort * []
 _unique_deps	tools/genmsg/src/genmsg/gentools.py	/^def _unique_deps(dep_list):$/;"	f
+_uorb_topics_count	build_elka/topics_sources/uORBTopics.cpp	/^const size_t _uorb_topics_count = 2;$/;"	v	typeref:typename:const size_t
+_uorb_topics_list	build_elka/topics_sources/uORBTopics.cpp	/^const struct orb_metadata* _uorb_topics_list[_uorb_topics_count] = { $/;"	v	typeref:typename:const struct orb_metadata * []
 _validate_TestString	tools/genmsg/test/test_genmsg_msg_loader.py	/^def _validate_TestString(msgspec):$/;"	f
-_write	src/_write.c	/^_write (int fd __attribute__((unused)), const char* buf __attribute__((unused)),$/;"	f	typeref:typename:ssize_t
-acc	src/main.c	/^Axis3f acc;  \/\/ Accelerometer axis data in mG$/;"	v	typeref:typename:Axis3f
+_write	src/_write.cpp	/^_write (int fd __attribute__((unused)), const char* buf __attribute__((unused)),$/;"	f	typeref:typename:ssize_t
+acc	src/main.cpp	/^Axis3f acc;  \/\/ Accelerometer axis data in mG$/;"	v	typeref:typename:Axis3f
 acc	src/modules/stabilizer.c	/^Axis3f acc;  \/\/ Accelerometer axis data in mG$/;"	v	typeref:typename:Axis3f
 accelBias	src/elka_hal/imu.c	/^BiasObj    accelBias;$/;"	v	typeref:typename:BiasObj
 accelLPF	src/elka_hal/imu.c	/^Axis3i16   accelLPF;$/;"	v	typeref:typename:Axis3i16
 accelLPFAligned	src/elka_hal/imu.c	/^Axis3i16   accelLPFAligned;$/;"	v	typeref:typename:Axis3i16
 accelMpu	src/elka_hal/imu.c	/^Axis3i16   accelMpu;$/;"	v	typeref:typename:Axis3i16
-accelMpu	src/main.c	/^Axis3i16   accelMpu;$/;"	v	typeref:typename:Axis3i16
+accelMpu	src/main.cpp	/^Axis3i16   accelMpu;$/;"	v	typeref:typename:Axis3i16
 accelMpu	src/modules/stabilizer.c	/^Axis3i16   accelMpu;$/;"	v	typeref:typename:Axis3i16
 accelStoredFilterValues	src/elka_hal/imu.c	/^Axis3i32   accelStoredFilterValues;$/;"	v	typeref:typename:Axis3i32
 actuatorLeftServo	src/modules/stabilizer.c	/^int16_t actuatorLeftServo = 1500;$/;"	v	typeref:typename:int16_t
@@ -10870,20 +10976,24 @@ adc_init	src/drivers/adc.c	/^void adc_init()$/;"	f	typeref:typename:void
 adc_init_multi	src/drivers/adc.c	/^void adc_init_multi()$/;"	f	typeref:typename:void
 adcstruct	inc/drivers/adc.h	/^} adcstruct;$/;"	t	typeref:struct:__anon87c6d37a0108
 adctransferQueue	src/drivers/adc.c	/^xQueueHandle      adcQueue, adctransferQueue;$/;"	v	typeref:typename:xQueueHandle
-adctransferQueue	src/main.c	/^xQueueHandle xDebugQueue, uartData, adctransferQueue;$/;"	v	typeref:typename:xQueueHandle
+adctransferQueue	src/main.cpp	/^xQueueHandle xDebugQueue, uartData, adctransferQueue,$/;"	v	typeref:typename:xQueueHandle
 add_msg	src/elka_comm/free_rtos/elka_devices.cpp	/^uint8_t elka::ELKAPort::add_msg($/;"	f	class:elka::ELKAPort	typeref:typename:uint8_t
 add_msg	src/elka_comm/gnd_station/elka_devices.cpp	/^uint8_t elka::GroundPort::add_msg($/;"	f	class:elka::GroundPort	typeref:typename:uint8_t
 add_msg	src/elka_comm/posix/elka_devices.cpp	/^uint8_t elka::PX4Port::add_msg($/;"	f	class:elka::PX4Port	typeref:typename:uint8_t
 add_msg	src/elka_comm/qurt/snapdragon_uart_devices.cpp	/^uint8_t uart::UARTPort::add_msg($/;"	f	class:uart::UARTPort	typeref:typename:uint8_t
+add_padding_bytes	tools/px_generate_uorb_topic_helper.py	/^def add_padding_bytes(fields, search_path):$/;"	f
 add_prop	src/elka_comm/common/elka_comm.cpp	/^void elka::DeviceRoute::add_prop(dev_prop_t prop) {$/;"	f	class:elka::DeviceRoute	typeref:typename:void
 all	Debug/makefile	/^all: elka_stm32f4_makefile.elf secondary-outputs$/;"	t
 all	Makefile	/^.PHONY all:$/;"	t
-all	Makefile	/^all: elka$/;"	t
+all	Makefile	/^all: elka update$/;"	t
 all	build_elka/Makefile	/^all: cmake_check_build_system$/;"	t
+all	build_elka/msg/Makefile	/^all: cmake_check_build_system$/;"	t
 all	build_elka/src/FreeRTOS/Makefile	/^all: cmake_check_build_system$/;"	t
 all	build_elka/src/Makefile	/^all: cmake_check_build_system$/;"	t
 all	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^all: cmake_check_build_system$/;"	t
 all	build_elka/src/drivers/Makefile	/^all: cmake_check_build_system$/;"	t
+all	build_elka/src/elka_comm/common/Makefile	/^all: cmake_check_build_system$/;"	t
+all	build_elka/src/elka_comm/free_rtos/Makefile	/^all: cmake_check_build_system$/;"	t
 all	build_elka/src/elka_hal/Makefile	/^all: cmake_check_build_system$/;"	t
 all	build_elka/src/modules/Makefile	/^all: cmake_check_build_system$/;"	t
 all	build_elka/src/utils/Makefile	/^all: cmake_check_build_system$/;"	t
@@ -10894,8 +11004,11 @@ all	src/drivers/Makefile	/^all: cmake_check_build_system$/;"	t
 all	src/elka_hal/Makefile	/^all: cmake_check_build_system$/;"	t
 all	src/modules/Makefile	/^all: cmake_check_build_system$/;"	t
 all	src/utils/Makefile	/^all: cmake_check_build_system$/;"	t
+append_to_include_path	tools/px_generate_uorb_topic_files.py	/^def append_to_include_path(path_to_append, curr_include):$/;"	f
+args	tools/px_generate_uorb_topic_files.py	/^        args = parser.parse_args()$/;"	v
+arming_state_t	inc/uORB/uORB.h	/^typedef uint8_t arming_state_t;$/;"	t	typeref:typename:uint8_t
 assertFail	src/utils/cfassert.c	/^void assertFail(char *exp, char *file, int line)$/;"	f	typeref:typename:void
-assert_failed	src/main.c	/^void assert_failed(uint8_t* file, uint32_t line)$/;"	f	typeref:typename:void
+assert_failed	src/main.cpp	/^void assert_failed(uint8_t* file, uint32_t line)$/;"	f	typeref:typename:void
 assert_param	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_conf.h	/^  #define assert_param(/;"	d
 assert_param	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_hal_conf.h	/^  #define assert_param(/;"	d
 assign_read_callback	src/elka_comm/qurt/snapdragon_uart_devices.cpp	/^int uart::UARTPort::assign_read_callback() {$/;"	f	class:uart::UARTPort	typeref:typename:int
@@ -10907,14 +11020,15 @@ autopilot_ctl_port	src/elka_comm/gnd_station/elka_devices.cpp	/^uint8_t elka::Gr
 autopilot_ctl_port	src/elka_comm/gnd_station/pyelka_gnd_station.h	/^  uint8_t autopilot_ctl_port() override {$/;"	f	struct:elka::PyGroundPort	typeref:typename:uint8_t
 autopilot_ctl_port	src/elka_comm/posix/elka_devices.cpp	/^uint8_t elka::PX4Port::autopilot_ctl_port() {$/;"	f	class:elka::PX4Port	typeref:typename:uint8_t
 autopilot_ctl_port	src/elka_comm/qurt/snapdragon_uart_devices.cpp	/^uint8_t uart::UARTPort::autopilot_ctl_port() {$/;"	f	class:uart::UARTPort	typeref:typename:uint8_t
-axi16	src/main.c	/^int16_t axi16, ayi16, azi16;$/;"	v	typeref:typename:int16_t
-ayi16	src/main.c	/^int16_t axi16, ayi16, azi16;$/;"	v	typeref:typename:int16_t
-azi16	src/main.c	/^int16_t axi16, ayi16, azi16;$/;"	v	typeref:typename:int16_t
+axi16	src/main.cpp	/^int16_t axi16, ayi16, azi16;$/;"	v	typeref:typename:int16_t
+ayi16	src/main.cpp	/^int16_t axi16, ayi16, azi16;$/;"	v	typeref:typename:int16_t
+azi16	src/main.cpp	/^int16_t axi16, ayi16, azi16;$/;"	v	typeref:typename:int16_t
 b	inc/CMSIS/core_cm4.h	/^  } b;                                   \/*!< Structure used for bit  access                  */;"	m	union:__anon7471197e010a	typeref:struct:__anon7471197e010a::__anon7471197e0208
 b	inc/CMSIS/core_cm4.h	/^  } b;                                   \/*!< Structure used for bit  access                  */;"	m	union:__anon7471197e030a	typeref:struct:__anon7471197e030a::__anon7471197e0408
 b	inc/CMSIS/core_cm4.h	/^  } b;                                   \/*!< Structure used for bit  access                  */;"	m	union:__anon7471197e050a	typeref:struct:__anon7471197e050a::__anon7471197e0608
 b	inc/CMSIS/core_cm4.h	/^  } b;                                   \/*!< Structure used for bit  access                  */;"	m	union:__anon7471197e070a	typeref:struct:__anon7471197e070a::__anon7471197e0808
 bare_msg_type	tools/genmsg/src/genmsg/msgs.py	/^def bare_msg_type(msg_type):$/;"	f
+bare_name	tools/px_generate_uorb_topic_helper.py	/^def bare_name(msg_type):$/;"	f
 bare_type	tools/genmsg/scripts/genmsg_check_deps.py	/^    bare_type = bare_msg_type(unresolved_type)$/;"	v
 baseline	src/modules/stabilizer.c	/^int16_t baseline = 0;\/\/1000;$/;"	v	typeref:typename:int16_t
 beta	src/modules/sensfusion6.c	/^  float beta = BETA_DEF;     \/\/ 2 * proportional gain (Kp)$/;"	v	typeref:typename:float
@@ -10944,8 +11058,8 @@ cfassert.s	build_elka/src/utils/Makefile	/^cfassert.s: cfassert.c.s$/;"	t
 change_route	src/elka_comm/common/elka_comm.cpp	/^void elka::CommPort::change_route($/;"	f	class:elka::CommPort	typeref:typename:void
 change_route	src/elka_comm/common/elka_comm.cpp	/^void elka::CommPort::change_route(dev_id_t &dev,$/;"	f	class:elka::CommPort	typeref:typename:void
 changes	tools/genmsg/doc/Makefile	/^changes:$/;"	t
-channeldata	src/main.c	/^int channeldata[7];$/;"	v	typeref:typename:int[7]
-channelnum	src/main.c	/^int channelnum;$/;"	v	typeref:typename:int
+channeldata	src/main.cpp	/^int channeldata[7];$/;"	v	typeref:typename:int[7]
+channelnum	src/main.cpp	/^int channelnum;$/;"	v	typeref:typename:int
 check_ack	src/elka_comm/free_rtos/elka_devices.cpp	/^uint8_t elka::ELKAPort::check_ack(struct elka_msg_ack_s &elka_ack) {$/;"	f	class:elka::ELKAPort	typeref:typename:uint8_t
 check_ack	src/elka_comm/gnd_station/elka_devices.cpp	/^uint8_t elka::GroundPort::check_ack(struct elka_msg_ack_s &elka_ack) {$/;"	f	class:elka::GroundPort	typeref:typename:uint8_t
 check_ack	src/elka_comm/posix/elka_devices.cpp	/^uint8_t elka::PX4Port::check_ack(struct elka_msg_ack_s &elka_ack) {$/;"	f	class:elka::PX4Port	typeref:typename:uint8_t
@@ -10962,10 +11076,13 @@ check_uart_dev	src/elka_comm/qurt/snapdragon_uart_manager.cpp	/^bool uart::Manag
 clean	Debug/makefile	/^clean:$/;"	t
 clean	Makefile	/^clean:$/;"	t
 clean	build_elka/Makefile	/^clean:$/;"	t
+clean	build_elka/msg/Makefile	/^clean:$/;"	t
 clean	build_elka/src/FreeRTOS/Makefile	/^clean:$/;"	t
 clean	build_elka/src/Makefile	/^clean:$/;"	t
 clean	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^clean:$/;"	t
 clean	build_elka/src/drivers/Makefile	/^clean:$/;"	t
+clean	build_elka/src/elka_comm/common/Makefile	/^clean:$/;"	t
+clean	build_elka/src/elka_comm/free_rtos/Makefile	/^clean:$/;"	t
 clean	build_elka/src/elka_hal/Makefile	/^clean:$/;"	t
 clean	build_elka/src/modules/Makefile	/^clean:$/;"	t
 clean	build_elka/src/utils/Makefile	/^clean:$/;"	t
@@ -10978,10 +11095,13 @@ clean	src/modules/Makefile	/^clean:$/;"	t
 clean	src/utils/Makefile	/^clean:$/;"	t
 clean	tools/genmsg/doc/Makefile	/^clean:$/;"	t
 clean/fast	build_elka/Makefile	/^clean\/fast: clean$/;"	t
+clean/fast	build_elka/msg/Makefile	/^clean\/fast: clean$/;"	t
 clean/fast	build_elka/src/FreeRTOS/Makefile	/^clean\/fast: clean$/;"	t
 clean/fast	build_elka/src/Makefile	/^clean\/fast: clean$/;"	t
 clean/fast	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^clean\/fast: clean$/;"	t
 clean/fast	build_elka/src/drivers/Makefile	/^clean\/fast: clean$/;"	t
+clean/fast	build_elka/src/elka_comm/common/Makefile	/^clean\/fast: clean$/;"	t
+clean/fast	build_elka/src/elka_comm/free_rtos/Makefile	/^clean\/fast: clean$/;"	t
 clean/fast	build_elka/src/elka_hal/Makefile	/^clean\/fast: clean$/;"	t
 clean/fast	build_elka/src/modules/Makefile	/^clean\/fast: clean$/;"	t
 clean/fast	build_elka/src/utils/Makefile	/^clean\/fast: clean$/;"	t
@@ -10995,10 +11115,13 @@ clean/fast	src/utils/Makefile	/^clean\/fast: clean$/;"	t
 clear_contents	src/elka_comm/common/elka_comm.cpp	/^void elka::ElkaBufferMsg::clear_contents() {$/;"	f	class:elka::ElkaBufferMsg	typeref:typename:void
 close	src/elka_comm/qurt/snapdragon_uart_devices.cpp	/^int uart::UARTPort::close() {$/;"	f	class:uart::UARTPort	typeref:typename:int
 cmake_check_build_system	build_elka/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_check_build_system	build_elka/msg/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_check_build_system	build_elka/src/FreeRTOS/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_check_build_system	build_elka/src/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_check_build_system	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_check_build_system	build_elka/src/drivers/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_check_build_system	build_elka/src/elka_comm/common/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_check_build_system	build_elka/src/elka_comm/free_rtos/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_check_build_system	build_elka/src/elka_hal/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_check_build_system	build_elka/src/modules/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_check_build_system	build_elka/src/utils/Makefile	/^cmake_check_build_system:$/;"	t
@@ -11010,10 +11133,13 @@ cmake_check_build_system	src/elka_hal/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_check_build_system	src/modules/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_check_build_system	src/utils/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_force	build_elka/Makefile	/^cmake_force:$/;"	t
+cmake_force	build_elka/msg/Makefile	/^cmake_force:$/;"	t
 cmake_force	build_elka/src/FreeRTOS/Makefile	/^cmake_force:$/;"	t
 cmake_force	build_elka/src/Makefile	/^cmake_force:$/;"	t
 cmake_force	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^cmake_force:$/;"	t
 cmake_force	build_elka/src/drivers/Makefile	/^cmake_force:$/;"	t
+cmake_force	build_elka/src/elka_comm/common/Makefile	/^cmake_force:$/;"	t
+cmake_force	build_elka/src/elka_comm/free_rtos/Makefile	/^cmake_force:$/;"	t
 cmake_force	build_elka/src/elka_hal/Makefile	/^cmake_force:$/;"	t
 cmake_force	build_elka/src/modules/Makefile	/^cmake_force:$/;"	t
 cmake_force	build_elka/src/utils/Makefile	/^cmake_force:$/;"	t
@@ -11028,6 +11154,7 @@ cmp_dev_id_t	src/elka_comm/common/elka.h	/^inline int8_t cmp_dev_id_t(dev_id_t d
 cmp_dev_prop_t	src/elka_comm/common/elka.h	/^inline int8_t cmp_dev_prop_t(dev_prop_t d1, dev_prop_t d2) {$/;"	f	typeref:typename:int8_t
 cmp_msg_id_t	src/elka_comm/common/elka.h	/^inline int8_t cmp_msg_id_t(msg_id_t m1, msg_id_t m2) {$/;"	f	typeref:typename:int8_t
 commanded	inc/serial_tasks.h	/^	uint8_t commanded[24];$/;"	m	struct:__anon64b800a90108	typeref:typename:uint8_t[24]
+commanded	src/main.cpp	/^	uint8_t commanded[16];$/;"	m	struct:__anon6bd514d20108	typeref:typename:uint8_t[16]	file:
 compute_full_text	tools/genmsg/src/genmsg/gentools.py	/^def compute_full_text(msg_context, spec):$/;"	f
 compute_full_type_name	tools/genmsg/src/genmsg/gentools.py	/^def compute_full_type_name(package_name, file_name):$/;"	f
 compute_md5	tools/genmsg/src/genmsg/gentools.py	/^def compute_md5(msg_context, spec):$/;"	f
@@ -11081,6 +11208,10 @@ configUSE_TIMERS	inc/FreeRTOS/FreeRTOSConfig.h	/^#define configUSE_TIMERS	/;"	d
 configUSE_TRACE_FACILITY	inc/FreeRTOS/FreeRTOSConfig.h	/^#define configUSE_TRACE_FACILITY	/;"	d
 connect	src/elka_comm/common/boost_uart.cpp	/^bool SerialHandler::connect($/;"	f	class:SerialHandler	typeref:typename:bool
 convert_constant_value	tools/genmsg/src/genmsg/msg_loader.py	/^def convert_constant_value(field_type, val):$/;"	f
+convert_dir	tools/px_generate_uorb_topic_files.py	/^def convert_dir(format_idx, inputdir, outputdir, templatedir):$/;"	f
+convert_dir_save	tools/px_generate_uorb_topic_files.py	/^def convert_dir_save(format_idx, inputdir, outputdir, templatedir, temporarydir, prefix, quiet=F/;"	f
+convert_type	tools/px_generate_uorb_topic_helper.py	/^def convert_type(spec_type):$/;"	f
+copy_changed	tools/px_generate_uorb_topic_files.py	/^def copy_changed(inputdir, outputdir, prefix='', quiet=False):$/;"	f
 copyright	tools/genmsg/doc/conf.py	/^copyright = u'2011, Willow Garage'$/;"	v
 corCRCB	inc/FreeRTOS/croutine.h	/^} corCRCB; \/* Co-routine control block.  Note must be identical in size down to uxPriority with/;"	t	typeref:struct:corCoRoutineControlBlock
 corCoRoutineControlBlock	inc/FreeRTOS/croutine.h	/^typedef struct corCoRoutineControlBlock$/;"	s
@@ -11106,17 +11237,22 @@ d	tools/genmsg/setup.py	/^d = generate_distutils_setup($/;"	v
 dDummy	src/FreeRTOS/MemMang/heap_1.c	/^		volatile portDOUBLE dDummy;$/;"	m	union:xRTOS_HEAP	typeref:typename:volatile portDOUBLE	file:
 daemon_task	src/elka_comm/posix/elka_posix.cpp	/^static int daemon_task[2];$/;"	v	typeref:typename:int[2]	file:
 daemon_task	src/elka_comm/qurt/snapdragon_uart.cpp	/^static int daemon_task[2];$/;"	v	typeref:typename:int[2]	file:
+data	build_elka/inc/uORB/topics/elka_msg.h	/^	uint8_t data[256];$/;"	m	struct:elka_msg_s	typeref:typename:uint8_t[256]
+data	build_elka/topics_temporary_header/elka_msg.h	/^	uint8_t data[256];$/;"	m	struct:elka_msg_s	typeref:typename:uint8_t[256]
 data	inc/drivers/adc.h	/^	uint16_t data[NBR_OF_ADC_CHANNELS];$/;"	m	struct:__anon87c6d37a0108	typeref:typename:uint16_t[]
 data	inc/modules/stabilizer.h	/^	int16_t data[11];$/;"	m	struct:__anondeeb10c50208	typeref:typename:int16_t[11]
 data	inc/modules/stabilizer.h	/^    uint8_t data[24];$/;"	m	struct:__anondeeb10c50108	typeref:typename:uint8_t[24]
 data	inc/serial_tasks.h	/^	uint8_t data[32];$/;"	m	struct:__anon64b800a90208	typeref:typename:uint8_t[32]
-dataRdy	src/main.c	/^xSemaphoreHandle dataRdy, queuewritten;$/;"	v	typeref:typename:xSemaphoreHandle
+dataRdy	src/main.cpp	/^xSemaphoreHandle dataRdy, queuewritten;$/;"	v	typeref:typename:xSemaphoreHandle
 data_cb	src/elka_comm/common/boost_uart.cpp	/^void SerialHandler::data_cb(const boost::system::error_code& e,$/;"	f	class:SerialHandler	typeref:typename:void
 default_target	build_elka/Makefile	/^default_target: all$/;"	t
+default_target	build_elka/msg/Makefile	/^default_target: all$/;"	t
 default_target	build_elka/src/FreeRTOS/Makefile	/^default_target: all$/;"	t
 default_target	build_elka/src/Makefile	/^default_target: all$/;"	t
 default_target	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^default_target: all$/;"	t
 default_target	build_elka/src/drivers/Makefile	/^default_target: all$/;"	t
+default_target	build_elka/src/elka_comm/common/Makefile	/^default_target: all$/;"	t
+default_target	build_elka/src/elka_comm/free_rtos/Makefile	/^default_target: all$/;"	t
 default_target	build_elka/src/elka_hal/Makefile	/^default_target: all$/;"	t
 default_target	build_elka/src/modules/Makefile	/^default_target: all$/;"	t
 default_target	build_elka/src/utils/Makefile	/^default_target: all$/;"	t
@@ -11132,10 +11268,13 @@ deinitialize	src/elka_comm/gnd_station/elka_devices.cpp	/^int elka::GroundPort::
 deinitialize	src/elka_comm/posix/elka_devices.cpp	/^int elka::PX4Port::deinitialize() {$/;"	f	class:elka::PX4Port	typeref:typename:int
 deinitialize	src/elka_comm/qurt/snapdragon_uart_devices.cpp	/^int uart::UARTPort::deinitialize() {$/;"	f	class:uart::UARTPort	typeref:typename:int
 depend	build_elka/Makefile	/^depend:$/;"	t
+depend	build_elka/msg/Makefile	/^depend:$/;"	t
 depend	build_elka/src/FreeRTOS/Makefile	/^depend:$/;"	t
 depend	build_elka/src/Makefile	/^depend:$/;"	t
 depend	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^depend:$/;"	t
 depend	build_elka/src/drivers/Makefile	/^depend:$/;"	t
+depend	build_elka/src/elka_comm/common/Makefile	/^depend:$/;"	t
+depend	build_elka/src/elka_comm/free_rtos/Makefile	/^depend:$/;"	t
 depend	build_elka/src/elka_hal/Makefile	/^depend:$/;"	t
 depend	build_elka/src/modules/Makefile	/^depend:$/;"	t
 depend	build_elka/src/utils/Makefile	/^depend:$/;"	t
@@ -11163,10 +11302,13 @@ dirhtml	tools/genmsg/doc/Makefile	/^dirhtml:$/;"	t
 distributePower	src/modules/stabilizer.c	/^static void distributePower(const uint16_t thrust, const int16_t roll,$/;"	f	typeref:typename:void	file:
 doctest	tools/genmsg/doc/Makefile	/^doctest:$/;"	t
 edit_cache	build_elka/Makefile	/^edit_cache:$/;"	t
+edit_cache	build_elka/msg/Makefile	/^edit_cache:$/;"	t
 edit_cache	build_elka/src/FreeRTOS/Makefile	/^edit_cache:$/;"	t
 edit_cache	build_elka/src/Makefile	/^edit_cache:$/;"	t
 edit_cache	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^edit_cache:$/;"	t
 edit_cache	build_elka/src/drivers/Makefile	/^edit_cache:$/;"	t
+edit_cache	build_elka/src/elka_comm/common/Makefile	/^edit_cache:$/;"	t
+edit_cache	build_elka/src/elka_comm/free_rtos/Makefile	/^edit_cache:$/;"	t
 edit_cache	build_elka/src/elka_hal/Makefile	/^edit_cache:$/;"	t
 edit_cache	build_elka/src/modules/Makefile	/^edit_cache:$/;"	t
 edit_cache	build_elka/src/utils/Makefile	/^edit_cache:$/;"	t
@@ -11178,10 +11320,13 @@ edit_cache	src/elka_hal/Makefile	/^edit_cache:$/;"	t
 edit_cache	src/modules/Makefile	/^edit_cache:$/;"	t
 edit_cache	src/utils/Makefile	/^edit_cache:$/;"	t
 edit_cache/fast	build_elka/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+edit_cache/fast	build_elka/msg/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	build_elka/src/FreeRTOS/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	build_elka/src/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	build_elka/src/drivers/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+edit_cache/fast	build_elka/src/elka_comm/common/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+edit_cache/fast	build_elka/src/elka_comm/free_rtos/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	build_elka/src/elka_hal/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	build_elka/src/modules/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	build_elka/src/utils/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
@@ -11192,8 +11337,7 @@ edit_cache/fast	src/drivers/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	src/elka_hal/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	src/modules/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	src/utils/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
-elka	Makefile	/^.PHONY elka:$/;"	t
-elka	Makefile	/^elka:$/;"	t
+elka	Makefile	/^elka: update$/;"	t
 elka	build_elka/Makefile	/^elka: cmake_check_build_system$/;"	t
 elka	src/elka_comm/common/elka_comm.h	/^namespace elka {$/;"	n
 elka	src/elka_comm/common/pyelka_common.h	/^namespace elka {$/;"	n
@@ -11203,12 +11347,39 @@ elka	src/elka_comm/gnd_station/pyelka_gnd_station.h	/^namespace elka {$/;"	n
 elka	src/elka_comm/posix/elka_devices.h	/^namespace elka {$/;"	n
 elka	src/elka_comm/posix/elka_manager.h	/^namespace elka {$/;"	n
 elka-debug	Makefile	/^.PHONY elka-debug:$/;"	t
+elka-debug	Makefile	/^elka-debug: update$/;"	t
 elka-debug	Makefile	/^elka-debug:$/;"	t
+elka.cpp.i	build_elka/src/elka_comm/common/Makefile	/^elka.cpp.i:$/;"	t
+elka.cpp.obj	build_elka/src/elka_comm/common/Makefile	/^elka.cpp.obj:$/;"	t
+elka.cpp.s	build_elka/src/elka_comm/common/Makefile	/^elka.cpp.s:$/;"	t
+elka.i	build_elka/src/elka_comm/common/Makefile	/^elka.i: elka.cpp.i$/;"	t
+elka.obj	build_elka/src/elka_comm/common/Makefile	/^elka.obj: elka.cpp.obj$/;"	t
+elka.s	build_elka/src/elka_comm/common/Makefile	/^elka.s: elka.cpp.s$/;"	t
 elka/fast	build_elka/Makefile	/^elka\/fast:$/;"	t
 elka_bin	build_elka/Makefile	/^elka_bin: cmake_check_build_system$/;"	t
 elka_bin/fast	build_elka/Makefile	/^elka_bin\/fast:$/;"	t
+elka_comm.cpp.i	build_elka/src/elka_comm/common/Makefile	/^elka_comm.cpp.i:$/;"	t
+elka_comm.cpp.obj	build_elka/src/elka_comm/common/Makefile	/^elka_comm.cpp.obj:$/;"	t
+elka_comm.cpp.s	build_elka/src/elka_comm/common/Makefile	/^elka_comm.cpp.s:$/;"	t
+elka_comm.i	build_elka/src/elka_comm/common/Makefile	/^elka_comm.i: elka_comm.cpp.i$/;"	t
+elka_comm.obj	build_elka/src/elka_comm/common/Makefile	/^elka_comm.obj: elka_comm.cpp.obj$/;"	t
+elka_comm.s	build_elka/src/elka_comm/common/Makefile	/^elka_comm.s: elka_comm.cpp.s$/;"	t
+elka_comm__common	build_elka/Makefile	/^elka_comm__common: cmake_check_build_system$/;"	t
+elka_comm__common	build_elka/src/elka_comm/common/Makefile	/^elka_comm__common: src\/elka_comm\/common\/CMakeFiles\/elka_comm__common.dir\/rule$/;"	t
+elka_comm__common/fast	build_elka/Makefile	/^elka_comm__common\/fast:$/;"	t
+elka_comm__common/fast	build_elka/src/elka_comm/common/Makefile	/^elka_comm__common\/fast:$/;"	t
+elka_comm__free_rtos	build_elka/Makefile	/^elka_comm__free_rtos: cmake_check_build_system$/;"	t
+elka_comm__free_rtos	build_elka/src/elka_comm/free_rtos/Makefile	/^elka_comm__free_rtos: src\/elka_comm\/free_rtos\/CMakeFiles\/elka_comm__free_rtos.dir\/rule$/;"	t
+elka_comm__free_rtos/fast	build_elka/Makefile	/^elka_comm__free_rtos\/fast:$/;"	t
+elka_comm__free_rtos/fast	build_elka/src/elka_comm/free_rtos/Makefile	/^elka_comm__free_rtos\/fast:$/;"	t
 elka_dev	src/elka_comm/posix/elka_posix.cpp	/^static elka::PX4Port *elka_dev = nullptr;$/;"	v	typeref:typename:elka::PX4Port *	file:
 elka_dev	src/elka_comm/qurt/snapdragon_uart.cpp	/^static uart::UARTPort *elka_dev = nullptr;$/;"	v	typeref:typename:uart::UARTPort *	file:
+elka_devices.cpp.i	build_elka/src/elka_comm/free_rtos/Makefile	/^elka_devices.cpp.i:$/;"	t
+elka_devices.cpp.obj	build_elka/src/elka_comm/free_rtos/Makefile	/^elka_devices.cpp.obj:$/;"	t
+elka_devices.cpp.s	build_elka/src/elka_comm/free_rtos/Makefile	/^elka_devices.cpp.s:$/;"	t
+elka_devices.i	build_elka/src/elka_comm/free_rtos/Makefile	/^elka_devices.i: elka_devices.cpp.i$/;"	t
+elka_devices.obj	build_elka/src/elka_comm/free_rtos/Makefile	/^elka_devices.obj: elka_devices.cpp.obj$/;"	t
+elka_devices.s	build_elka/src/elka_comm/free_rtos/Makefile	/^elka_devices.s: elka_devices.cpp.s$/;"	t
 elka_drivers	build_elka/Makefile	/^elka_drivers: cmake_check_build_system$/;"	t
 elka_drivers	build_elka/src/drivers/Makefile	/^elka_drivers: src\/drivers\/CMakeFiles\/elka_drivers.dir\/rule$/;"	t
 elka_drivers/fast	build_elka/Makefile	/^elka_drivers\/fast:$/;"	t
@@ -11224,7 +11395,11 @@ elka_modules	build_elka/Makefile	/^elka_modules: cmake_check_build_system$/;"	t
 elka_modules	build_elka/src/modules/Makefile	/^elka_modules: src\/modules\/CMakeFiles\/elka_modules.dir\/rule$/;"	t
 elka_modules/fast	build_elka/Makefile	/^elka_modules\/fast:$/;"	t
 elka_modules/fast	build_elka/src/modules/Makefile	/^elka_modules\/fast:$/;"	t
+elka_msg_ack_s	build_elka/inc/uORB/topics/elka_msg_ack.h	/^struct __EXPORT elka_msg_ack_s {$/;"	s
+elka_msg_ack_s	build_elka/topics_temporary_header/elka_msg_ack.h	/^struct __EXPORT elka_msg_ack_s {$/;"	s
 elka_msg_id_s	src/elka_comm/common/elka.h	/^struct elka_msg_id_s {$/;"	s
+elka_msg_s	build_elka/inc/uORB/topics/elka_msg.h	/^struct __EXPORT elka_msg_s {$/;"	s
+elka_msg_s	build_elka/topics_temporary_header/elka_msg.h	/^struct __EXPORT elka_msg_s {$/;"	s
 elka_parse_loop	src/elka_comm/posix/elka_posix.cpp	/^int elka_parse_loop(int argc, char **argv) {$/;"	f	typeref:typename:int
 elka_parse_loop	src/elka_comm/qurt/snapdragon_uart.cpp	/^int elka_parse_loop(int argc, char **argv) {$/;"	f	typeref:typename:int
 elka_read_callback	src/elka_comm/common/basic_uart.cpp	/^void elka_read_callback(void *context, $/;"	f	typeref:typename:void
@@ -11255,7 +11430,8 @@ eulerRollDesired	src/modules/stabilizer.c	/^PRIVATE float eulerRollDesired;$/;"	
 eulerYawActual	src/modules/stabilizer.c	/^PRIVATE float eulerYawActual;$/;"	v	typeref:typename:PRIVATE float
 eulerYawDesired	src/modules/stabilizer.c	/^PRIVATE float eulerYawDesired;$/;"	v	typeref:typename:PRIVATE float
 eulerangles	inc/serial_tasks.h	/^	uint8_t eulerangles[4];$/;"	m	struct:__anon64b800a90108	typeref:typename:uint8_t[4]
-eulerqueue	src/main.c	/^xQueueHandle  tx1Queue,eulerqueue,spektrumqueue;$/;"	v	typeref:typename:xQueueHandle
+eulerangles	src/main.cpp	/^	uint8_t eulerangles[4];$/;"	m	struct:__anon6bd514d20108	typeref:typename:uint8_t[4]	file:
+eulerqueue	src/main.cpp	/^xQueueHandle tx1Queue,eulerqueue,spektrumqueue;$/;"	v	typeref:typename:xQueueHandle
 eulerqueue	src/modules/stabilizer.c	/^xQueueHandle  tx1Queue, eulerqueue,spektrumqueue;$/;"	v	typeref:typename:xQueueHandle
 eulerstruct	inc/modules/stabilizer.h	/^} eulerstruct;$/;"	t	typeref:struct:__anondeeb10c50208
 exclude_patterns	tools/genmsg/doc/conf.py	/^exclude_patterns = ['_build']$/;"	v
@@ -11297,14 +11473,20 @@ frame_count_since_last_readout	inc/drivers/px4flow.h	/^    uint16_t frame_count_
 full_type_name	tools/genmsg/scripts/genmsg_check_deps.py	/^full_type_name = compute_full_type_name(pkg_name, os.path.basename(msg_file))$/;"	v
 fusionDt	src/modules/stabilizer.c	/^PRIVATE float fusionDt;$/;"	v	typeref:typename:PRIVATE float
 g_pfnVectors	src/startup/startup_stm32f4xx.s	/^g_pfnVectors:$/;"	l
-g_pfnVectors	startup_stm32f4xx.s	/^g_pfnVectors:$/;"	l
+generate_by_template	tools/px_generate_uorb_topic_files.py	/^def generate_by_template(output_file, template_file, em_globals):$/;"	f
 generate_from_command_line_options	tools/genmsg/src/genmsg/template_tools.py	/^def generate_from_command_line_options(argv, msg_template_dict, srv_template_dict, module_templa/;"	f
 generate_from_file	tools/genmsg/src/genmsg/template_tools.py	/^def generate_from_file(input_file, package_name, output_dir, template_dir, include_path, msg_tem/;"	f
+generate_idx	tools/px_generate_uorb_topic_files.py	/^            generate_idx = 0$/;"	v
+generate_idx	tools/px_generate_uorb_topic_files.py	/^            generate_idx = 1$/;"	v
 generate_module	tools/genmsg/src/genmsg/template_tools.py	/^def generate_module(package_name, output_dir, template_dir, template_dict):$/;"	f
+generate_output_from_file	tools/px_generate_uorb_topic_files.py	/^def generate_output_from_file(format_idx, filename, outputdir, templatedir, includepath):$/;"	f
+generate_topics_list_file	tools/px_generate_uorb_topic_files.py	/^def generate_topics_list_file(msgdir, outputdir, templatedir):$/;"	f
+generate_topics_list_file_from_files	tools/px_generate_uorb_topic_files.py	/^def generate_topics_list_file_from_files(files, outputdir, templatedir):$/;"	f
 genmsg Python API	tools/genmsg/doc/python_api.rst	/^genmsg Python API$/;"	c
 genmsg:  generating code from ros .msg format	tools/genmsg/doc/index.rst	/^genmsg:  generating code from ros .msg format$/;"	c
 get_all_depends	tools/genmsg/src/genmsg/msg_loader.py	/^    def get_all_depends(self, full_msg_type):$/;"	m	class:MsgContext
 get_buffer_msg	src/elka_comm/common/elka_comm.cpp	/^elka::ElkaBufferMsg *elka::SerialBuffer::get_buffer_msg($/;"	f	class:elka::SerialBuffer	typeref:typename:elka::ElkaBufferMsg *
+get_children_fields	tools/px_generate_uorb_topic_helper.py	/^def get_children_fields(base_type, search_path):$/;"	f
 get_depends	tools/genmsg/src/genmsg/msg_loader.py	/^    def get_depends(self, full_msg_type):$/;"	m	class:MsgContext
 get_dev_id_t	src/elka_comm/common/elka.cpp	/^void get_dev_id_t(dev_id_t *d) {$/;"	f	typeref:typename:void
 get_elka_dev	src/elka_comm/posix/elka_manager.cpp	/^elka::PX4Port *elka::Manager::get_elka_dev($/;"	f	class:elka::Manager	typeref:typename:elka::PX4Port *
@@ -11323,6 +11505,8 @@ get_instance	src/elka_comm/qurt/snapdragon_uart_manager.h	/^  static uart::Manag
 get_msg	src/elka_comm/common/elka_comm.cpp	/^uint8_t elka::CommPort::get_msg($/;"	f	class:elka::CommPort	typeref:typename:uint8_t
 get_msg	src/elka_comm/common/elka_comm.cpp	/^uint8_t elka::SerialBuffer::get_msg($/;"	f	class:elka::SerialBuffer	typeref:typename:uint8_t
 get_msg_file	tools/genmsg/src/genmsg/msg_loader.py	/^def get_msg_file(package, base_type, search_path, ext=EXT_MSG):$/;"	f
+get_msgs_list	tools/px_generate_uorb_topic_files.py	/^def get_msgs_list(msgdir):$/;"	f
+get_multi_topics	tools/px_generate_uorb_topic_files.py	/^def get_multi_topics(filename):$/;"	f
 get_next_dev	src/elka_comm/common/elka_comm.cpp	/^bool elka::CommPort::get_next_dev(dev_id_t &end, dev_id_t *nxt) {$/;"	f	class:elka::CommPort	typeref:typename:bool
 get_nxt_idx	src/elka_comm/common/elka.cpp	/^uint16_t get_nxt_idx(uint16_t cb_end,$/;"	f	typeref:typename:uint16_t
 get_nxt_msg_num	src/elka_comm/common/elka_comm.h	/^  inline uint16_t get_nxt_msg_num() {$/;"	f	struct:elka::SerialBuffer	typeref:typename:uint16_t
@@ -11339,15 +11523,21 @@ get_test_dir	tools/genmsg/test/test_genmsg_msg_loader.py	/^def get_test_dir():$/
 get_test_dir	tools/genmsg/test/test_genmsg_srvs.py	/^def get_test_dir():$/;"	f
 get_test_msg_dir	tools/genmsg/test/test_genmsg_gentools.py	/^def get_test_msg_dir():$/;"	f
 get_uart_dev	src/elka_comm/qurt/snapdragon_uart_manager.cpp	/^uart::UARTPort *uart::Manager::get_uart_dev($/;"	f	class:uart::Manager	typeref:typename:uart::UARTPort *
+git_elka_comm	build_elka/Makefile	/^git_elka_comm: cmake_check_build_system$/;"	t
+git_elka_comm/fast	build_elka/Makefile	/^git_elka_comm\/fast:$/;"	t
+git_gencpp	build_elka/Makefile	/^git_gencpp: cmake_check_build_system$/;"	t
+git_gencpp/fast	build_elka/Makefile	/^git_gencpp\/fast:$/;"	t
+git_genmsg	build_elka/Makefile	/^git_genmsg: cmake_check_build_system$/;"	t
+git_genmsg/fast	build_elka/Makefile	/^git_genmsg\/fast:$/;"	t
 ground_distance	inc/drivers/px4flow.h	/^    int16_t ground_distance;\/\/ Ground distance in meters*1000 [meters*1000]$/;"	m	struct:i2c_integral_frame	typeref:typename:int16_t
 ground_distance	inc/drivers/px4flow.h	/^    int16_t ground_distance;\/\/ Ground distance in meters*1000 [meters]. Positive value: distan/;"	m	struct:i2c_frame	typeref:typename:int16_t
-gxi16	src/main.c	/^int16_t gxi16, gyi16, gzi16;$/;"	v	typeref:typename:int16_t
-gyi16	src/main.c	/^int16_t gxi16, gyi16, gzi16;$/;"	v	typeref:typename:int16_t
-gyro	src/main.c	/^Axis3f gyro; \/\/ Gyro axis data in deg\/s$/;"	v	typeref:typename:Axis3f
+gxi16	src/main.cpp	/^int16_t gxi16, gyi16, gzi16;$/;"	v	typeref:typename:int16_t
+gyi16	src/main.cpp	/^int16_t gxi16, gyi16, gzi16;$/;"	v	typeref:typename:int16_t
+gyro	src/main.cpp	/^Axis3f gyro; \/\/ Gyro axis data in deg\/s$/;"	v	typeref:typename:Axis3f
 gyro	src/modules/stabilizer.c	/^Axis3f gyro; \/\/ Gyro axis data in deg\/s$/;"	v	typeref:typename:Axis3f
 gyroBias	src/elka_hal/imu.c	/^BiasObj    gyroBias;$/;"	v	typeref:typename:BiasObj
 gyroMpu	src/elka_hal/imu.c	/^Axis3i16   gyroMpu;$/;"	v	typeref:typename:Axis3i16
-gyroMpu	src/main.c	/^Axis3i16   gyroMpu;$/;"	v	typeref:typename:Axis3i16
+gyroMpu	src/main.cpp	/^Axis3i16   gyroMpu;$/;"	v	typeref:typename:Axis3i16
 gyroMpu	src/modules/stabilizer.c	/^Axis3i16   gyroMpu;$/;"	v	typeref:typename:Axis3i16
 gyro_range	inc/drivers/px4flow.h	/^    uint8_t gyro_range; \/\/ gyro range [0 .. 7] equals [50 deg\/sec .. 2000 deg\/sec]$/;"	m	struct:i2c_frame	typeref:typename:uint8_t
 gyro_temperature	inc/drivers/px4flow.h	/^    int16_t gyro_temperature;\/\/ Temperature * 100 in centi-degrees Celsius [degcelsius*100]$/;"	m	struct:i2c_integral_frame	typeref:typename:int16_t
@@ -11358,13 +11548,21 @@ gyro_y_rate_integral	inc/drivers/px4flow.h	/^    int16_t gyro_y_rate_integral;\/
 gyro_z_rate	inc/drivers/px4flow.h	/^    int16_t gyro_z_rate; \/\/ latest gyro z rate [rad\/sec]$/;"	m	struct:i2c_frame	typeref:typename:int16_t
 gyro_z_rate_integral	inc/drivers/px4flow.h	/^    int16_t gyro_z_rate_integral;\/\/accumulated gyro z rates in radians*10000 since last I2C re/;"	m	struct:i2c_integral_frame	typeref:typename:int16_t
 gyrobytes	inc/serial_tasks.h	/^	uint8_t gyrobytes[6];$/;"	m	struct:__anon64b800a90108	typeref:typename:uint8_t[6]
-gzi16	src/main.c	/^int16_t gxi16, gyi16, gzi16;$/;"	v	typeref:typename:int16_t
+gyrobytes	src/main.cpp	/^	uint8_t gyrobytes[6];$/;"	m	struct:__anon6bd514d20108	typeref:typename:uint8_t[6]	file:
+gzi16	src/main.cpp	/^int16_t gxi16, gyi16, gzi16;$/;"	v	typeref:typename:int16_t
+handle	build_elka/multi_topics_temporary/FreeRTOS/elka_msg.h	/^	static PX4TopicHandle handle() {return ORB_ID(elka_msg);}$/;"	f	class:px4::px4_elka_msg	typeref:typename:PX4TopicHandle
+handle	build_elka/multi_topics_temporary/FreeRTOS/elka_msg_ack.h	/^	static PX4TopicHandle handle() {return ORB_ID(elka_msg_ack);}$/;"	f	class:px4::px4_elka_msg_ack	typeref:typename:PX4TopicHandle
+handle	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg.h	/^	static PX4TopicHandle handle() {return ORB_ID(elka_msg);}$/;"	f	class:px4::px4_elka_msg	typeref:typename:PX4TopicHandle
+handle	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg_ack.h	/^	static PX4TopicHandle handle() {return ORB_ID(elka_msg_ack);}$/;"	f	class:px4::px4_elka_msg_ack	typeref:typename:PX4TopicHandle
 has_header	tools/genmsg/src/genmsg/msgs.py	/^    def has_header(self):$/;"	m	class:MsgSpec
 help	build_elka/Makefile	/^help:$/;"	t
+help	build_elka/msg/Makefile	/^help:$/;"	t
 help	build_elka/src/FreeRTOS/Makefile	/^help:$/;"	t
 help	build_elka/src/Makefile	/^help:$/;"	t
 help	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^help:$/;"	t
 help	build_elka/src/drivers/Makefile	/^help:$/;"	t
+help	build_elka/src/elka_comm/common/Makefile	/^help:$/;"	t
+help	build_elka/src/elka_comm/free_rtos/Makefile	/^help:$/;"	t
 help	build_elka/src/elka_hal/Makefile	/^help:$/;"	t
 help	build_elka/src/modules/Makefile	/^help:$/;"	t
 help	build_elka/src/utils/Makefile	/^help:$/;"	t
@@ -11376,6 +11574,7 @@ help	src/elka_hal/Makefile	/^help:$/;"	t
 help	src/modules/Makefile	/^help:$/;"	t
 help	src/utils/Makefile	/^help:$/;"	t
 help	tools/genmsg/doc/Makefile	/^help:$/;"	t
+hil_state_t	inc/uORB/uORB.h	/^typedef uint8_t hil_state_t;$/;"	t	typeref:typename:uint8_t
 html	tools/genmsg/doc/Makefile	/^html:$/;"	t
 html_logo	tools/genmsg/doc/conf.py	/^html_logo = 'ros.png'$/;"	v
 html_static_path	tools/genmsg/doc/conf.py	/^html_static_path = []$/;"	v
@@ -11434,8 +11633,9 @@ imuCalculateBiasMean	src/elka_hal/imu.c	/^static void __attribute__((used)) imuC
 imuCalculateVarianceAndMean	src/elka_hal/imu.c	/^static void imuCalculateVarianceAndMean(BiasObj* bias, Axis3i32* varOut, Axis3i32* meanOut)$/;"	f	typeref:typename:void	file:
 imuFindBiasValue	src/elka_hal/imu.c	/^static bool imuFindBiasValue(BiasObj* bias)$/;"	f	typeref:typename:bool	file:
 imubytes	inc/serial_tasks.h	/^}imubytes;$/;"	t	typeref:struct:__anon64b800a90108
+imubytes	src/main.cpp	/^}imubytes;$/;"	t	typeref:struct:__anon6bd514d20108	file:
 imudata	inc/serial_tasks.h	/^imubytes imudata;$/;"	v	typeref:typename:imubytes
-imudata	src/main.c	/^imubytes imudata;$/;"	v	typeref:typename:imubytes
+imudata	src/main.cpp	/^imubytes imudata;$/;"	v	typeref:typename:imubytes
 imuinit	src/modules/stabilizer.c	/^void imuinit(void)$/;"	f	typeref:typename:void
 includepath_to_dict	tools/genmsg/src/genmsg/command_line.py	/^def includepath_to_dict(includepath):$/;"	f
 init_I2C1	src/drivers/px4flow.c	/^void init_I2C1(void){$/;"	f	typeref:typename:void
@@ -11454,7 +11654,7 @@ integralFBx	src/modules/sensfusion6.c	/^  float integralFBx = 0.0f;$/;"	v	typere
 integralFBy	src/modules/sensfusion6.c	/^  float integralFBy = 0.0f;$/;"	v	typeref:typename:float
 integralFBz	src/modules/sensfusion6.c	/^  float integralFBz = 0.0f;  \/\/ integral error terms scaled by Ki$/;"	v	typeref:typename:float
 integration_timespan	inc/drivers/px4flow.h	/^    uint32_t integration_timespan;\/\/accumulation timespan in microseconds since last I2C reado/;"	m	struct:i2c_integral_frame	typeref:typename:uint32_t
-interruptCallback	src/main.c	/^static void interruptCallback()$/;"	f	typeref:typename:void	file:
+interruptCallback	src/main.cpp	/^static void interruptCallback()$/;"	f	typeref:typename:void	file:
 interruptCb	src/drivers/nrf24l01.c	/^static void (*interruptCb)(void) = NULL;$/;"	v	typeref:typename:void (*)(void)	file:
 intersphinx_mapping	tools/genmsg/doc/conf.py	/^intersphinx_mapping = {$/;"	v
 invSqrt	src/modules/sensfusion6.c	/^float invSqrt(float x)$/;"	f	typeref:typename:float
@@ -11521,9 +11721,9 @@ log_full_text	tools/genmsg/test/test_genmsg_gentools.py	/^log_full_text = """##$
 log_verbose	tools/genmsg/src/genmsg/base.py	/^def log_verbose(value):$/;"	f
 ls	src/modules/stabilizer.c	/^uint32_t ls;$/;"	v	typeref:typename:uint32_t
 mag	src/elka_hal/imu.c	/^Axis3i16   mag;$/;"	v	typeref:typename:Axis3i16
-main	src/dummy.c	/^int main(int argc, char **argv) {$/;"	f	typeref:typename:int
-main	src/main.c	/^int main(void)$/;"	f	typeref:typename:int
+main	src/main.cpp	/^int main(void)$/;"	f	typeref:typename:int
 main	src/test.c	/^int main(void) {$/;"	f	typeref:typename:int
+main_state_t	inc/uORB/uORB.h	/^typedef uint8_t main_state_t;$/;"	t	typeref:typename:uint8_t
 man	tools/genmsg/doc/Makefile	/^man:$/;"	t
 man_pages	tools/genmsg/doc/conf.py	/^man_pages = [$/;"	v
 master_doc	tools/genmsg/doc/conf.py	/^master_doc = 'index'$/;"	v
@@ -11821,10 +12021,22 @@ mpu6050WriteProgDMPConfigurationSet	src/drivers/mpu6050.c	/^bool mpu6050WritePro
 mpu6050WriteProgMemoryBlock	src/drivers/mpu6050.c	/^bool mpu6050WriteProgMemoryBlock(const uint8_t *data, uint16_t dataSize, uint8_t bank,$/;"	f	typeref:typename:bool
 msg_context	tools/genmsg/scripts/genmsg_check_deps.py	/^msg_context = MsgContext.create_default()$/;"	v
 msg_file	tools/genmsg/scripts/genmsg_check_deps.py	/^msg_file = sys.argv[2]$/;"	v
+msg_gen	build_elka/Makefile	/^msg_gen: cmake_check_build_system$/;"	t
+msg_gen/fast	build_elka/Makefile	/^msg_gen\/fast:$/;"	t
+msg_id	build_elka/inc/uORB/topics/elka_msg.h	/^	uint64_t msg_id;$/;"	m	struct:elka_msg_s	typeref:typename:uint64_t
+msg_id	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	uint64_t msg_id;$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint64_t
+msg_id	build_elka/topics_temporary_header/elka_msg.h	/^	uint64_t msg_id;$/;"	m	struct:elka_msg_s	typeref:typename:uint64_t
+msg_id	build_elka/topics_temporary_header/elka_msg_ack.h	/^	uint64_t msg_id;$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint64_t
 msg_id_t	src/elka_comm/common/elka.h	/^typedef uint64_t msg_id_t;$/;"	t	typeref:typename:uint64_t
+msg_num	build_elka/inc/uORB/topics/elka_msg.h	/^	uint16_t msg_num;$/;"	m	struct:elka_msg_s	typeref:typename:uint16_t
+msg_num	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	uint16_t msg_num;$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint16_t
+msg_num	build_elka/topics_temporary_header/elka_msg.h	/^	uint16_t msg_num;$/;"	m	struct:elka_msg_s	typeref:typename:uint16_t
+msg_num	build_elka/topics_temporary_header/elka_msg_ack.h	/^	uint16_t msg_num;$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint16_t
 msg_priority	src/elka_comm/common/elka_comm.cpp	/^uint8_t elka::SerialBuffer::Compare::msg_priority($/;"	f	class:elka::SerialBuffer::Compare	typeref:typename:uint8_t
 msg_threshold	src/elka_comm/common/elka.cpp	/^const hrt_abstime msg_threshold = 500000;$/;"	v	typeref:typename:const hrt_abstime
+msgtype_size_map	tools/px_generate_uorb_topic_helper.py	/^msgtype_size_map = {$/;"	v
 nPRIV	inc/CMSIS/core_cm4.h	/^    uint32_t nPRIV:1;                    \/*!< bit:      0  Execution privilege in Thread mode */;"	m	struct:__anon7471197e070a::__anon7471197e0808	typeref:typename:uint32_t:1
+navigation_state_t	inc/uORB/uORB.h	/^typedef uint8_t navigation_state_t;$/;"	t	typeref:typename:uint8_t
 normalize_package_context	tools/genmsg/src/genmsg/names.py	/^def normalize_package_context(package_context):$/;"	f
 nrf24l01.c.i	build_elka/src/drivers/Makefile	/^nrf24l01.c.i:$/;"	t
 nrf24l01.c.obj	build_elka/src/drivers/Makefile	/^nrf24l01.c.obj:$/;"	t
@@ -11837,7 +12049,7 @@ nrfFlushRx	src/drivers/nrf24l01.c	/^unsigned char nrfFlushRx()$/;"	f	typeref:typ
 nrfFlushTx	src/drivers/nrf24l01.c	/^unsigned char nrfFlushTx()$/;"	f	typeref:typename:unsigned char
 nrfGetStatus	src/drivers/nrf24l01.c	/^unsigned char nrfGetStatus()$/;"	f	typeref:typename:unsigned char
 nrfInit	src/drivers/nrf24l01.c	/^void nrfInit(void)$/;"	f	typeref:typename:void
-nrfInitRxAck	src/main.c	/^void nrfInitRxAck()$/;"	f	typeref:typename:void
+nrfInitRxAck	src/main.cpp	/^void nrfInitRxAck()$/;"	f	typeref:typename:void
 nrfIsr	src/drivers/nrf24l01.c	/^void nrfIsr()$/;"	f	typeref:typename:void
 nrfNop	src/drivers/nrf24l01.c	/^unsigned char nrfNop()$/;"	f	typeref:typename:unsigned char
 nrfRead1Reg	src/drivers/nrf24l01.c	/^unsigned char nrfRead1Reg(unsigned char address) {$/;"	f	typeref:typename:unsigned char
@@ -11853,6 +12065,10 @@ nrfTest	src/drivers/nrf24l01.c	/^bool nrfTest(void)$/;"	f	typeref:typename:bool
 nrfWrite1Reg	src/drivers/nrf24l01.c	/^unsigned char nrfWrite1Reg(unsigned char address, char byte)$/;"	f	typeref:typename:unsigned char
 nrfWriteAck	src/drivers/nrf24l01.c	/^unsigned char nrfWriteAck(unsigned int pipe, char *buffer, int len)$/;"	f	typeref:typename:unsigned char
 nrfWriteReg	src/drivers/nrf24l01.c	/^unsigned char nrfWriteReg(unsigned char address, char *buffer, int len)$/;"	f	typeref:typename:unsigned char
+num_retries	build_elka/inc/uORB/topics/elka_msg.h	/^	uint8_t num_retries;$/;"	m	struct:elka_msg_s	typeref:typename:uint8_t
+num_retries	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	uint8_t num_retries;$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint8_t
+num_retries	build_elka/topics_temporary_header/elka_msg.h	/^	uint8_t num_retries;$/;"	m	struct:elka_msg_s	typeref:typename:uint8_t
+num_retries	build_elka/topics_temporary_header/elka_msg_ack.h	/^	uint8_t num_retries;$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint8_t
 nvic.c.i	build_elka/src/drivers/Makefile	/^nvic.c.i:$/;"	t
 nvic.c.obj	build_elka/src/drivers/Makefile	/^nvic.c.obj:$/;"	t
 nvic.c.s	build_elka/src/drivers/Makefile	/^nvic.c.s:$/;"	t
@@ -11860,6 +12076,10 @@ nvic.i	build_elka/src/drivers/Makefile	/^nvic.i: nvic.c.i$/;"	t
 nvic.obj	build_elka/src/drivers/Makefile	/^nvic.obj: nvic.c.obj$/;"	t
 nvic.s	build_elka/src/drivers/Makefile	/^nvic.s: nvic.c.s$/;"	t
 nvicInit	src/drivers/nvic.c	/^void nvicInit(void)$/;"	f	typeref:typename:void
+o_fields	inc/uORB/uORB.h	/^	const char *o_fields;		\/**< semicolon separated list of fields (with type) *\/$/;"	m	struct:orb_metadata	typeref:typename:const char *
+o_name	inc/uORB/uORB.h	/^	const char *o_name;		\/**< unique object name *\/$/;"	m	struct:orb_metadata	typeref:typename:const char *
+o_size	inc/uORB/uORB.h	/^	const size_t o_size;		\/**< object size *\/$/;"	m	struct:orb_metadata	typeref:typename:const size_t
+o_size_no_padding	inc/uORB/uORB.h	/^	const size_t o_size_no_padding;	\/**< object size w\/o padding at the end (for logger) *\/$/;"	m	struct:orb_metadata	typeref:typename:const size_t
 oldtio	src/elka_comm/common/basic_uart.cpp	/^struct termios oldtio;$/;"	v	typeref:struct:termios
 oldtio	src/elka_comm/qurt/basic_uart.cpp	/^struct termios oldtio;$/;"	v	typeref:struct:termios
 open	src/elka_comm/qurt/snapdragon_uart_devices.cpp	/^int uart::UARTPort::open() {$/;"	f	class:uart::UARTPort	typeref:typename:int
@@ -11867,6 +12087,11 @@ operator ()	src/elka_comm/common/elka.h	/^  bool operator()(const dev_id_t &d1,$
 operator ()	src/elka_comm/common/elka.h	/^  bool operator()(const dev_prop_t &d1, const dev_prop_t &d2) {$/;"	f	struct:dev_prop_tCmp	typeref:typename:bool
 operator () 	src/elka_comm/common/elka_comm.cpp	/^bool elka::SerialBuffer::Compare::operator()$/;"	f	class:elka::SerialBuffer::Compare	typeref:typename:bool
 operator <	src/elka_comm/common/elka_comm.h	/^  bool operator <(const DeviceRoute &rhs) const {$/;"	f	struct:elka::DeviceRoute	typeref:typename:bool
+orb_advert_t	inc/uORB/uORB.h	/^typedef void 	*orb_advert_t;$/;"	t	typeref:typename:void *
+orb_get_topics	build_elka/topics_sources/uORBTopics.cpp	/^const struct orb_metadata **orb_get_topics()$/;"	f	typeref:typename:const struct orb_metadata **
+orb_id_t	inc/uORB/uORB.h	/^typedef const struct orb_metadata *orb_id_t;$/;"	t	typeref:typename:const struct orb_metadata *
+orb_metadata	inc/uORB/uORB.h	/^struct orb_metadata {$/;"	s
+orb_topics_count	build_elka/topics_sources/uORBTopics.cpp	/^size_t orb_topics_count()$/;"	f	typeref:typename:size_t
 p_sens	src/modules/stabilizer.c	/^int8_t p_sens = 1;\/\/3$/;"	v	typeref:typename:int8_t
 package_context	tools/genmsg/scripts/genmsg_check_deps.py	/^package_context = spec.package$/;"	v
 package_resource_name	tools/genmsg/src/genmsg/names.py	/^def package_resource_name(name):$/;"	f
@@ -11896,6 +12121,7 @@ parse_routing_msg	src/elka_comm/common/elka_comm.cpp	/^uint8_t elka::CommPort::p
 parse_spektrum_msg	src/elka_comm/qurt/snapdragon_uart_devices.cpp	/^uint8_t uart::UARTPort::parse_spektrum_msg(input_rc_s input_rc) {$/;"	f	class:uart::UARTPort	typeref:typename:uint8_t
 parse_type	tools/genmsg/src/genmsg/msgs.py	/^def parse_type(msg_type):$/;"	f
 parsed_fields	tools/genmsg/src/genmsg/msgs.py	/^    def parsed_fields(self):$/;"	m	class:MsgSpec
+parser	tools/px_generate_uorb_topic_files.py	/^        parser = argparse.ArgumentParser($/;"	v
 pause_port	src/elka_comm/common/pyelka_common.h	/^  uint8_t pause_port() override {$/;"	f	struct:elka::PyCommPort	typeref:typename:uint8_t
 pause_port	src/elka_comm/free_rtos/elka_devices.cpp	/^uint8_t elka::ELKAPort::pause_port() {$/;"	f	class:elka::ELKAPort	typeref:typename:uint8_t
 pause_port	src/elka_comm/gnd_station/elka_devices.cpp	/^uint8_t elka::GroundPort::pause_port() {$/;"	f	class:elka::GroundPort	typeref:typename:uint8_t
@@ -11981,10 +12207,12 @@ portSTACK_TYPE	inc/FreeRTOS/GCC/ARM_CM4F/portmacro.h	/^#define portSTACK_TYPE	/;
 portTASK_FUNCTION	inc/FreeRTOS/GCC/ARM_CM4F/portmacro.h	/^#define portTASK_FUNCTION(/;"	d
 portTASK_FUNCTION	src/FreeRTOS/tasks.c	/^static portTASK_FUNCTION( prvIdleTask, pvParameters )$/;"	f	file:
 portTASK_FUNCTION	src/debug.c	/^portTASK_FUNCTION( vDebugTask, pvParameters ) {$/;"	f
-portTASK_FUNCTION	src/main.c	/^portTASK_FUNCTION (vElkaRXAck, pvParameters)$/;"	f
-portTASK_FUNCTION	src/main.c	/^portTASK_FUNCTION (vGetData, pvParameters)$/;"	f
-portTASK_FUNCTION	src/main.c	/^portTASK_FUNCTION (vSpektrumchannel_DSMX, pvParameters)$/;"	f
+portTASK_FUNCTION	src/main.cpp	/^portTASK_FUNCTION (vElkaRXAck, pvParameters)$/;"	f
+portTASK_FUNCTION	src/main.cpp	/^portTASK_FUNCTION (vElkaRXReadWrite, pvParameters) {$/;"	f
+portTASK_FUNCTION	src/main.cpp	/^portTASK_FUNCTION (vGetData, pvParameters)$/;"	f
+portTASK_FUNCTION	src/main.cpp	/^portTASK_FUNCTION (vSpektrumchannel_DSMX, pvParameters)$/;"	f
 portTASK_FUNCTION_PROTO	inc/FreeRTOS/GCC/ARM_CM4F/portmacro.h	/^#define portTASK_FUNCTION_PROTO(/;"	d
+portTASK_FUNCTION_PROTO	src/main.cpp	/^portTASK_FUNCTION_PROTO( vElkaParse, pvParameters) {$/;"	f
 portTickType	inc/FreeRTOS/GCC/ARM_CM4F/portmacro.h	/^	typedef unsigned portSHORT portTickType;$/;"	t	typeref:typename:unsigned portSHORT
 portUSING_MPU_WRAPPERS	inc/FreeRTOS/mpu_wrappers.h	/^	#define portUSING_MPU_WRAPPERS /;"	d
 portYIELD	inc/FreeRTOS/GCC/ARM_CM4F/portmacro.h	/^#define portYIELD(/;"	d
@@ -11992,10 +12220,13 @@ portYIELD_WITHIN_API	inc/FreeRTOS/FreeRTOS.h	/^	#define portYIELD_WITHIN_API /;"
 port_num	src/elka_comm/common/elka.h	/^  uint8_t port_num, port_type, proc_side;$/;"	m	struct:snd_params_s	typeref:typename:uint8_t
 port_type	src/elka_comm/common/elka.h	/^  uint8_t port_num, port_type, proc_side;$/;"	m	struct:snd_params_s	typeref:typename:uint8_t
 preinstall	build_elka/Makefile	/^preinstall: all$/;"	t
+preinstall	build_elka/msg/Makefile	/^preinstall: all$/;"	t
 preinstall	build_elka/src/FreeRTOS/Makefile	/^preinstall: all$/;"	t
 preinstall	build_elka/src/Makefile	/^preinstall: all$/;"	t
 preinstall	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^preinstall: all$/;"	t
 preinstall	build_elka/src/drivers/Makefile	/^preinstall: all$/;"	t
+preinstall	build_elka/src/elka_comm/common/Makefile	/^preinstall: all$/;"	t
+preinstall	build_elka/src/elka_comm/free_rtos/Makefile	/^preinstall: all$/;"	t
 preinstall	build_elka/src/elka_hal/Makefile	/^preinstall: all$/;"	t
 preinstall	build_elka/src/modules/Makefile	/^preinstall: all$/;"	t
 preinstall	build_elka/src/utils/Makefile	/^preinstall: all$/;"	t
@@ -12007,10 +12238,13 @@ preinstall	src/elka_hal/Makefile	/^preinstall: all$/;"	t
 preinstall	src/modules/Makefile	/^preinstall: all$/;"	t
 preinstall	src/utils/Makefile	/^preinstall: all$/;"	t
 preinstall/fast	build_elka/Makefile	/^preinstall\/fast:$/;"	t
+preinstall/fast	build_elka/msg/Makefile	/^preinstall\/fast:$/;"	t
 preinstall/fast	build_elka/src/FreeRTOS/Makefile	/^preinstall\/fast:$/;"	t
 preinstall/fast	build_elka/src/Makefile	/^preinstall\/fast:$/;"	t
 preinstall/fast	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^preinstall\/fast:$/;"	t
 preinstall/fast	build_elka/src/drivers/Makefile	/^preinstall\/fast:$/;"	t
+preinstall/fast	build_elka/src/elka_comm/common/Makefile	/^preinstall\/fast:$/;"	t
+preinstall/fast	build_elka/src/elka_comm/free_rtos/Makefile	/^preinstall\/fast:$/;"	t
 preinstall/fast	build_elka/src/elka_hal/Makefile	/^preinstall\/fast:$/;"	t
 preinstall/fast	build_elka/src/modules/Makefile	/^preinstall\/fast:$/;"	t
 preinstall/fast	build_elka/src/utils/Makefile	/^preinstall\/fast:$/;"	t
@@ -12033,6 +12267,7 @@ print_elka_msg_id	src/elka_comm/common/elka.cpp	/^void print_elka_msg_id(msg_id_
 print_elka_route_msg	src/elka_comm/common/elka_comm.cpp	/^void elka::CommPort::print_elka_route_msg(elka_msg_s &elka_msg) {$/;"	f	class:elka::CommPort	typeref:typename:void
 print_elka_serial_array	src/elka_comm/common/elka.cpp	/^void print_elka_serial_array(uint8_t *buf) {$/;"	f	typeref:typename:void
 print_elka_state	src/elka_comm/common/elka_comm.cpp	/^void elka::CommPort::print_elka_state() {$/;"	f	class:elka::CommPort	typeref:typename:void
+print_field_def	tools/px_generate_uorb_topic_helper.py	/^def print_field_def(field):$/;"	f
 print_routing_table	src/elka_comm/common/elka_comm.cpp	/^void elka::CommPort::print_routing_table($/;"	f	class:elka::CommPort	typeref:typename:void
 print_statistics	src/elka_comm/free_rtos/elka_devices.cpp	/^bool elka::ELKAPort::print_statistics(bool reset) {$/;"	f	class:elka::ELKAPort	typeref:typename:bool
 print_statistics	src/elka_comm/gnd_station/elka_devices.cpp	/^bool elka::GroundPort::print_statistics(bool reset) {$/;"	f	class:elka::GroundPort	typeref:typename:bool
@@ -12095,7 +12330,24 @@ pvPortMallocAligned	inc/FreeRTOS/FreeRTOS.h	/^	#define pvPortMallocAligned(/;"	d
 pvTaskCode	inc/FreeRTOS/task.h	/^	pdTASK_CODE pvTaskCode;$/;"	m	struct:xTASK_PARAMTERS	typeref:typename:pdTASK_CODE
 pvTimerGetTimerID	src/FreeRTOS/timers.c	/^void *pvTimerGetTimerID( xTimerHandle xTimer )$/;"	f	typeref:typename:void *
 pvTimerID	src/FreeRTOS/timers.c	/^	void 					*pvTimerID;			\/*<< An ID to identify the timer.  This allows the timer to be identif/;"	m	struct:tmrTimerControl	typeref:typename:void *	file:
-px4_test	src/main.c	/^i2c_frame px4_test;$/;"	v	typeref:typename:i2c_frame
+px4	build_elka/multi_topics_temporary/FreeRTOS/elka_msg.h	/^namespace px4$/;"	n
+px4	build_elka/multi_topics_temporary/FreeRTOS/elka_msg_ack.h	/^namespace px4$/;"	n
+px4	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg.h	/^namespace px4$/;"	n
+px4	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg_ack.h	/^namespace px4$/;"	n
+px4_elka_msg	build_elka/multi_topics_temporary/FreeRTOS/elka_msg.h	/^	px4_elka_msg() :$/;"	f	class:px4::px4_elka_msg
+px4_elka_msg	build_elka/multi_topics_temporary/FreeRTOS/elka_msg.h	/^	px4_elka_msg(elka_msg_s msg) :$/;"	f	class:px4::px4_elka_msg
+px4_elka_msg	build_elka/multi_topics_temporary/FreeRTOS/elka_msg.h	/^class __EXPORT px4_elka_msg :$/;"	c	namespace:px4
+px4_elka_msg	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg.h	/^	px4_elka_msg() :$/;"	f	class:px4::px4_elka_msg
+px4_elka_msg	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg.h	/^	px4_elka_msg(elka_msg_s msg) :$/;"	f	class:px4::px4_elka_msg
+px4_elka_msg	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg.h	/^class __EXPORT px4_elka_msg :$/;"	c	namespace:px4
+px4_elka_msg_ack	build_elka/multi_topics_temporary/FreeRTOS/elka_msg_ack.h	/^	px4_elka_msg_ack() :$/;"	f	class:px4::px4_elka_msg_ack
+px4_elka_msg_ack	build_elka/multi_topics_temporary/FreeRTOS/elka_msg_ack.h	/^	px4_elka_msg_ack(elka_msg_ack_s msg) :$/;"	f	class:px4::px4_elka_msg_ack
+px4_elka_msg_ack	build_elka/multi_topics_temporary/FreeRTOS/elka_msg_ack.h	/^class __EXPORT px4_elka_msg_ack :$/;"	c	namespace:px4
+px4_elka_msg_ack	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg_ack.h	/^	px4_elka_msg_ack() :$/;"	f	class:px4::px4_elka_msg_ack
+px4_elka_msg_ack	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg_ack.h	/^	px4_elka_msg_ack(elka_msg_ack_s msg) :$/;"	f	class:px4::px4_elka_msg_ack
+px4_elka_msg_ack	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg_ack.h	/^class __EXPORT px4_elka_msg_ack :$/;"	c	namespace:px4
+px4_msg_dir	tools/px_generate_uorb_topic_files.py	/^px4_msg_dir = os.path.join(px4_tools_dir,"..\/msg")$/;"	v
+px4_tools_dir	tools/px_generate_uorb_topic_files.py	/^px4_tools_dir = os.path.dirname(os.path.abspath(__file__))$/;"	v
 px4flow.c.i	build_elka/src/drivers/Makefile	/^px4flow.c.i:$/;"	t
 px4flow.c.obj	build_elka/src/drivers/Makefile	/^px4flow.c.obj:$/;"	t
 px4flow.c.s	build_elka/src/drivers/Makefile	/^px4flow.c.s:$/;"	t
@@ -12163,9 +12415,9 @@ queueSEND_TO_BACK	inc/FreeRTOS/queue.h	/^#define	queueSEND_TO_BACK	/;"	d
 queueSEND_TO_BACK	src/FreeRTOS/queue.c	/^#define	queueSEND_TO_BACK	/;"	d	file:
 queueSEND_TO_FRONT	inc/FreeRTOS/queue.h	/^#define	queueSEND_TO_FRONT	/;"	d
 queueSEND_TO_FRONT	src/FreeRTOS/queue.c	/^#define	queueSEND_TO_FRONT	/;"	d	file:
-queueSIZE	src/main.c	/^#define queueSIZE	/;"	d	file:
+queueSIZE	src/main.cpp	/^#define queueSIZE	/;"	d	file:
 queueUNLOCKED	src/FreeRTOS/queue.c	/^#define queueUNLOCKED	/;"	d	file:
-queuewritten	src/main.c	/^xSemaphoreHandle dataRdy, queuewritten;$/;"	v	typeref:typename:xSemaphoreHandle
+queuewritten	src/main.cpp	/^xSemaphoreHandle dataRdy, queuewritten;$/;"	v	typeref:typename:xSemaphoreHandle
 queuewritten	src/modules/stabilizer.c	/^xSemaphoreHandle queuewritten;$/;"	v	typeref:typename:xSemaphoreHandle
 quit	src/elka_comm/common/boost_uart.h	/^  inline bool quit() {return _quit_flag;}$/;"	f	class:SerialHandler	typeref:typename:bool
 r_sens	src/modules/stabilizer.c	/^int8_t r_sens = 1;\/\/3$/;"	v	typeref:typename:int8_t
@@ -12173,10 +12425,13 @@ rcv_id	src/elka_comm/common/elka.h	/^  dev_id_t snd_id, rcv_id;$/;"	m	struct:elk
 readx	src/drivers/px4flow.c	/^void readx(I2C_TypeDef* I2Cx, i2c_frame* px4data, uint8_t address)$/;"	f	typeref:typename:void
 readx1	src/drivers/px4flow.c	/^void readx1(I2C_TypeDef* I2Cx, i2c_frame* px4data, uint8_t address,uint8_t status)$/;"	f	typeref:typename:void
 rebuild_cache	build_elka/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache	build_elka/msg/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache	build_elka/src/FreeRTOS/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache	build_elka/src/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache	build_elka/src/drivers/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache	build_elka/src/elka_comm/common/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache	build_elka/src/elka_comm/free_rtos/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache	build_elka/src/elka_hal/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache	build_elka/src/modules/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache	build_elka/src/utils/Makefile	/^rebuild_cache:$/;"	t
@@ -12188,10 +12443,13 @@ rebuild_cache	src/elka_hal/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache	src/modules/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache	src/utils/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache/fast	build_elka/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+rebuild_cache/fast	build_elka/msg/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
 rebuild_cache/fast	build_elka/src/FreeRTOS/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
 rebuild_cache/fast	build_elka/src/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
 rebuild_cache/fast	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
 rebuild_cache/fast	build_elka/src/drivers/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+rebuild_cache/fast	build_elka/src/elka_comm/common/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+rebuild_cache/fast	build_elka/src/elka_comm/free_rtos/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
 rebuild_cache/fast	build_elka/src/elka_hal/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
 rebuild_cache/fast	build_elka/src/modules/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
 rebuild_cache/fast	build_elka/src/utils/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
@@ -12218,6 +12476,8 @@ resolved_type	tools/genmsg/scripts/genmsg_check_deps.py	/^    resolved_type = re
 resource_name	tools/genmsg/src/genmsg/names.py	/^def resource_name(res_pkg_name, name, my_pkg=None):$/;"	f
 resource_name_base	tools/genmsg/src/genmsg/names.py	/^def resource_name_base(name):$/;"	f
 resource_name_package	tools/genmsg/src/genmsg/names.py	/^def resource_name_package(name):$/;"	f
+result	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	uint8_t result;$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint8_t
+result	build_elka/topics_temporary_header/elka_msg_ack.h	/^	uint8_t result;$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint8_t
 resume_port	src/elka_comm/common/pyelka_common.h	/^  uint8_t resume_port() override {$/;"	f	struct:elka::PyCommPort	typeref:typename:uint8_t
 resume_port	src/elka_comm/free_rtos/elka_devices.cpp	/^uint8_t elka::ELKAPort::resume_port() {$/;"	f	class:elka::ELKAPort	typeref:typename:uint8_t
 resume_port	src/elka_comm/gnd_station/elka_devices.cpp	/^uint8_t elka::GroundPort::resume_port() {$/;"	f	class:elka::GroundPort	typeref:typename:uint8_t
@@ -12288,6 +12548,7 @@ serial_write	src/elka_comm/common/basic_uart.cpp	/^int serial_write(int fd, int 
 serial_write	src/elka_comm/qurt/basic_uart.cpp	/^int serial_write(int fd, int port_num,$/;"	f	typeref:typename:int
 serialize_elka_msg	src/elka_comm/common/elka.cpp	/^void serialize_elka_msg(uint8_t *ret, elka_msg_s &elka_msg) {$/;"	f	typeref:typename:void
 serialize_elka_msg_ack	src/elka_comm/common/elka.cpp	/^void serialize_elka_msg_ack(uint8_t *ret, elka_msg_ack_s &elka_msg) {$/;"	f	typeref:typename:void
+serialize_imubytes	src/main.cpp	/^void serialize_imubytes(char *imu_bytes, imubytes *imu_data) {$/;"	f	typeref:typename:void
 set_blocking	src/elka_comm/common/basic_uart.cpp	/^void set_blocking(int fd, int should_block) {$/;"	f	typeref:typename:void
 set_blocking	src/elka_comm/qurt/basic_uart.cpp	/^void set_blocking(int fd, int should_block) {$/;"	f	typeref:typename:void
 set_depends	tools/genmsg/src/genmsg/msg_loader.py	/^    def set_depends(self, full_msg_type, dependencies):$/;"	m	class:MsgContext
@@ -12306,6 +12567,7 @@ set_sock_opts	src/elka_comm/common/inet_comm.cpp	/^void set_sock_opts(int fd, ui
 set_sock_opts	src/elka_comm/posix/inet_comm.cpp	/^void set_sock_opts(int fd, uint8_t sock_side) {$/;"	f	typeref:typename:void
 set_state_msg	src/elka_comm/common/elka.h	/^inline void set_state_msg(elka_msg_s &elka_snd, uint8_t state,$/;"	f	typeref:typename:void
 singlehtml	tools/genmsg/doc/Makefile	/^singlehtml:$/;"	t
+sizeof_field_type	tools/px_generate_uorb_topic_helper.py	/^def sizeof_field_type(field):$/;"	f
 snap_buf	inc/serial_tasks.h	/^rx_xbee snap_buf;$/;"	v	typeref:typename:rx_xbee
 snapdragon_uart_main	src/elka_comm/qurt/snapdragon_uart.cpp	/^int snapdragon_uart_main(int argc, char *argv[]) {$/;"	f	typeref:typename:int
 snd_id	src/elka_comm/common/elka.h	/^  dev_id_t snd_id, rcv_id;$/;"	m	struct:elka_msg_id_s	typeref:typename:dev_id_t
@@ -12332,11 +12594,10 @@ sonar_timestamp	inc/drivers/px4flow.h	/^    uint8_t sonar_timestamp;\/\/ time si
 source_suffix	tools/genmsg/doc/conf.py	/^source_suffix = '.rst'$/;"	v
 spec	tools/genmsg/scripts/genmsg_check_deps.py	/^    spec = load_msg_from_file(msg_context, msg_file, full_type_name)$/;"	v
 spec	tools/genmsg/scripts/genmsg_check_deps.py	/^    spec = load_srv_from_file(msg_context, msg_file, full_type_name)$/;"	v
-spektrum_check	src/main.c	/^int spektrum_check;$/;"	v	typeref:typename:int
+spektrum_check	src/main.cpp	/^int spektrum_check;$/;"	v	typeref:typename:int
 spektrum_ctl_port	src/elka_comm/qurt/snapdragon_uart_devices.cpp	/^uint8_t uart::UARTPort::spektrum_ctl_port($/;"	f	class:uart::UARTPort	typeref:typename:uint8_t
 spektrumchannel	inc/modules/stabilizer.h	/^uint16_t spektrumchannel[7];$/;"	v	typeref:typename:uint16_t[7]
-spektrumchannel	src/main.c	/^uint16_t spektrumchannel[7];$/;"	v	typeref:typename:uint16_t[7]
-spektrumqueue	src/main.c	/^xQueueHandle  tx1Queue,eulerqueue,spektrumqueue;$/;"	v	typeref:typename:xQueueHandle
+spektrumqueue	src/main.cpp	/^xQueueHandle tx1Queue,eulerqueue,spektrumqueue;$/;"	v	typeref:typename:xQueueHandle
 spektrumqueue	src/modules/stabilizer.c	/^xQueueHandle  tx1Queue, eulerqueue,spektrumqueue;$/;"	v	typeref:typename:xQueueHandle
 spiReceiveByte	src/drivers/nrf24l01.c	/^static char spiReceiveByte()$/;"	f	typeref:typename:char	file:
 spiSendByte	src/drivers/nrf24l01.c	/^static char spiSendByte(char byte)$/;"	f	typeref:typename:char	file:
@@ -12347,12 +12608,12 @@ src/FreeRTOS/GCC/ARM_CM4F/%.o	Debug/src/FreeRTOS/GCC/ARM_CM4F/subdir.mk	/^src\/F
 src/FreeRTOS/MemMang/%.o	Debug/src/FreeRTOS/MemMang/subdir.mk	/^src\/FreeRTOS\/MemMang\/%.o: ..\/src\/FreeRTOS\/MemMang\/%.c$/;"	t
 src/STM32F4xx_StdPeriph_Driver/%.o	Debug/src/STM32F4xx_StdPeriph_Driver/subdir.mk	/^src\/STM32F4xx_StdPeriph_Driver\/%.o: ..\/src\/STM32F4xx_StdPeriph_Driver\/%.c$/;"	t
 src/STM32F4xx_StdPeriph_Driver/CMakeFiles/STM32F4xx_StdPeriph_Driver.dir/rule	build_elka/src/STM32F4xx_StdPeriph_Driver/Makefile	/^src\/STM32F4xx_StdPeriph_Driver\/CMakeFiles\/STM32F4xx_StdPeriph_Driver.dir\/rule:$/;"	t
-src/_write.c.i	build_elka/Makefile	/^src\/_write.c.i:$/;"	t
-src/_write.c.obj	build_elka/Makefile	/^src\/_write.c.obj:$/;"	t
-src/_write.c.s	build_elka/Makefile	/^src\/_write.c.s:$/;"	t
-src/_write.i	build_elka/Makefile	/^src\/_write.i: src\/_write.c.i$/;"	t
-src/_write.obj	build_elka/Makefile	/^src\/_write.obj: src\/_write.c.obj$/;"	t
-src/_write.s	build_elka/Makefile	/^src\/_write.s: src\/_write.c.s$/;"	t
+src/_write.cpp.i	build_elka/Makefile	/^src\/_write.cpp.i:$/;"	t
+src/_write.cpp.obj	build_elka/Makefile	/^src\/_write.cpp.obj:$/;"	t
+src/_write.cpp.s	build_elka/Makefile	/^src\/_write.cpp.s:$/;"	t
+src/_write.i	build_elka/Makefile	/^src\/_write.i: src\/_write.cpp.i$/;"	t
+src/_write.obj	build_elka/Makefile	/^src\/_write.obj: src\/_write.cpp.obj$/;"	t
+src/_write.s	build_elka/Makefile	/^src\/_write.s: src\/_write.cpp.s$/;"	t
 src/debug.c.i	build_elka/Makefile	/^src\/debug.c.i:$/;"	t
 src/debug.c.obj	build_elka/Makefile	/^src\/debug.c.obj:$/;"	t
 src/debug.c.s	build_elka/Makefile	/^src\/debug.c.s:$/;"	t
@@ -12361,6 +12622,8 @@ src/debug.obj	build_elka/Makefile	/^src\/debug.obj: src\/debug.c.obj$/;"	t
 src/debug.s	build_elka/Makefile	/^src\/debug.s: src\/debug.c.s$/;"	t
 src/drivers/%.o	Debug/src/drivers/subdir.mk	/^src\/drivers\/%.o: ..\/src\/drivers\/%.c$/;"	t
 src/drivers/CMakeFiles/elka_drivers.dir/rule	build_elka/src/drivers/Makefile	/^src\/drivers\/CMakeFiles\/elka_drivers.dir\/rule:$/;"	t
+src/elka_comm/common/CMakeFiles/elka_comm__common.dir/rule	build_elka/src/elka_comm/common/Makefile	/^src\/elka_comm\/common\/CMakeFiles\/elka_comm__common.dir\/rule:$/;"	t
+src/elka_comm/free_rtos/CMakeFiles/elka_comm__free_rtos.dir/rule	build_elka/src/elka_comm/free_rtos/Makefile	/^src\/elka_comm\/free_rtos\/CMakeFiles\/elka_comm__free_rtos.dir\/rule:$/;"	t
 src/elka_hal/%.o	Debug/src/elka_hal/subdir.mk	/^src\/elka_hal\/%.o: ..\/src\/elka_hal\/%.c$/;"	t
 src/elka_hal/CMakeFiles/elka_hal.dir/rule	build_elka/src/elka_hal/Makefile	/^src\/elka_hal\/CMakeFiles\/elka_hal.dir\/rule:$/;"	t
 src/hw_config.c.i	build_elka/Makefile	/^src\/hw_config.c.i:$/;"	t
@@ -12369,12 +12632,12 @@ src/hw_config.c.s	build_elka/Makefile	/^src\/hw_config.c.s:$/;"	t
 src/hw_config.i	build_elka/Makefile	/^src\/hw_config.i: src\/hw_config.c.i$/;"	t
 src/hw_config.obj	build_elka/Makefile	/^src\/hw_config.obj: src\/hw_config.c.obj$/;"	t
 src/hw_config.s	build_elka/Makefile	/^src\/hw_config.s: src\/hw_config.c.s$/;"	t
-src/main.c.i	build_elka/Makefile	/^src\/main.c.i:$/;"	t
-src/main.c.obj	build_elka/Makefile	/^src\/main.c.obj:$/;"	t
-src/main.c.s	build_elka/Makefile	/^src\/main.c.s:$/;"	t
-src/main.i	build_elka/Makefile	/^src\/main.i: src\/main.c.i$/;"	t
-src/main.obj	build_elka/Makefile	/^src\/main.obj: src\/main.c.obj$/;"	t
-src/main.s	build_elka/Makefile	/^src\/main.s: src\/main.c.s$/;"	t
+src/main.cpp.i	build_elka/Makefile	/^src\/main.cpp.i:$/;"	t
+src/main.cpp.obj	build_elka/Makefile	/^src\/main.cpp.obj:$/;"	t
+src/main.cpp.s	build_elka/Makefile	/^src\/main.cpp.s:$/;"	t
+src/main.i	build_elka/Makefile	/^src\/main.i: src\/main.cpp.i$/;"	t
+src/main.obj	build_elka/Makefile	/^src\/main.obj: src\/main.cpp.obj$/;"	t
+src/main.s	build_elka/Makefile	/^src\/main.s: src\/main.cpp.s$/;"	t
 src/modules/%.o	Debug/src/modules/subdir.mk	/^src\/modules\/%.o: ..\/src\/modules\/%.c$/;"	t
 src/modules/CMakeFiles/elka_modules.dir/rule	build_elka/src/modules/Makefile	/^src\/modules\/CMakeFiles\/elka_modules.dir\/rule:$/;"	t
 src/startup/startup_stm32f4xx.i	build_elka/Makefile	/^src\/startup\/startup_stm32f4xx.i: src\/startup\/startup_stm32f4xx.s.i$/;"	t
@@ -12609,6 +12872,9 @@ stop_port	src/elka_comm/posix/elka_devices.cpp	/^uint8_t elka::PX4Port::stop_por
 stop_port	src/elka_comm/qurt/snapdragon_uart_devices.cpp	/^uint8_t uart::UARTPort::stop_port() {$/;"	f	class:uart::UARTPort	typeref:typename:uint8_t
 stop_uart_dev	src/elka_comm/qurt/snapdragon_uart_manager.cpp	/^void uart::Manager::stop_uart_dev(uint8_t port_num) {$/;"	f	class:uart::Manager	typeref:typename:void
 sub_test_MsgSpec	tools/genmsg/test/test_genmsg_msgs.py	/^    def sub_test_MsgSpec(types, names, constants, text, full_name, has_header):$/;"	f	function:test_MsgSpec	file:
+submodule_clean	build_elka/Makefile	/^submodule_clean: cmake_check_build_system$/;"	t
+submodule_clean/fast	build_elka/Makefile	/^submodule_clean\/fast:$/;"	t
+switch_pos_t	inc/uORB/uORB.h	/^typedef uint8_t switch_pos_t;$/;"	t	typeref:typename:uint8_t
 system/src/cmsis/%.o	Debug/system/src/cmsis/subdir.mk	/^system\/src\/cmsis\/%.o: ..\/system\/src\/cmsis\/%.c$/;"	t
 system/src/cortexm/%.o	Debug/system/src/cortexm/subdir.mk	/^system\/src\/cortexm\/%.o: ..\/system\/src\/cortexm\/%.c$/;"	t
 system/src/diag/%.o	Debug/system/src/diag/subdir.mk	/^system\/src\/diag\/%.o: ..\/system\/src\/diag\/%.c$/;"	t
@@ -12696,6 +12962,10 @@ timers.c.s	build_elka/src/FreeRTOS/Makefile	/^timers.c.s:$/;"	t
 timers.i	build_elka/src/FreeRTOS/Makefile	/^timers.i: timers.c.i$/;"	t
 timers.obj	build_elka/src/FreeRTOS/Makefile	/^timers.obj: timers.c.obj$/;"	t
 timers.s	build_elka/src/FreeRTOS/Makefile	/^timers.s: timers.c.s$/;"	t
+timestamp	build_elka/inc/uORB/topics/elka_msg.h	/^	uint64_t timestamp; \/\/ required for logger$/;"	m	struct:elka_msg_s	typeref:typename:uint64_t
+timestamp	build_elka/inc/uORB/topics/elka_msg_ack.h	/^	uint64_t timestamp; \/\/ required for logger$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint64_t
+timestamp	build_elka/topics_temporary_header/elka_msg.h	/^	uint64_t timestamp; \/\/ required for logger$/;"	m	struct:elka_msg_s	typeref:typename:uint64_t
+timestamp	build_elka/topics_temporary_header/elka_msg_ack.h	/^	uint64_t timestamp; \/\/ required for logger$/;"	m	struct:elka_msg_ack_s	typeref:typename:uint64_t
 tmrCOMMAND_CHANGE_PERIOD	inc/FreeRTOS/timers.h	/^#define tmrCOMMAND_CHANGE_PERIOD	/;"	d
 tmrCOMMAND_DELETE	inc/FreeRTOS/timers.h	/^#define tmrCOMMAND_DELETE	/;"	d
 tmrCOMMAND_START	inc/FreeRTOS/timers.h	/^#define tmrCOMMAND_START	/;"	d
@@ -12704,6 +12974,24 @@ tmrNO_DELAY	src/FreeRTOS/timers.c	/^#define tmrNO_DELAY	/;"	d	file:
 tmrTIMER_CALLBACK	inc/FreeRTOS/timers.h	/^typedef void (*tmrTIMER_CALLBACK)( xTimerHandle xTimer );$/;"	t	typeref:typename:void (*)(xTimerHandle xTimer)
 tmrTimerControl	src/FreeRTOS/timers.c	/^typedef struct tmrTimerControl$/;"	s	file:
 tmrTimerQueueMessage	src/FreeRTOS/timers.c	/^typedef struct tmrTimerQueueMessage$/;"	s	file:
+topics_sources/elka_msg.cpp.i	build_elka/Makefile	/^topics_sources\/elka_msg.cpp.i:$/;"	t
+topics_sources/elka_msg.cpp.obj	build_elka/Makefile	/^topics_sources\/elka_msg.cpp.obj:$/;"	t
+topics_sources/elka_msg.cpp.s	build_elka/Makefile	/^topics_sources\/elka_msg.cpp.s:$/;"	t
+topics_sources/elka_msg.i	build_elka/Makefile	/^topics_sources\/elka_msg.i: topics_sources\/elka_msg.cpp.i$/;"	t
+topics_sources/elka_msg.obj	build_elka/Makefile	/^topics_sources\/elka_msg.obj: topics_sources\/elka_msg.cpp.obj$/;"	t
+topics_sources/elka_msg.s	build_elka/Makefile	/^topics_sources\/elka_msg.s: topics_sources\/elka_msg.cpp.s$/;"	t
+topics_sources/elka_msg_ack.cpp.i	build_elka/Makefile	/^topics_sources\/elka_msg_ack.cpp.i:$/;"	t
+topics_sources/elka_msg_ack.cpp.obj	build_elka/Makefile	/^topics_sources\/elka_msg_ack.cpp.obj:$/;"	t
+topics_sources/elka_msg_ack.cpp.s	build_elka/Makefile	/^topics_sources\/elka_msg_ack.cpp.s:$/;"	t
+topics_sources/elka_msg_ack.i	build_elka/Makefile	/^topics_sources\/elka_msg_ack.i: topics_sources\/elka_msg_ack.cpp.i$/;"	t
+topics_sources/elka_msg_ack.obj	build_elka/Makefile	/^topics_sources\/elka_msg_ack.obj: topics_sources\/elka_msg_ack.cpp.obj$/;"	t
+topics_sources/elka_msg_ack.s	build_elka/Makefile	/^topics_sources\/elka_msg_ack.s: topics_sources\/elka_msg_ack.cpp.s$/;"	t
+topics_sources/uORBTopics.cpp.i	build_elka/Makefile	/^topics_sources\/uORBTopics.cpp.i:$/;"	t
+topics_sources/uORBTopics.cpp.obj	build_elka/Makefile	/^topics_sources\/uORBTopics.cpp.obj:$/;"	t
+topics_sources/uORBTopics.cpp.s	build_elka/Makefile	/^topics_sources\/uORBTopics.cpp.s:$/;"	t
+topics_sources/uORBTopics.i	build_elka/Makefile	/^topics_sources\/uORBTopics.i: topics_sources\/uORBTopics.cpp.i$/;"	t
+topics_sources/uORBTopics.obj	build_elka/Makefile	/^topics_sources\/uORBTopics.obj: topics_sources\/uORBTopics.cpp.obj$/;"	t
+topics_sources/uORBTopics.s	build_elka/Makefile	/^topics_sources\/uORBTopics.s: topics_sources\/uORBTopics.cpp.s$/;"	t
 traceBLOCKING_ON_QUEUE_RECEIVE	inc/FreeRTOS/FreeRTOS.h	/^	#define traceBLOCKING_ON_QUEUE_RECEIVE(/;"	d
 traceBLOCKING_ON_QUEUE_SEND	inc/FreeRTOS/FreeRTOS.h	/^	#define traceBLOCKING_ON_QUEUE_SEND(/;"	d
 traceCREATE_COUNTING_SEMAPHORE	inc/FreeRTOS/FreeRTOS.h	/^	#define traceCREATE_COUNTING_SEMAPHORE(/;"	d
@@ -12767,7 +13055,7 @@ tskTaskControlBlock	src/FreeRTOS/tasks.c	/^typedef struct tskTaskControlBlock$/;
 twist_with_covariance_stamped_full_text	tools/genmsg/test/test_genmsg_gentools.py	/^twist_with_covariance_stamped_full_text = """# This represents an estimate twist with reference /;"	v
 twoKi	src/modules/sensfusion6.c	/^  float twoKi = TWO_KI_DEF;    \/\/ 2 * integral gain (Ki)$/;"	v	typeref:typename:float
 twoKp	src/modules/sensfusion6.c	/^  float twoKp = TWO_KP_DEF;    \/\/ 2 * proportional gain (Kp)$/;"	v	typeref:typename:float
-tx1Queue	src/main.c	/^xQueueHandle  tx1Queue,eulerqueue,spektrumqueue;$/;"	v	typeref:typename:xQueueHandle
+tx1Queue	src/main.cpp	/^xQueueHandle tx1Queue,eulerqueue,spektrumqueue;$/;"	v	typeref:typename:xQueueHandle
 tx1Queue	src/modules/stabilizer.c	/^xQueueHandle  tx1Queue, eulerqueue,spektrumqueue;$/;"	v	typeref:typename:xQueueHandle
 txQueue_xbee	inc/serial_tasks.h	/^xQueueHandle txQueue_xbee;$/;"	v	typeref:typename:xQueueHandle
 type	src/elka_comm/common/elka.h	/^  uint8_t snd_params, type, length;$/;"	m	struct:elka_msg_id_s	typeref:typename:uint8_t
@@ -12777,18 +13065,21 @@ type_caster	src/elka_comm/gnd_station/pyelka_gnd_station.cpp	/^	template <> stru
 type_caster	src/elka_comm/gnd_station/pyelka_gnd_station.cpp	/^	template <> struct type_caster<msg_id_t> {$/;"	s	namespace:pybind11::detail	file:
 type_caster	src/elka_comm/pyelka_comm.cpp	/^	template <> struct type_caster<dev_id_t> {$/;"	s	namespace:pybind11::detail	file:
 type_caster	src/elka_comm/pyelka_comm.cpp	/^	template <> struct type_caster<msg_id_t> {$/;"	s	namespace:pybind11::detail	file:
+type_map	tools/px_generate_uorb_topic_helper.py	/^type_map = {$/;"	v
 u16	inc/CMSIS/core_cm4.h	/^    __O  uint16_t   u16;                 \/*!< Offset: 0x000 ( \/W)  ITM Stimulus Port 16-bit   /;"	m	union:__anon7471197e0d08::__anon7471197e0e0a	typeref:typename:__O uint16_t
 u16	inc/Device/STM32F4xx/stm32f4xx.h	/^typedef uint16_t u16;$/;"	t	typeref:typename:uint16_t
 u32	inc/CMSIS/core_cm4.h	/^    __O  uint32_t   u32;                 \/*!< Offset: 0x000 ( \/W)  ITM Stimulus Port 32-bit   /;"	m	union:__anon7471197e0d08::__anon7471197e0e0a	typeref:typename:__O uint32_t
 u32	inc/Device/STM32F4xx/stm32f4xx.h	/^typedef uint32_t  u32;$/;"	t	typeref:typename:uint32_t
-u64IdleTicks	src/main.c	/^uint64_t u64IdleTicks=0;    \/\/ Value of u64IdleTicksCnt is copied once per sec.$/;"	v	typeref:typename:uint64_t
-u64IdleTicksCnt	src/main.c	/^uint64_t u64IdleTicksCnt=0; \/\/ Counts when the OS has no task to execute.$/;"	v	typeref:typename:uint64_t
-u64Ticks	src/main.c	/^uint64_t u64Ticks=0;$/;"	v	typeref:typename:uint64_t
+u64IdleTicks	src/main.cpp	/^uint64_t u64IdleTicks=0;    \/\/ Value of u64IdleTicksCnt is copied once per sec.$/;"	v	typeref:typename:uint64_t
+u64IdleTicksCnt	src/main.cpp	/^uint64_t u64IdleTicksCnt=0; \/\/ Counts when the OS has no task to execute.$/;"	v	typeref:typename:uint64_t
+u64Ticks	src/main.cpp	/^uint64_t u64Ticks=0;$/;"	v	typeref:typename:uint64_t
 u8	inc/CMSIS/core_cm4.h	/^    __O  uint8_t    u8;                  \/*!< Offset: 0x000 ( \/W)  ITM Stimulus Port 8-bit    /;"	m	union:__anon7471197e0d08::__anon7471197e0e0a	typeref:typename:__O uint8_t
 u8	inc/Device/STM32F4xx/stm32f4xx.h	/^typedef uint8_t  u8;$/;"	t	typeref:typename:uint8_t
 uart	src/elka_comm/qurt/snapdragon_uart_devices.h	/^namespace uart {$/;"	n
 uart	src/elka_comm/qurt/snapdragon_uart_manager.h	/^namespace uart {$/;"	n
-uartData	src/main.c	/^xQueueHandle xDebugQueue, uartData, adctransferQueue;$/;"	v	typeref:typename:xQueueHandle
+uartData	src/main.cpp	/^xQueueHandle xDebugQueue, uartData, adctransferQueue,$/;"	v	typeref:typename:xQueueHandle
+uartRXData	src/main.cpp	/^             uartRXData, uartTXData;$/;"	v	typeref:typename:xQueueHandle
+uartTXData	src/main.cpp	/^             uartRXData, uartTXData;$/;"	v	typeref:typename:xQueueHandle
 uc16	inc/Device/STM32F4xx/stm32f4xx.h	/^typedef const uint16_t uc16;  \/*!< Read Only *\/$/;"	t	typeref:typename:const uint16_t
 uc32	inc/Device/STM32F4xx/stm32f4xx.h	/^typedef const uint32_t uc32;  \/*!< Read Only *\/$/;"	t	typeref:typename:const uint32_t
 uc8	inc/Device/STM32F4xx/stm32f4xx.h	/^typedef const uint8_t uc8;   \/*!< Read Only *\/$/;"	t	typeref:typename:const uint8_t
@@ -12805,6 +13096,7 @@ ulTaskEndTrace	inc/FreeRTOS/mpu_wrappers.h	/^		#define ulTaskEndTrace	/;"	d
 ulTaskSwitchedInTime	src/FreeRTOS/tasks.c	/^	PRIVILEGED_DATA static unsigned long ulTaskSwitchedInTime = 0UL;	\/*< Holds the value of a time/;"	v	typeref:typename:PRIVILEGED_DATA unsigned long	file:
 unresolved_types	tools/genmsg/scripts/genmsg_check_deps.py	/^    unresolved_types = spec.request.types + spec.response.types$/;"	v
 unresolved_types	tools/genmsg/scripts/genmsg_check_deps.py	/^    unresolved_types = spec.types$/;"	v
+update	Makefile	/^update:$/;"	t
 update_time	src/elka_comm/free_rtos/elka_devices.cpp	/^void elka::ELKAPort::update_time() {$/;"	f	class:elka::ELKAPort	typeref:typename:void
 update_time	src/elka_comm/gnd_station/elka_devices.cpp	/^void elka::GroundPort::update_time() {$/;"	f	class:elka::GroundPort	typeref:typename:void
 update_time	src/elka_comm/posix/elka_devices.cpp	/^void elka::PX4Port::update_time() {$/;"	f	class:elka::PX4Port	typeref:typename:void
@@ -12854,17 +13146,17 @@ uxTasksDeleted	src/FreeRTOS/tasks.c	/^	PRIVILEGED_DATA static volatile unsigned 
 uxTopCoRoutineReadyPriority	src/FreeRTOS/croutine.c	/^static unsigned portBASE_TYPE uxTopCoRoutineReadyPriority = 0;$/;"	v	typeref:typename:unsigned portBASE_TYPE	file:
 uxTopReadyPriority	src/FreeRTOS/tasks.c	/^PRIVILEGED_DATA static volatile unsigned portBASE_TYPE uxTopReadyPriority 		= tskIDLE_PRIORITY;$/;"	v	typeref:typename:PRIVILEGED_DATA volatile unsigned portBASE_TYPE	file:
 uxTopUsedPriority	src/FreeRTOS/tasks.c	/^PRIVILEGED_DATA static unsigned portBASE_TYPE uxTopUsedPriority	 				= tskIDLE_PRIORITY;$/;"	v	typeref:typename:PRIVILEGED_DATA unsigned portBASE_TYPE	file:
-vApplicationIdleHook	src/main.c	/^void vApplicationIdleHook( void ) {$/;"	f	typeref:typename:void
-vApplicationMallocFailedHook	src/main.c	/^void vApplicationMallocFailedHook( void )$/;"	f	typeref:typename:void
-vApplicationStackOverflowHook	src/main.c	/^void vApplicationStackOverflowHook( xTaskHandle *pxTask, signed char *pcTaskName )$/;"	f	typeref:typename:void
-vApplicationTickHook	src/main.c	/^void vApplicationTickHook( void ) {$/;"	f	typeref:typename:void
+vApplicationIdleHook	src/main.cpp	/^void vApplicationIdleHook( void ) {$/;"	f	typeref:typename:void
+vApplicationMallocFailedHook	src/main.cpp	/^void vApplicationMallocFailedHook( void )$/;"	f	typeref:typename:void
+vApplicationStackOverflowHook	src/main.cpp	/^void vApplicationStackOverflowHook( xTaskHandle *pxTask, signed char *pcTaskName )$/;"	f	typeref:typename:void
+vApplicationTickHook	src/main.cpp	/^void vApplicationTickHook( void ) {$/;"	f	typeref:typename:void
 vCoRoutineAddToDelayedList	src/FreeRTOS/croutine.c	/^void vCoRoutineAddToDelayedList( portTickType xTicksToDelay, xList *pxEventList )$/;"	f	typeref:typename:void
 vCoRoutineSchedule	src/FreeRTOS/croutine.c	/^void vCoRoutineSchedule( void )$/;"	f	typeref:typename:void
 vDebugInitQueue	src/debug.c	/^void vDebugInitQueue( void ) {$/;"	f	typeref:typename:void
 vDebugPrintResetType	src/debug.c	/^void vDebugPrintResetType( void ) {$/;"	f	typeref:typename:void
 vDebugPrintf	src/debug.c	/^void vDebugPrintf(const char *fmt, ...) {$/;"	f	typeref:typename:void
 vDebugString	src/debug.c	/^void vDebugString( char *s ) {$/;"	f	typeref:typename:void
-vLEDTask	src/main.c	/^void vLEDTask( void *pvParameters )$/;"	f	typeref:typename:void
+vLEDTask	src/main.cpp	/^void vLEDTask( void *pvParameters )$/;"	f	typeref:typename:void
 vLEDTask	src/serial_tasks.c	/^void vLEDTask( void *pvParameters )$/;"	f	typeref:typename:void
 vListInitialise	src/FreeRTOS/list.c	/^void vListInitialise( xList *pxList )$/;"	f	typeref:typename:void
 vListInitialiseItem	src/FreeRTOS/list.c	/^void vListInitialiseItem( xListItem *pxItem )$/;"	f	typeref:typename:void
@@ -12884,7 +13176,6 @@ vPortSVCHandler	inc/FreeRTOS/FreeRTOSConfig.h	/^#define vPortSVCHandler /;"	d
 vPortSVCHandler	src/FreeRTOS/GCC/ARM_CM4F/port.c	/^void vPortSVCHandler( void )$/;"	f	typeref:typename:void
 vPortStartFirstTask	src/FreeRTOS/GCC/ARM_CM4F/port.c	/^void vPortStartFirstTask( void )$/;"	f	typeref:typename:void
 vPortYieldFromISR	src/FreeRTOS/GCC/ARM_CM4F/port.c	/^void vPortYieldFromISR( void )$/;"	f	typeref:typename:void
-vPx4_read	src/main.c	/^void vPx4_read( void *pvParameters )$/;"	f	typeref:typename:void
 vQueueAddToRegistry	inc/FreeRTOS/FreeRTOS.h	/^	#define vQueueAddToRegistry(/;"	d
 vQueueAddToRegistry	inc/FreeRTOS/mpu_wrappers.h	/^			#define vQueueAddToRegistry	/;"	d
 vQueueAddToRegistry	src/FreeRTOS/queue.c	/^	void vQueueAddToRegistry( xQueueHandle xQueue, signed char *pcQueueName )$/;"	f	typeref:typename:void
@@ -12935,7 +13226,7 @@ vTaskSuspendAll	inc/FreeRTOS/mpu_wrappers.h	/^		#define vTaskSuspendAll	/;"	d
 vTaskSuspendAll	src/FreeRTOS/tasks.c	/^void vTaskSuspendAll( void )$/;"	f	typeref:typename:void
 vTaskSwitchContext	src/FreeRTOS/tasks.c	/^void vTaskSwitchContext( void )$/;"	f	typeref:typename:void
 values	inc/serial_tasks.h	/^	uint8_t values[8];$/;"	m	struct:Pilot_ROS	typeref:typename:uint8_t[8]
-values	src/main.c	/^	uint8_t values[14];$/;"	m	struct:SpektrumStateStruct	typeref:typename:uint8_t[14]	file:
+values	src/main.cpp	/^	uint8_t values[14];$/;"	m	struct:SpektrumStateStruct	typeref:typename:uint8_t[14]	file:
 varianceSampleTime	src/elka_hal/imu.c	/^int32_t    varianceSampleTime;$/;"	v	typeref:typename:int32_t
 verbose	tools/genmsg/src/genmsg/base.py	/^verbose = False$/;"	v
 version	tools/genmsg/doc/conf.py	/^    version = root.findtext('version')$/;"	v
@@ -12974,8 +13265,7 @@ xCoRoutineHandle	inc/FreeRTOS/croutine.h	/^typedef void * xCoRoutineHandle;$/;"	
 xCoRoutineRemoveFromEventList	src/FreeRTOS/croutine.c	/^signed portBASE_TYPE xCoRoutineRemoveFromEventList( const xList *pxEventList )$/;"	f	typeref:typename:signed portBASE_TYPE
 xCoRoutineTickCount	src/FreeRTOS/croutine.c	/^static portTickType xCoRoutineTickCount = 0, xLastTickCount = 0, xPassedTicks = 0;$/;"	v	typeref:typename:portTickType	file:
 xDebugQueue	src/debug.c	/^xQueueHandle xDebugQueue;$/;"	v	typeref:typename:xQueueHandle
-xDebugQueue	src/main.c	/^xQueueHandle xDebugQueue, uartData, adctransferQueue;$/;"	v	typeref:typename:xQueueHandle
-xDebugQueue	src/main.c	/^xQueueHandle xDebugQueue;$/;"	v	typeref:typename:xQueueHandle
+xDebugQueue	src/main.cpp	/^xQueueHandle xDebugQueue, uartData, adctransferQueue,$/;"	v	typeref:typename:xQueueHandle
 xDelayedCoRoutineList1	src/FreeRTOS/croutine.c	/^static xList xDelayedCoRoutineList1;									\/*< Delayed co-routines. *\/$/;"	v	typeref:typename:xList	file:
 xDelayedCoRoutineList2	src/FreeRTOS/croutine.c	/^static xList xDelayedCoRoutineList2;									\/*< Delayed co-routines (two lists are used - one /;"	v	typeref:typename:xList	file:
 xDelayedTaskList1	src/FreeRTOS/tasks.c	/^PRIVILEGED_DATA static xList xDelayedTaskList1;							\/*< Delayed tasks. *\/$/;"	v	typeref:typename:PRIVILEGED_DATA xList	file:
@@ -12987,7 +13277,7 @@ xGenericListItem	src/FreeRTOS/tasks.c	/^	xListItem				xGenericListItem;	\/*< Lis
 xHandle	src/FreeRTOS/queue.c	/^		xQueueHandle xHandle;$/;"	m	struct:QUEUE_REGISTRY_ITEM	typeref:typename:xQueueHandle	file:
 xHeap	src/FreeRTOS/MemMang/heap_1.c	/^} xHeap;$/;"	v	typeref:union:xRTOS_HEAP
 xHigherPriorityTaskWoken	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_it.c	/^portBASE_TYPE xHigherPriorityTaskWoken;$/;"	v	typeref:typename:portBASE_TYPE
-xHigherPriorityTaskWoken	src/main.c	/^static portBASE_TYPE xHigherPriorityTaskWoken;$/;"	v	typeref:typename:portBASE_TYPE	file:
+xHigherPriorityTaskWoken	src/main.cpp	/^static portBASE_TYPE xHigherPriorityTaskWoken;$/;"	v	typeref:typename:portBASE_TYPE	file:
 xIdleTaskHandle	src/FreeRTOS/tasks.c	/^	PRIVILEGED_DATA static xTaskHandle xIdleTaskHandle = NULL;$/;"	v	typeref:typename:PRIVILEGED_DATA xTaskHandle	file:
 xItemValue	inc/FreeRTOS/list.h	/^	portTickType xItemValue;				\/*< The value being listed.  In most cases this is used to sort th/;"	m	struct:xLIST_ITEM	typeref:typename:portTickType
 xItemValue	inc/FreeRTOS/list.h	/^	portTickType xItemValue;$/;"	m	struct:xMINI_LIST_ITEM	typeref:typename:portTickType
@@ -13021,7 +13311,7 @@ xPortStartScheduler	src/FreeRTOS/GCC/ARM_CM4F/port.c	/^portBASE_TYPE xPortStartS
 xPortSysTickHandler	inc/FreeRTOS/FreeRTOSConfig.h	/^#define xPortSysTickHandler /;"	d
 xPortSysTickHandler	src/FreeRTOS/GCC/ARM_CM4F/port.c	/^void xPortSysTickHandler( void )$/;"	f	typeref:typename:void
 xQUEUE	src/FreeRTOS/queue.c	/^} xQUEUE;$/;"	t	typeref:struct:QueueDefinition	file:
-xQueue	src/main.c	/^xQueueHandle xQueue;$/;"	v	typeref:typename:xQueueHandle
+xQueue	src/main.cpp	/^xQueueHandle xQueue;$/;"	v	typeref:typename:xQueueHandle
 xQueueAltGenericReceive	inc/FreeRTOS/mpu_wrappers.h	/^		#define xQueueAltGenericReceive	/;"	d
 xQueueAltGenericReceive	src/FreeRTOS/queue.c	/^	signed portBASE_TYPE xQueueAltGenericReceive( xQueueHandle pxQueue, void * const pvBuffer, port/;"	f	typeref:typename:signed portBASE_TYPE
 xQueueAltGenericSend	inc/FreeRTOS/mpu_wrappers.h	/^		#define xQueueAltGenericSend	/;"	d
@@ -13078,7 +13368,7 @@ xSemaphoreGive	inc/FreeRTOS/semphr.h	/^#define xSemaphoreGive(/;"	d
 xSemaphoreGiveFromISR	inc/FreeRTOS/semphr.h	/^#define xSemaphoreGiveFromISR(/;"	d
 xSemaphoreGiveRecursive	inc/FreeRTOS/semphr.h	/^#define xSemaphoreGiveRecursive(/;"	d
 xSemaphoreHandle	inc/FreeRTOS/semphr.h	/^typedef xQueueHandle xSemaphoreHandle;$/;"	t	typeref:typename:xQueueHandle
-xSemaphoreSW	src/main.c	/^xSemaphoreHandle xSemaphoreSW  = NULL;$/;"	v	typeref:typename:xSemaphoreHandle
+xSemaphoreSW	src/main.cpp	/^xSemaphoreHandle xSemaphoreSW  = NULL;$/;"	v	typeref:typename:xSemaphoreHandle
 xSemaphoreTake	inc/FreeRTOS/semphr.h	/^#define xSemaphoreTake(/;"	d
 xSemaphoreTakeRecursive	inc/FreeRTOS/semphr.h	/^#define xSemaphoreTakeRecursive(/;"	d
 xSuspendedTaskList	src/FreeRTOS/tasks.c	/^	PRIVILEGED_DATA static xList xSuspendedTaskList;					\/*< Tasks that are currently suspended. */;"	v	typeref:typename:PRIVILEGED_DATA xList	file:
@@ -13157,3 +13447,7 @@ z	inc/elka_hal/imu.h	/^  int32_t z;$/;"	m	struct:__anonf295feef0208	typeref:type
 ~SerialBuffer	src/elka_comm/common/elka_comm.cpp	/^elka::SerialBuffer::~SerialBuffer() {$/;"	f	class:elka::SerialBuffer
 ~SerialHandler	src/elka_comm/common/boost_uart.cpp	/^SerialHandler::~SerialHandler() {$/;"	f	class:SerialHandler
 ~UARTPort	src/elka_comm/qurt/snapdragon_uart_devices.cpp	/^uart::UARTPort::~UARTPort() {$/;"	f	class:uart::UARTPort
+~px4_elka_msg	build_elka/multi_topics_temporary/FreeRTOS/elka_msg.h	/^	~px4_elka_msg() {}$/;"	f	class:px4::px4_elka_msg
+~px4_elka_msg	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg.h	/^	~px4_elka_msg() {}$/;"	f	class:px4::px4_elka_msg
+~px4_elka_msg_ack	build_elka/multi_topics_temporary/FreeRTOS/elka_msg_ack.h	/^	~px4_elka_msg_ack() {}$/;"	f	class:px4::px4_elka_msg_ack
+~px4_elka_msg_ack	build_elka/src/platforms/FreeRTOS/elka_messages/elka_elka_msg_ack.h	/^	~px4_elka_msg_ack() {}$/;"	f	class:px4::px4_elka_msg_ack

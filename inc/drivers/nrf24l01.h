@@ -27,6 +27,10 @@
 #ifndef __NRF24L01_H__
 #define __NRF24L01_H__
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdbool.h>
 
 #include "nRF24L01reg.h"
@@ -69,5 +73,9 @@ void nrfSetAddress(unsigned int pipe, char* address);
 void nrfSetEnable(bool enable);
 unsigned char nrfGetStatus();
 
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

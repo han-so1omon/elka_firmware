@@ -25,7 +25,7 @@ void vNum2String( char *s, uint8_t *pPos, uint32_t u32Number, uint8_t u8Base);
 
 // Total buffer size for all debug messages.
 #define DEBUG_QUEUE_SIZE	128
-xQueueHandle xDebugQueue;
+extern xQueueHandle xDebugQueue;
 
 extern xTaskHandle hDebugTask;
 //extern xTaskHandle hTimeTask;

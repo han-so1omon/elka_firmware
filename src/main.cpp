@@ -39,6 +39,7 @@
 #include "nrf24l01.h"
 #include "nRF24L01reg.h"
 
+#include <elka_comm/common/elka.h>
 #include <elka_comm/free_rtos/elka_free_rtos.h>
 #include <elka_comm/free_rtos/elka_devices.h>
 #include <unistd.h>
@@ -75,8 +76,8 @@ int16_t gxi16, gyi16, gzi16;
 
 /* Task functions declarations */
 static void vLEDTask( void *pvParameters );
-static void imuinit();
-static void stabilizerTask(void* param);
+//static void imuinit();
+//static void stabilizerTask(void* param);
 portTASK_FUNCTION_PROTO( vDebugTask, pvParameters );
 portTASK_FUNCTION_PROTO( vElkaRXAck, pvParameters ); // Task to wirelessly receive commands from base-station and transmit the values obtained from vGetData via wireless acknowledgement packet
 portTASK_FUNCTION_PROTO( vGetData, pvParameters ); // Task to obtain gyro, accel and actuator data and transfer it to queue that can later be read by ElkaRxAck Task
@@ -185,14 +186,18 @@ int main(void)
   // TODO send rcv_msg, snd_msg, rcv_ack, snd_ack as parameters
   elka::ELKAPort *elka = new elka::ELKAPort(
       3, PORT_NONE, PRIORITY_QUEUE, 42, "elka_port");
+  /*
   xTaskCreate(vElkaRXReadWrite,
               NULL,
               130,
               (void *) elka,
-              3,
+              4,
               NULL);
-  xTaskCreate(vElkaParse, NULL, 130, (void *) elka, 2, NULL);
+  xTaskCreate(vElkaParse, NULL, 130, (void *) elka, 3, NULL);
+  */
   // END MY CODE ------------------------------
+	xTaskCreate( vGetData, NULL, 130, NULL, 1, NULL );
+  //xTaskCreate( vLEDTask, ( signed portCHAR * ) "LED4", configMINIMAL_STACK_SIZE, (void *)LEDS[0],tskIDLE_PRIORITY+1, NULL );
 
     //adc_init_multi();
 
@@ -205,9 +210,8 @@ int main(void)
 
    // xTaskCreate(stabilizerTask, (const signed char * const)"STABILIZER",configMINIMAL_STACK_SIZE, NULL, /*Piority*/tskIDLE_PRIORITY, NULL);
 
-    //xTaskCreate( vLEDTask, ( signed portCHAR * ) "LED3", configMINIMAL_STACK_SIZE, (void *)LEDS[0],tskIDLE_PRIORITY+1, NULL );
 	//xTaskCreate(vElkaRXAck, NULL,130, NULL, 2, NULL);
-	xTaskCreate( vGetData, NULL, 130, NULL, 1, NULL );
+	//xTaskCreate( vGetData, NULL, 130, NULL, 1, NULL );
 	//xTaskCreate (vSpektrumchannel_DSMX, NULL, 130, NULL, 3, NULL);
 	//xTaskCreate( vDebugTask, (signed char *) "DEBUG", 130,NULL, 1, NULL );
   //
@@ -239,7 +243,7 @@ void vLEDTask( void *pvParameters )
 		//if (nrfRead1Reg(REG_CONFIG)>>5&1)
 		{
 			//STM_EVAL_LEDToggle(LED4);
-			STM_EVAL_LEDToggle(LED3);
+			//STM_EVAL_LEDToggle(LED3);
 			//GPIOC->ODR ^= GPIO_Pin_2;
 			//GPIOC->ODR ^= GPIO_Pin_3;
 		}
@@ -247,7 +251,8 @@ void vLEDTask( void *pvParameters )
 
 
 	    //vTaskDelay(LED[1]/portTICK_RATE_MS);
-        vTaskDelay(1000);
+			STM_EVAL_LEDToggle(LED4);
+      vTaskDelay(1000);
 	}
 }
 
@@ -318,8 +323,8 @@ portTASK_FUNCTION (vGetData, pvParameters)
 
 		//GPIO_WriteBit(GPIOB, GPIO_Pin_5, led1_state ? Bit_SET : Bit_RESET);
 		//led1_state^=1;*/
-	    //STM_EVAL_LEDToggle(LED4);
-	    //vTaskDelay(100);
+    STM_EVAL_LEDToggle(LED4);
+    vTaskDelay(100);
 	}
 }
 
@@ -526,11 +531,12 @@ portTASK_FUNCTION (vElkaRXReadWrite, pvParameters) {
         }
       } else if (rcv_msg_ready) {
         // Add message
-        elka->add_msg(rcv_msg_id,
-                      rcv_msg_num,
-                      rcv_num_retries,
-                      &(rcv_data[0]),
-                      false);
+        // FIXME check if done correctly
+        elka->push_msg(rcv_msg_id,
+                       &(rcv_data[0]),
+                       rcv_msg_num,
+                       rcv_num_retries,
+                       false);
       }
     }
 
@@ -591,12 +597,13 @@ portTASK_FUNCTION_PROTO( vElkaParse, pvParameters) {
         // pushed here and not in a separate thread
         elka->pop_msg(true);
       else // Sleep for a short time to let ack process
-        usleep(20000);
+        //usleep(20000);
+        vTaskDelay(100);
     }
   }
 }
 
-void vApplicationMallocFailedHook( void )
+extern "C" void vApplicationMallocFailedHook( void )
 {
 	/* Called if a call to pvPortMalloc() fails because there is insufficient
 	free memory available in the FreeRTOS heap.  pvPortMalloc() is called
@@ -607,7 +614,7 @@ void vApplicationMallocFailedHook( void )
 }
 /*-----------------------------------------------------------*/
 
-void vApplicationStackOverflowHook( xTaskHandle *pxTask, signed char *pcTaskName )
+extern "C" void vApplicationStackOverflowHook( xTaskHandle *pxTask, signed char *pcTaskName )
 {
 	( void ) pcTaskName;
 	( void ) pxTask;
@@ -640,14 +647,14 @@ void assert_failed(uint8_t* file, uint32_t line)
 }
 #endif
 
-void vApplicationTickHook( void ) {
+extern "C" void vApplicationTickHook( void ) {
     ++u64Ticks;
 }
 
 // This FreeRTOS call-back function gets when no other task is ready to execute.
 // On a completely unloaded system this is getting called at over 2.5MHz!
 // ----------------------------------------------------------------------------
-void vApplicationIdleHook( void ) {
+extern "C" void vApplicationIdleHook( void ) {
     ++u64IdleTicksCnt;
 }
 

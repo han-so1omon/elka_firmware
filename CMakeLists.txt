@@ -73,20 +73,6 @@ include_directories(
   ${ELKA_SOURCE_DIR}/src/elka_comm
 )
 
-link_directories(
-  ${ELKA_BINARY_DIR}
-  ${ELKA_BINARY_DIR}/src
-  ${ELKA_BINARY_DIR}/src/elka_comm/common
-  ${ELKA_BINARY_DIR}/src/elka_comm/free_rtos
-  ${ELKA_BINARY_DIR}/src/drivers
-  ${ELKA_BINARY_DIR}/src/elka_hal
-  ${ELKA_BINARY_DIR}/src/FreeRTOS
-  ${ELKA_BINARY_DIR}/src/modules
-  ${ELKA_BINARY_DIR}/src/STM32F4xx_StdPeriph_Driver
-  ${ELKA_BINARY_DIR}/src/uORB
-  ${ELKA_BINARY_DIR}/src/utils
-)
-
 set(ELKA_LINK_LIBS "")
 
 add_definitions(
@@ -139,8 +125,8 @@ set(GCC_COVERAGE_LINK_FLAGS
   #-T \"${PROJECT_SOURCE_DIR}/ldscripts/libs.ld\" \
   #-T \"${PROJECT_SOURCE_DIR}/ldscripts/sections.ld\" \
   "-T \"${PROJECT_SOURCE_DIR}/ldscripts/stm32_flash.ld\" \
--Xlinker --gc-sections -Wl,-Map,\"elka.map\" \
---specs=nano.specs")
+  -Xlinker --gc-sections -Wl,-Map,\"elka.map\" \
+  --specs=nano.specs --specs=nosys.specs")
 #--specs=nosys.specs")
 #--specs=rdimon.specs")
 #-nostartfiles -Xlinker --gc-sections -Wl,-Map,\"elka.map\" \
@@ -154,7 +140,6 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER__FLAGS} ${GCC_COVERAGE_LINK_FLAGS
 add_definitions(-DUSE_STDPERIPH_DRIVER)
 
 add_subdirectory(src)
-)
 
 # Set startup assembly file to be C file so that it may be linked
 # against
@@ -166,11 +151,11 @@ set_property(
 #FIXME make sure that this will create elka executable file
 #TODO link against libraries
 add_executable(elka
-  src/main.c
+  src/main.cpp
   #src/test.c
-  src/debug.c
-  src/hw_config.c
-  src/_write.c
+  src/debug.cpp
+  src/hw_config.cpp
+  src/_write.cpp
   src/startup/startup_stm32f4xx.s
 )
 
