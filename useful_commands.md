@@ -1,5 +1,9 @@
 #Commands to run in order to compile/run ELKA program
 
+##Clone specific branch from git repository
+git clone -b <branch> <remote_repo>
+e.g. git clone -b original_test_quad-biplane https://github.com/<username>/elka_firmware.git
+
 ##View code in a directory
 `ls` (might be `dir` on Windows)
 
