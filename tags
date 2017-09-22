@@ -2349,7 +2349,6 @@ Constant	tools/genmsg/src/genmsg/msgs.py	/^class Constant(object):$/;"	c
 Contents	inc/Device/STM32F4xx/Release_Notes.html	/^<h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: initia/;"	i
 Contents	inc/STM32F4xx_StdPeriph_Driver/Release_Notes.html	/^    <h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: in/;"	i
 CopyDataInit	src/startup/startup_stm32f4xx.s	/^CopyDataInit:$/;"	l
-CopyDataInit	startup_stm32f4xx.s	/^CopyDataInit:$/;"	l
 CoreDebug	inc/CMSIS/core_cm4.h	/^#define CoreDebug /;"	d
 CoreDebug_BASE	inc/CMSIS/core_cm4.h	/^#define CoreDebug_BASE /;"	d
 CoreDebug_DCRSR_REGSEL_Msk	inc/CMSIS/core_cm4.h	/^#define CoreDebug_DCRSR_REGSEL_Msk /;"	d
@@ -3185,7 +3184,6 @@ Data	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.h	/^  uint32_t Data[5];      
 DebugMon_Handler	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_it.c	/^void DebugMon_Handler(void)$/;"	f	typeref:typename:void
 DebugMonitor_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  DebugMonitor_IRQn           = -4,     \/*!< 12 Cortex-M4 Debug Monitor Interrupt              /;"	e	enum:IRQn
 Default_Handler	src/startup/startup_stm32f4xx.s	/^Default_Handler:$/;"	l
-Default_Handler	startup_stm32f4xx.s	/^Default_Handler:$/;"	l
 DevIdVector	src/elka_comm/common/pyelka_common.cpp	/^typedef std::vector<dev_id_t> DevIdVector;$/;"	t	typeref:typename:std::vector<dev_id_t>	file:
 DevIdVector	src/elka_comm/pyelka_comm.cpp	/^typedef std::vector<dev_id_t> DevIdVector;$/;"	t	typeref:typename:std::vector<dev_id_t>	file:
 DevPropVector	src/elka_comm/common/pyelka_common.cpp	/^typedef std::vector<dev_prop_t> DevPropVector;$/;"	t	typeref:typename:std::vector<dev_prop_t>	file:
@@ -4775,7 +4773,6 @@ FTSR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t FTSR;   \/*!< EXTI Falli
 FUSION_UPDATE_DT	src/modules/stabilizer.c	/^#define FUSION_UPDATE_DT /;"	d	file:
 Field	tools/genmsg/src/genmsg/msgs.py	/^class Field(object):$/;"	c
 FillZerobss	src/startup/startup_stm32f4xx.s	/^FillZerobss:$/;"	l
-FillZerobss	startup_stm32f4xx.s	/^FillZerobss:$/;"	l
 FlagStatus	inc/Device/STM32F4xx/stm32f4xx.h	/^typedef enum {RESET = 0, SET = !RESET} FlagStatus, ITStatus;$/;"	t	typeref:enum:__anon5babb8180103
 Foo	tools/genmsg/test/test_genmsg_base.py	/^    class Foo(object):$/;"	c	function:test_plog	file:
 Foo	tools/genmsg/test/test_genmsg_msg_loader.py	/^    class Foo(object): pass$/;"	c	function:test_load_depends_srv	file:
@@ -6180,7 +6177,6 @@ IWDG_WriteAccessCmd	src/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.c	/^void IWDG_
 IWDG_WriteAccess_Disable	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.h	/^#define IWDG_WriteAccess_Disable /;"	d
 IWDG_WriteAccess_Enable	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.h	/^#define IWDG_WriteAccess_Enable /;"	d
 Infinite_Loop	src/startup/startup_stm32f4xx.s	/^Infinite_Loop:$/;"	l
-Infinite_Loop	startup_stm32f4xx.s	/^Infinite_Loop:$/;"	l
 InvalidMsgSpec	tools/genmsg/src/genmsg/base.py	/^class InvalidMsgSpec(Exception):$/;"	c
 JDR1	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t JDR1;   \/*!< ADC injected data register 1,                Address offset: 0x3C /;"	m	struct:__anon5babb8180408	typeref:typename:__IO uint32_t
 JDR2	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t JDR2;   \/*!< ADC injected data register 2,                Address offset: 0x40 /;"	m	struct:__anon5babb8180408	typeref:typename:__IO uint32_t
@@ -6363,9 +6359,7 @@ License	inc/Device/STM32F4xx/Release_Notes.html	/^<h2 style="background: rgb(51,
 License	inc/STM32F4xx_StdPeriph_Driver/Release_Notes.html	/^    <h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: in/;"	a
 License	inc/STM32F4xx_StdPeriph_Driver/Release_Notes.html	/^    <h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: in/;"	i
 LoopCopyDataInit	src/startup/startup_stm32f4xx.s	/^LoopCopyDataInit:$/;"	l
-LoopCopyDataInit	startup_stm32f4xx.s	/^LoopCopyDataInit:$/;"	l
 LoopFillZerobss	src/startup/startup_stm32f4xx.s	/^LoopFillZerobss:$/;"	l
-LoopFillZerobss	startup_stm32f4xx.s	/^LoopFillZerobss:$/;"	l
 LostFrame_cnt	src/main.c	/^	uint8_t LostFrame_cnt;$/;"	m	struct:SpektrumStateStruct	typeref:typename:uint8_t	file:
 M0AR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t M0AR;   \/*!< DMA stream x memory 0 address register   *\/$/;"	m	struct:__anon5babb8180e08	typeref:typename:__IO uint32_t
 M1AR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint32_t M1AR;   \/*!< DMA stream x memory 1 address register   *\/$/;"	m	struct:__anon5babb8180e08	typeref:typename:__IO uint32_t
@@ -8502,7 +8496,6 @@ RXCRCR	inc/Device/STM32F4xx/stm32f4xx.h	/^  __IO uint16_t RXCRCR;     \/*!< SPI 
 Release Notes for STM32F4xx CMSIS	inc/Device/STM32F4xx/Release_Notes.html	/^Notes for STM32F4xx CMSIS<\/span><span style="font-size: 20pt; font-family: Verdana;"><o:p><\/o:/;"	h
 Release Notes for STM32F4xx Standard Peripherals Library Drivers (StdPeriph_Driver)	inc/STM32F4xx_StdPeriph_Driver/Release_Notes.html	/^    Peripherals Library Drivers (StdPeriph_Driver)<\/span><span style="font-size: 20pt; font-fam/;"	h
 Reset_Handler	src/startup/startup_stm32f4xx.s	/^Reset_Handler:  $/;"	l
-Reset_Handler	startup_stm32f4xx.s	/^Reset_Handler:  $/;"	l
 RouteMap	src/elka_comm/common/pyelka_common.cpp	/^					RouteMap;$/;"	t	typeref:typename:std::map<dev_id_t,elka::DeviceRoute,dev_id_tCmp>	file:
 RouteMap	src/elka_comm/pyelka_comm.cpp	/^					RouteMap;$/;"	t	typeref:typename:std::map<dev_id_t,elka::DeviceRoute,dev_id_tCmp>	file:
 Rx_Idx1	src/drivers/i2croutines.c	/^__IO uint8_t Tx_Idx1 = 0, Rx_Idx1 = 0;$/;"	v	typeref:typename:__IO uint8_t
@@ -10062,6 +10055,7 @@ UARTPort	src/elka_comm/qurt/snapdragon_uart_devices.h	/^class uart::UARTPort : p
 USART1	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART1 /;"	d
 USART1Init	src/hw_config.c	/^void USART1Init(uint32_t baudrate)$/;"	f	typeref:typename:void
 USART1_BASE	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART1_BASE /;"	d
+USART1_IRQHandler	src/main.c	/^void USART1_IRQHandler(void)$/;"	f	typeref:typename:void
 USART1_IRQHandler	src/serial_tasks.c	/^void USART1_IRQHandler(void)$/;"	f	typeref:typename:void
 USART1_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  USART1_IRQn                 = 37,     \/*!< USART1 global Interrupt                           /;"	e	enum:IRQn
 USART2	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART2 /;"	d
@@ -10071,6 +10065,7 @@ USART2_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  USART2_IRQn                 = 3
 USART3	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART3 /;"	d
 USART3Init	src/hw_config.c	/^void USART3Init(uint32_t baudrate)$/;"	f	typeref:typename:void
 USART3_BASE	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART3_BASE /;"	d
+USART3_IRQHandler	src/main.c	/^void USART3_IRQHandler(void)$/;"	f	typeref:typename:void
 USART3_IRQHandler	src/serial_tasks.c	/^void USART3_IRQHandler(void)$/;"	f	typeref:typename:void
 USART3_IRQn	inc/Device/STM32F4xx/stm32f4xx.h	/^  USART3_IRQn                 = 39,     \/*!< USART3 global Interrupt                           /;"	e	enum:IRQn
 USART6	inc/Device/STM32F4xx/stm32f4xx.h	/^#define USART6 /;"	d
@@ -10546,6 +10541,7 @@ __anon5babb8182608	inc/Device/STM32F4xx/stm32f4xx.h	/^{$/;"	s
 __anon5c9ac9830103	inc/STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.h	/^{ $/;"	g
 __anon64b800a90108	inc/serial_tasks.h	/^{$/;"	s
 __anon64b800a90208	inc/serial_tasks.h	/^{$/;"	s
+__anon6a96e1720108	src/main.c	/^{$/;"	s	file:
 __anon7471197e010a	inc/CMSIS/core_cm4.h	/^{$/;"	u
 __anon7471197e0208	inc/CMSIS/core_cm4.h	/^  {$/;"	s	union:__anon7471197e010a
 __anon7471197e030a	inc/CMSIS/core_cm4.h	/^{$/;"	u
@@ -10916,7 +10912,7 @@ b	inc/CMSIS/core_cm4.h	/^  } b;                                   \/*!< Structur
 b	inc/CMSIS/core_cm4.h	/^  } b;                                   \/*!< Structure used for bit  access                  */;"	m	union:__anon7471197e070a	typeref:struct:__anon7471197e070a::__anon7471197e0808
 bare_msg_type	tools/genmsg/src/genmsg/msgs.py	/^def bare_msg_type(msg_type):$/;"	f
 bare_type	tools/genmsg/scripts/genmsg_check_deps.py	/^    bare_type = bare_msg_type(unresolved_type)$/;"	v
-baseline	src/modules/stabilizer.c	/^int16_t baseline = 0;\/\/1000;$/;"	v	typeref:typename:int16_t
+baseline	src/modules/stabilizer.c	/^int16_t baseline = 1000;$/;"	v	typeref:typename:int16_t
 beta	src/modules/sensfusion6.c	/^  float beta = BETA_DEF;     \/\/ 2 * proportional gain (Kp)$/;"	v	typeref:typename:float
 bias	src/elka_hal/imu.c	/^  Axis3i16   bias;$/;"	m	struct:__anon8adadc380108	typeref:typename:Axis3i16	file:
 bool	inc/stdbool.h	/^#define bool	/;"	d
@@ -11028,6 +11024,7 @@ cmp_dev_id_t	src/elka_comm/common/elka.h	/^inline int8_t cmp_dev_id_t(dev_id_t d
 cmp_dev_prop_t	src/elka_comm/common/elka.h	/^inline int8_t cmp_dev_prop_t(dev_prop_t d1, dev_prop_t d2) {$/;"	f	typeref:typename:int8_t
 cmp_msg_id_t	src/elka_comm/common/elka.h	/^inline int8_t cmp_msg_id_t(msg_id_t m1, msg_id_t m2) {$/;"	f	typeref:typename:int8_t
 commanded	inc/serial_tasks.h	/^	uint8_t commanded[24];$/;"	m	struct:__anon64b800a90108	typeref:typename:uint8_t[24]
+commanded	src/main.c	/^	uint8_t commanded[16];$/;"	m	struct:__anon6a96e1720108	typeref:typename:uint8_t[16]	file:
 compute_full_text	tools/genmsg/src/genmsg/gentools.py	/^def compute_full_text(msg_context, spec):$/;"	f
 compute_full_type_name	tools/genmsg/src/genmsg/gentools.py	/^def compute_full_type_name(package_name, file_name):$/;"	f
 compute_md5	tools/genmsg/src/genmsg/gentools.py	/^def compute_md5(msg_context, spec):$/;"	f
@@ -11255,6 +11252,7 @@ eulerRollDesired	src/modules/stabilizer.c	/^PRIVATE float eulerRollDesired;$/;"	
 eulerYawActual	src/modules/stabilizer.c	/^PRIVATE float eulerYawActual;$/;"	v	typeref:typename:PRIVATE float
 eulerYawDesired	src/modules/stabilizer.c	/^PRIVATE float eulerYawDesired;$/;"	v	typeref:typename:PRIVATE float
 eulerangles	inc/serial_tasks.h	/^	uint8_t eulerangles[4];$/;"	m	struct:__anon64b800a90108	typeref:typename:uint8_t[4]
+eulerangles	src/main.c	/^	uint8_t eulerangles[4];$/;"	m	struct:__anon6a96e1720108	typeref:typename:uint8_t[4]	file:
 eulerqueue	src/main.c	/^xQueueHandle  tx1Queue,eulerqueue,spektrumqueue;$/;"	v	typeref:typename:xQueueHandle
 eulerqueue	src/modules/stabilizer.c	/^xQueueHandle  tx1Queue, eulerqueue,spektrumqueue;$/;"	v	typeref:typename:xQueueHandle
 eulerstruct	inc/modules/stabilizer.h	/^} eulerstruct;$/;"	t	typeref:struct:__anondeeb10c50208
@@ -11297,7 +11295,6 @@ frame_count_since_last_readout	inc/drivers/px4flow.h	/^    uint16_t frame_count_
 full_type_name	tools/genmsg/scripts/genmsg_check_deps.py	/^full_type_name = compute_full_type_name(pkg_name, os.path.basename(msg_file))$/;"	v
 fusionDt	src/modules/stabilizer.c	/^PRIVATE float fusionDt;$/;"	v	typeref:typename:PRIVATE float
 g_pfnVectors	src/startup/startup_stm32f4xx.s	/^g_pfnVectors:$/;"	l
-g_pfnVectors	startup_stm32f4xx.s	/^g_pfnVectors:$/;"	l
 generate_from_command_line_options	tools/genmsg/src/genmsg/template_tools.py	/^def generate_from_command_line_options(argv, msg_template_dict, srv_template_dict, module_templa/;"	f
 generate_from_file	tools/genmsg/src/genmsg/template_tools.py	/^def generate_from_file(input_file, package_name, output_dir, template_dir, include_path, msg_tem/;"	f
 generate_module	tools/genmsg/src/genmsg/template_tools.py	/^def generate_module(package_name, output_dir, template_dir, template_dict):$/;"	f
@@ -11358,6 +11355,7 @@ gyro_y_rate_integral	inc/drivers/px4flow.h	/^    int16_t gyro_y_rate_integral;\/
 gyro_z_rate	inc/drivers/px4flow.h	/^    int16_t gyro_z_rate; \/\/ latest gyro z rate [rad\/sec]$/;"	m	struct:i2c_frame	typeref:typename:int16_t
 gyro_z_rate_integral	inc/drivers/px4flow.h	/^    int16_t gyro_z_rate_integral;\/\/accumulated gyro z rates in radians*10000 since last I2C re/;"	m	struct:i2c_integral_frame	typeref:typename:int16_t
 gyrobytes	inc/serial_tasks.h	/^	uint8_t gyrobytes[6];$/;"	m	struct:__anon64b800a90108	typeref:typename:uint8_t[6]
+gyrobytes	src/main.c	/^	uint8_t gyrobytes[6];$/;"	m	struct:__anon6a96e1720108	typeref:typename:uint8_t[6]	file:
 gzi16	src/main.c	/^int16_t gxi16, gyi16, gzi16;$/;"	v	typeref:typename:int16_t
 has_header	tools/genmsg/src/genmsg/msgs.py	/^    def has_header(self):$/;"	m	class:MsgSpec
 help	build_elka/Makefile	/^help:$/;"	t
@@ -11434,6 +11432,7 @@ imuCalculateBiasMean	src/elka_hal/imu.c	/^static void __attribute__((used)) imuC
 imuCalculateVarianceAndMean	src/elka_hal/imu.c	/^static void imuCalculateVarianceAndMean(BiasObj* bias, Axis3i32* varOut, Axis3i32* meanOut)$/;"	f	typeref:typename:void	file:
 imuFindBiasValue	src/elka_hal/imu.c	/^static bool imuFindBiasValue(BiasObj* bias)$/;"	f	typeref:typename:bool	file:
 imubytes	inc/serial_tasks.h	/^}imubytes;$/;"	t	typeref:struct:__anon64b800a90108
+imubytes	src/main.c	/^}imubytes;$/;"	t	typeref:struct:__anon6a96e1720108	file:
 imudata	inc/serial_tasks.h	/^imubytes imudata;$/;"	v	typeref:typename:imubytes
 imudata	src/main.c	/^imubytes imudata;$/;"	v	typeref:typename:imubytes
 imuinit	src/modules/stabilizer.c	/^void imuinit(void)$/;"	f	typeref:typename:void
@@ -11923,7 +11922,7 @@ pid	src/elka_comm/common/inet_comm.h	/^	pid_t pid;$/;"	m	struct:Child	typeref:ty
 pid	src/elka_comm/posix/inet_comm.h	/^	pid_t pid;$/;"	m	struct:Child	typeref:typename:pid_t
 pitchRateDesired	src/modules/stabilizer.c	/^PRIVATE float pitchRateDesired;$/;"	v	typeref:typename:PRIVATE float
 pitch_sens	src/modules/stabilizer.c	/^float pitch_sens = 1.0;$/;"	v	typeref:typename:float
-pitchkd	src/modules/stabilizer.c	/^int8_t pitchkd = 80;$/;"	v	typeref:typename:int8_t
+pitchkd	src/modules/stabilizer.c	/^int8_t pitchkd = 60;$/;"	v	typeref:typename:int8_t
 pitchki	src/modules/stabilizer.c	/^int8_t pitchki, rollki;$/;"	v	typeref:typename:int8_t
 pitchkp	src/modules/stabilizer.c	/^int8_t pitchkp = 4;$/;"	v	typeref:typename:int8_t
 pixel_flow_x_integral	inc/drivers/px4flow.h	/^    int16_t pixel_flow_x_integral;\/\/accumulated flow in radians*10000 around x axis since last/;"	m	struct:i2c_integral_frame	typeref:typename:int16_t
@@ -12095,7 +12094,6 @@ pvPortMallocAligned	inc/FreeRTOS/FreeRTOS.h	/^	#define pvPortMallocAligned(/;"	d
 pvTaskCode	inc/FreeRTOS/task.h	/^	pdTASK_CODE pvTaskCode;$/;"	m	struct:xTASK_PARAMTERS	typeref:typename:pdTASK_CODE
 pvTimerGetTimerID	src/FreeRTOS/timers.c	/^void *pvTimerGetTimerID( xTimerHandle xTimer )$/;"	f	typeref:typename:void *
 pvTimerID	src/FreeRTOS/timers.c	/^	void 					*pvTimerID;			\/*<< An ID to identify the timer.  This allows the timer to be identif/;"	m	struct:tmrTimerControl	typeref:typename:void *	file:
-px4_test	src/main.c	/^i2c_frame px4_test;$/;"	v	typeref:typename:i2c_frame
 px4flow.c.i	build_elka/src/drivers/Makefile	/^px4flow.c.i:$/;"	t
 px4flow.c.obj	build_elka/src/drivers/Makefile	/^px4flow.c.obj:$/;"	t
 px4flow.c.s	build_elka/src/drivers/Makefile	/^px4flow.c.s:$/;"	t
@@ -12227,9 +12225,9 @@ resume_port	src/elka_comm/qurt/snapdragon_uart_devices.cpp	/^uint8_t uart::UARTP
 rightmotor	src/modules/stabilizer.c	/^uint32_t rightmotor;$/;"	v	typeref:typename:uint32_t
 rollRateDesired	src/modules/stabilizer.c	/^PRIVATE float rollRateDesired;$/;"	v	typeref:typename:PRIVATE float
 roll_sens	src/modules/stabilizer.c	/^float roll_sens = 1.0;$/;"	v	typeref:typename:float
-rollkd	src/modules/stabilizer.c	/^int8_t rollkd = 80;$/;"	v	typeref:typename:int8_t
+rollkd	src/modules/stabilizer.c	/^int8_t rollkd = 60;$/;"	v	typeref:typename:int8_t
 rollki	src/modules/stabilizer.c	/^int8_t pitchki, rollki;$/;"	v	typeref:typename:int8_t
-rollkp	src/modules/stabilizer.c	/^int8_t rollkp = -4;$/;"	v	typeref:typename:int8_t
+rollkp	src/modules/stabilizer.c	/^int8_t rollkp = 4;$/;"	v	typeref:typename:int8_t
 root	tools/genmsg/doc/conf.py	/^    root = ElementTree(None, os.path.join('..', 'package.xml'))$/;"	v
 rosSerialInit	src/serial_tasks.c	/^void rosSerialInit()$/;"	f	typeref:typename:void
 roschannel	inc/serial_tasks.h	/^uint16_t roschannel[4];$/;"	v	typeref:typename:uint16_t[4]
@@ -12640,6 +12638,7 @@ tasks.c.s	build_elka/src/FreeRTOS/Makefile	/^tasks.c.s:$/;"	t
 tasks.i	build_elka/src/FreeRTOS/Makefile	/^tasks.i: tasks.c.i$/;"	t
 tasks.obj	build_elka/src/FreeRTOS/Makefile	/^tasks.obj: tasks.c.obj$/;"	t
 tasks.s	build_elka/src/FreeRTOS/Makefile	/^tasks.s: tasks.c.s$/;"	t
+tempThrust	src/modules/stabilizer.c	/^int16_t tempThrust = 900;$/;"	v	typeref:typename:int16_t
 templates_path	tools/genmsg/doc/conf.py	/^templates_path = ['_templates']$/;"	v
 test_Constant	tools/genmsg/test/test_genmsg_msgs.py	/^def test_Constant():$/;"	f
 test_Field	tools/genmsg/test/test_genmsg_msgs.py	/^def test_Field():$/;"	f
@@ -12884,7 +12883,6 @@ vPortSVCHandler	inc/FreeRTOS/FreeRTOSConfig.h	/^#define vPortSVCHandler /;"	d
 vPortSVCHandler	src/FreeRTOS/GCC/ARM_CM4F/port.c	/^void vPortSVCHandler( void )$/;"	f	typeref:typename:void
 vPortStartFirstTask	src/FreeRTOS/GCC/ARM_CM4F/port.c	/^void vPortStartFirstTask( void )$/;"	f	typeref:typename:void
 vPortYieldFromISR	src/FreeRTOS/GCC/ARM_CM4F/port.c	/^void vPortYieldFromISR( void )$/;"	f	typeref:typename:void
-vPx4_read	src/main.c	/^void vPx4_read( void *pvParameters )$/;"	f	typeref:typename:void
 vQueueAddToRegistry	inc/FreeRTOS/FreeRTOS.h	/^	#define vQueueAddToRegistry(/;"	d
 vQueueAddToRegistry	inc/FreeRTOS/mpu_wrappers.h	/^			#define vQueueAddToRegistry	/;"	d
 vQueueAddToRegistry	src/FreeRTOS/queue.c	/^	void vQueueAddToRegistry( xQueueHandle xQueue, signed char *pcQueueName )$/;"	f	typeref:typename:void
@@ -13140,10 +13138,10 @@ xTxLock	src/FreeRTOS/queue.c	/^	signed portBASE_TYPE xTxLock;			\/*< Stores the 
 y	inc/elka_hal/imu.h	/^  float y;$/;"	m	struct:__anonf295feef0308	typeref:typename:float
 y	inc/elka_hal/imu.h	/^  int16_t y;$/;"	m	struct:__anonf295feef0108	typeref:typename:int16_t
 y	inc/elka_hal/imu.h	/^  int32_t y;$/;"	m	struct:__anonf295feef0208	typeref:typename:int32_t
-y_sens	src/modules/stabilizer.c	/^int8_t y_sens = 30;\/\/30;$/;"	v	typeref:typename:int8_t
+y_sens	src/modules/stabilizer.c	/^int8_t y_sens = 15;\/\/30;$/;"	v	typeref:typename:int8_t
 yawRateDesired	src/modules/stabilizer.c	/^PRIVATE float yawRateDesired;$/;"	v	typeref:typename:PRIVATE float
 yaw_sens	src/modules/stabilizer.c	/^float yaw_sens = 1.0;$/;"	v	typeref:typename:float
-yawkp	src/modules/stabilizer.c	/^int8_t yawkp = 100;$/;"	v	typeref:typename:int8_t
+yawkp	src/modules/stabilizer.c	/^int8_t yawkp = 150;$/;"	v	typeref:typename:int8_t
 z	inc/elka_hal/imu.h	/^  float z;$/;"	m	struct:__anonf295feef0308	typeref:typename:float
 z	inc/elka_hal/imu.h	/^  int16_t z;$/;"	m	struct:__anonf295feef0108	typeref:typename:int16_t
 z	inc/elka_hal/imu.h	/^  int32_t z;$/;"	m	struct:__anonf295feef0208	typeref:typename:int32_t

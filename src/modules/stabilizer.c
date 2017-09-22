@@ -108,22 +108,25 @@ xSemaphoreHandle queuewritten;
 /* Initialize Motors, IMU, Sensor Fusion and Stabilizer Task */
 void stabilizerInit(void)
 {
-	//if(isInit)
-	//return;
+	if(isInit)
+	return;
 
 	motorsInit();
 	imu6Init();
+  /*
 	sensfusion6Init();
 	rollRateDesired = 0;
 	pitchRateDesired = 0;
 	yawRateDesired = 0;
 	//vSemaphoreCreateBinary(queuewritten);
+  */
 
 
 	xTaskCreate(stabilizerTask, (const signed char * const)"STABILIZER",
-			configMINIMAL_STACK_SIZE, NULL, /*Piority*/tskIDLE_PRIORITY, NULL);
+			configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY + 1, NULL);
 
-	//isInit = TRUE;
+	isInit = TRUE;
+  
 }
 
 static void stabilizerTask(void* param)
@@ -132,7 +135,7 @@ static void stabilizerTask(void* param)
 	uint16_t ratio;
 	uint8_t data;
 	uint8_t buffer[14];
-	imuinit();
+	//imuinit();
 	int16_t ax,ay,az,gx,gy,gz;
 	uint32_t lastWakeTime;
 	lastWakeTime = xTaskGetTickCount ();
@@ -151,6 +154,12 @@ static void stabilizerTask(void* param)
 	int spektrumchanneltemp[6];
 
 
+  while(1) {
+    STM_EVAL_LEDToggle(LED3);
+    vTaskDelay(500);
+  }
+
+  /*
 
 
 
@@ -192,7 +201,7 @@ static void stabilizerTask(void* param)
 			euler.data[2] = (int)(eulerPitchDesired*100);
 			//vDebugPrintf("%i\r\n",attitudeCounter);
 		}
-		xQueueReceive(tx1Queue,&test,0);
+		//xQueueReceive(tx1Queue,&test,0);
 
 
 
@@ -206,14 +215,15 @@ static void stabilizerTask(void* param)
 			rollki = (test.data[12]<<8)+test.data[13];
 			rollkd = (test.data[14]<<8)+test.data[15];
 			yawkp = (test.data[16]<<8)+test.data[17];
-			/*pitchkp = test.data[4];
-			pitchki = test.data[5];
-			pitchkd = test.data[6];
-			rollkp = test.data[7];
-			rollki = test.data[8];
-			rollkd = test.data[9];
-			yawkp = test.data[10];*/
+			//pitchkp = test.data[4];
+			//pitchki = test.data[5];
+			//pitchkd = test.data[6];
+			//rollkp = test.data[7];
+			//rollki = test.data[8];
+			//rollkd = test.data[9];
+			//yawkp = test.data[10];
 			k=1;
+
 
 
 		}
@@ -224,10 +234,10 @@ static void stabilizerTask(void* param)
 			r_sens = (test.data[6]<<8)+test.data[7];
 			p_sens = (test.data[8]<<8)+test.data[9];
 			y_sens = (test.data[10]<<8)+test.data[11];
-			/*t_sens = test.data[4];
-			r_sens = test.data[5];
-			p_sens = test.data[6];
-			y_sens = test.data[7];*/
+			//t_sens = test.data[4];
+			//r_sens = test.data[5];
+			//p_sens = test.data[6];
+			//y_sens = test.data[7];
 			//k=2;
 
 		}
@@ -279,7 +289,7 @@ static void stabilizerTask(void* param)
 		euler.data[6] = (int)(helicnt);
 
 
-		xQueueSend(eulerqueue,&euler,0);
+		//xQueueSend(eulerqueue,&euler,0);
 		distributePower(actuatorThrust, actuatorRoll, actuatorPitch, actuatorYaw, 0, 0);
 		//distributePower(1000, 0, 0, 0, 0, 0);
 		//
@@ -342,6 +352,8 @@ static void stabilizerTask(void* param)
 
 
 	}
+
+  */
 }
 
 static void distributePower(const uint16_t thrust, const int16_t roll,

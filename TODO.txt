@@ -1,4 +1,4 @@
 FIXME:
-Code hangs at `vTaskStartScheduler();` in `main.c`
-Specifically at void vPortStartFirstTask( void ) at
-  `src/FreeRTOS/GCC/ARMCM4F/port.c:154
+  i2cdevReadByte() <116 src/drivers/i2cdev.c>
+    from < imu6init ... mpu6050TestConnection ...
+           mpu6050GetDeviceID ... i2cdevReadBits >

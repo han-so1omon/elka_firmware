@@ -120,6 +120,7 @@ void imu6Init(void)
   i2cdevInit(I2C1);
   mpu6050Init(I2C1);
 
+
   if (mpu6050TestConnection() == TRUE)
   {
     //DEBUG_PRINT("MPU6050 I2C connection [OK].\n");
@@ -129,6 +130,7 @@ void imu6Init(void)
    // DEBUG_PRINT("MPU6050 I2C connection [FAIL].\n");
   }
 
+  /*
   //mpu6050Reset();
   //vTaskDelay(M2T(50));
   //for (i=0; i<10000; i++);
@@ -160,6 +162,7 @@ void imu6Init(void)
 
   isInit = TRUE;
   //GPIO_WriteBit(GPIOB, GPIO_Pin_5,  Bit_RESET );
+  */
 }
 
 

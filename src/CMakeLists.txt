@@ -7,6 +7,7 @@ add_subdirectory(FreeRTOS)
 add_subdirectory(modules)
 add_subdirectory(STM32F4xx_StdPeriph_Driver)
 add_subdirectory(utils)
+add_subdirectory(tests)
 
 set (ELKA_LINK_LIBS
   ${ELKA_LINK_LIBS}

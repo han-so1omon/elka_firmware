@@ -136,7 +136,7 @@ bool i2cdevReadBits(I2C_TypeDef *I2Cx, uint8_t devAddress, uint8_t memAddress,
 {
   bool status;
   uint8_t byte;
-
+  
   if ((status = i2cdevReadByte(I2Cx, devAddress, memAddress, &byte)) == TRUE)
   {
       uint8_t mask = ((1 << length) - 1) << (bitStart - length + 1);
@@ -144,6 +144,7 @@ bool i2cdevReadBits(I2C_TypeDef *I2Cx, uint8_t devAddress, uint8_t memAddress,
       byte >>= (bitStart - length + 1);
       *data = byte;
   }
+
   return status;
 }
 

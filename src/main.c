@@ -212,7 +212,7 @@ void vLEDTask( void *pvParameters )
 
 
 	    //vTaskDelay(LED[1]/portTICK_RATE_MS);
-        vTaskDelay(1000);
+        vTaskDelay(500);
 	}
 }
 
@@ -236,9 +236,9 @@ portTASK_FUNCTION (vGetData, pvParameters)
 	{
 		//vTaskDelayUntil(&xlastWakeTime1, 10);
 
-		xSemaphoreTake(queuewritten, portMAX_DELAY);
+		//xSemaphoreTake(queuewritten, portMAX_DELAY);
 		//xQueueReceive(adctransferQueue,&press_sens,0);
-		xQueueReceive(eulerqueue,&eulerdata,0);
+		//xQueueReceive(eulerqueue,&eulerdata,0);
 		gxi16 = (int)(100*gyro.x);
 		gyi16 = (int)(100*gyro.y);
 		gzi16 = (int)(100*gyro.z);
@@ -283,8 +283,8 @@ portTASK_FUNCTION (vGetData, pvParameters)
 
 		//GPIO_WriteBit(GPIOB, GPIO_Pin_5, led1_state ? Bit_SET : Bit_RESET);
 		//led1_state^=1;*/
-	    //STM_EVAL_LEDToggle(LED4);
-	    //vTaskDelay(100);
+    STM_EVAL_LEDToggle(LED4);
+    vTaskDelay(500);
 	}
 }
 
