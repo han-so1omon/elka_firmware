@@ -12,7 +12,7 @@ set(CMAKE_SYSTEM_VERSION 1)
 # specify the cross compiler
 # requires a symbolic link typically from /usr/bin/arm-none-eabi-gcc
 find_program(C_COMPILER arm-none-eabi-gcc
-	PATHS /usr/bin/
+	PATHS /usr/bin/ 
 	NO_DEFAULT_PATH
 )
 

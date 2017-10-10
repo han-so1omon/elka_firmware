@@ -26,7 +26,7 @@ target_link_libraries(test_i2c
 add_custom_target(test_i2c_bin)
 add_custom_command(
   TARGET test_i2c_bin 
-  COMMAND arm-none-eabi-objcopy -O binary "test_i2c" "test_i2c.bin" && chmod a+x test_i2c.bin && mv test_i2c.bin ${CMAKE_BUILD_DIRECTORY}
+  COMMAND cd ${CMAKE_BINARY_DIR}/tests && arm-none-eabi-objcopy -O binary "test_i2c" "test_i2c.bin" && chmod a+x test_i2c.bin 
   DEPENDS test_i2c
   POST_BUILD
 )

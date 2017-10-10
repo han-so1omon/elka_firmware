@@ -11,6 +11,7 @@ elka:
 elka-debug:
 	@mkdir -p build_elka && cd build_elka && cmake -Wno-dev ../ -DCMAKE_TOOLCHAIN_FILE=../toolchain/Toolchain-arm-none-eabi.cmake -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
 	@cd build_elka && make && make elka_hex && make elka_bin
+	@cd build_elka && make && make test_i2c_bin
 
 .PHONY upload:
 upload:
